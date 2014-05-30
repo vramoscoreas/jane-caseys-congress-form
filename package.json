@@ -24,7 +24,6 @@
     "hbs": "2.x",
     "less": "1.x",
     "less-middleware": "*",
-    "underscore": "1.x",
     "metalogger": "*",
     "lodash": "~2.4.1",
     "jade": "~1.3.1",

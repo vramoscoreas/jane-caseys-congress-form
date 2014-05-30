@@ -4,11 +4,6 @@ block content
 
   form(method='POST', action='/forms/solveRecaptcha')
     .row
-      .col-md-3
-        h4 Email
-      .col-md-3
-        input(type='text', value='$EMAIL')
-    .row
       .col-md-6
         script(src="http://www.google.com/recaptcha/api/challenge?k=#{publicKey}")
         noscript
