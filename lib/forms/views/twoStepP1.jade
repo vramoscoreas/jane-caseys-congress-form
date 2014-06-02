@@ -1,0 +1,8 @@
+extends layout
+
+block content
+
+  form(method='POST', action='/forms/twoStepTest', class='form-inline', role='form')
+    .form-group
+        input(type='text', name='zipCode', class='form-control', placeholder='Enter Zip')
+    input(type='submit', value='Next Step', class='btn btn-default')
