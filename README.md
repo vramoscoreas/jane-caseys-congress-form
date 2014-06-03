@@ -1,4 +1,17 @@
 jane-caseys-congress-form
 =========================
 
-A fake page to contact our beloved Jane Casey
+A set offake pages to contact our beloved Jane Casey
+
+
+Setup
+-----
+
+1. Run ```./setup.sh```
+2. To run as a developer, run ```./bin/dev_start.sh```
+
+Forms Available
+---------------
+
+* Captcha
+* Two step
