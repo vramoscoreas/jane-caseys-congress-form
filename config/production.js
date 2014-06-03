@@ -1,4 +1,4 @@
-var port = env.Process.PORT;
+var port = process.env.PORT;
 
 module.exports = {
   app: {
