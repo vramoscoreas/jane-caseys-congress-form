@@ -1,7 +1,7 @@
 jane-caseys-congress-form
 =========================
 
-A set offake pages to contact our beloved Jane Casey
+A set of fake pages to contact our beloved Jane Casey
 
 
 Setup
