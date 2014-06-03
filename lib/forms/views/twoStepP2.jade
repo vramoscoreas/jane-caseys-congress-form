@@ -2,7 +2,7 @@ extends layout
 
 block content
 
-  form(method='POST', action='/forms/twoStepSubmit', class='form-inline', role='form')
+  form(method='POST', action='/forms/twoStepSubmit', class='form-inline', role='form' id='two')
     .form-group
-        input(type='text', name='email', class='form-control', placeholder='Enter Email')
-    input(type='submit', value='Submit', class='btn btn-default')
+        input(type='text', id='email', name='email', class='form-control', placeholder='Enter Email')
+    input(type='submit', id='submitTwo', name="submitTwo", value='Submit', class='btn btn-default')

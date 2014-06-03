@@ -4,5 +4,5 @@ block content
 
   form(method='POST', action='/forms/twoStepTest', class='form-inline', role='form')
     .form-group
-        input(type='text', name='zipCode', class='form-control', placeholder='Enter Zip')
-    input(type='submit', value='Next Step', class='btn btn-default')
+        input(type='text', id='zipCode', name='zipCode', class='form-control', placeholder='Enter Zip')
+    input(type='submit', id='submitOne', name="submitOne", value='Next Step', class='btn btn-default')
