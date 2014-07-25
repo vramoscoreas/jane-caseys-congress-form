@@ -1,0 +1,20 @@
+extends layout
+
+block content
+
+  form(method='POST', action='/forms/submitRequiredRadios', role="form")
+    .row
+      h3 Prefix
+      label.radio
+        input(type='radio', id='prefix-Mr', name='Prefix', value='Mr.')
+        | Mr.
+      label.radio
+        input(type='radio', id='prefix-Mrs', name='Prefix', value='Mrs.')
+        | Mrs.
+      label.radio
+        input(type='radio', id='prefix-Ms', name='Prefix', value='Ms.')
+        | Ms.
+      label.radio
+        input(type='radio', id='prefix-Miss', name='Prefix', value='Miss')
+        | Miss
+      input(type='submit', id='submitRequiredRadios', name='submitRequiredRadios', value='Submit Prefix', class='btn btn-default')
