@@ -1,0 +1,13 @@
+extends layout
+
+block content
+
+  form(method='POST', action='/forms/submitRequiredSelect', role="form")
+    .row
+      h3 Prefix
+      select
+        option Mr.
+        option Mrs.
+        option Ms.
+        option Miss
+      input(type='submit', id='submitRequiredSelect', name='submitRequiredSelect', value='Submit Prefix', class='btn btn-default')

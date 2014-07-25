@@ -3,7 +3,7 @@ contact_form:
   method: post
   action: ""
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/requiredRadios"
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/requiredSelect"
     - select:
         - name: prefix
           selector: "#prefix"
@@ -16,7 +16,7 @@ contact_form:
             - Miss
     - click_on:
         - value: Submit
-          selector: "#submitRequiredRadios"
+          selector: "#submitRequiredSelect"
   success:
     headers:
       status: 200
