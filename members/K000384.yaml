@@ -1,0 +1,24 @@
+bioguide: K000384
+contact_form:
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/requiredSelect"
+    - select:
+        - name: prefix
+          selector: "#prefix"
+          value: $NAME_PREFIX
+          required: true
+          options:
+            - Mr.
+            - Mrs.
+            - Ms.
+            - Miss
+    - click_on:
+        - value: Submit
+          selector: "#submitRequiredSelect"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
