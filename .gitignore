@@ -27,4 +27,4 @@ build/Release
 node_modules
 
 # Post data from submissions
-postData.json
+postData.txt
