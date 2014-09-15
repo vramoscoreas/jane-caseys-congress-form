@@ -5,22 +5,23 @@ block content
   form(method='POST', action='/forms/submitRequiredSelect', role="form")
     .row
       h3 Prefix
-      select(name="prefix")#prefix
-        option Select One
+      select(name="prefix", required)#prefix
+        option(value='') Select One
         option Mr.
         option Mrs.
         option Ms.
         option Miss
       br
       br
-      input(type='text', id='req_firstname', name='firstName', class='form-control', placeholder='Enter First Name')
+      input(type='text', id='req_firstname', name='firstName',
+      class='form-control', placeholder='Enter First Name', required)
       br
-      select(name="topic")#topic
-        option Select One
+      select(name="topic", required)#topic
+        option(value='') Select One
         option Agriculture
         option Other
       br
-      input(type='text', id='req_subject', name='subject', class='form-control', placeholder='Enter Subject')
-      input(type='text', id='req_message', name='message', class='form-control', placeholder='Enter Message')
+      input(type='text', id='req_subject', name='subject', class='form-control', placeholder='Enter Subject', required)
+      input(type='text', id='req_message', name='message', class='form-control', placeholder='Enter Message', required)
       br
-      input(type='submit', id='submitRequiredSelect', name='submitRequiredSelect', value='Submit Prefix', class='btn btn-default')
+      input(type='submit', id='submitRequiredSelect', name='submitRequiredSelect', value='Submit Prefix', class='btn btn-default', required)
