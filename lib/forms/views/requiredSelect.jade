@@ -5,7 +5,8 @@ block content
   form(method='POST', action='/forms/submitRequiredSelect', role="form")
     .row
       h3 Prefix
-      select#prefix
+      select(name="prefix")#prefix
+        option Select One
         option Mr.
         option Mrs.
         option Ms.
@@ -13,4 +14,13 @@ block content
       br
       br
       input(type='text', id='req_firstname', name='firstName', class='form-control', placeholder='Enter First Name')
+      br
+      select(name="topic")#topic
+        option Select One
+        option Agriculture
+        option Other
+      br
+      input(type='text', id='req_subject', name='subject', class='form-control', placeholder='Enter Subject')
+      input(type='text', id='req_message', name='message', class='form-control', placeholder='Enter Message')
+      br
       input(type='submit', id='submitRequiredSelect', name='submitRequiredSelect', value='Submit Prefix', class='btn btn-default')

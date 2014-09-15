@@ -14,9 +14,24 @@ contact_form:
             - Mrs.
             - Ms.
             - Miss
+        - name: prefix
+          selector: "#topic"
+          value: $TOPIC
+          required: true
+          options:
+            - Agriculture
+            - Other
         - name: firstname
           selector: "#req_firstname"
           value: $NAME_FIRST
+          required: true
+        - name: message
+          selector: "#req_message"
+          value: $MESSAGE
+          required: true
+        - name: subject
+          selector: "#req_subject"
+          value: $SUBJECT
           required: true
     - click_on:
         - value: Submit
