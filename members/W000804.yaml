@@ -15,6 +15,10 @@ contact_form:
     - find:
       - selector: "#two"
     - fill_in:
+      - name: firstname
+        selector: "#req_firstname"
+        value: $NAME_FIRST
+        required: true
       - name: email
         selector: "#email"
         value: $EMAIL
