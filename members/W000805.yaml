@@ -5,22 +5,23 @@ contact_form:
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/requiredSelect"
     - select:
-        - name: prefix
-          selector: "#prefix"
-          value: $NAME_PREFIX
-          required: true
-          options:
-            - Mr.
-            - Mrs.
-            - Ms.
-            - Miss
+      - name: prefix
+        selector: "#prefix"
+        value: $NAME_PREFIX
+        required: true
+        options:
+          - Mr.
+          - Mrs.
+          - Ms.
+          - Miss
+      - fill_in:
         - name: firstname
           selector: "#req_firstname"
           value: $NAME_FIRST
           required: true
     - click_on:
-        - value: Submit
-          selector: "#submit"
+      - value: Submit
+        selector: "#submit"
   success:
     headers:
       status: 200

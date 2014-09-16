@@ -5,41 +5,42 @@ contact_form:
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/requiredSelect"
     - select:
-        - name: prefix
-          selector: "#prefix"
-          value: $NAME_PREFIX
-          required: true
-          options:
-            - Mr.
-            - Mrs.
-            - Ms.
-            - Miss
-        - name: prefix
-          selector: "#topic"
-          value: $TOPIC
-          required: true
-          options:
-            - Agriculture
+      - name: prefix
+        selector: "#prefix"
+        value: $NAME_PREFIX
+        required: true
+        options:
+          - Mr.
+          - Mrs.
+          - Ms.
+          - Miss
+      - name: topic
+        selector: "#topic"
+        value: $TOPIC
+        required: true
+        options:
+          - Agriculture
             - Other
-        - name: firstname
-          selector: "#req_firstname"
-          value: $NAME_FIRST
-          required: true
-        - name: lastname
-          selector: "#req_lastname"
-          value: $NAME_LAST
-          required: true
-        - name: message
-          selector: "#req_message"
-          value: $MESSAGE
-          required: true
-        - name: subject
-          selector: "#req_subject"
-          value: $SUBJECT
-          required: true
+    - fill_in:
+      - name: firstname
+        selector: "#req_firstname"
+        value: $NAME_FIRST
+        required: true
+      - name: lastname
+        selector: "#req_lastname"
+        value: $NAME_LAST
+        required: true
+      - name: message
+        selector: "#req_message"
+        value: $MESSAGE
+        required: true
+      - name: subject
+        selector: "#req_subject"
+        value: $SUBJECT
+        required: true
     - click_on:
-        - value: Submit
-          selector: "#submit"
+      - value: Submit
+        selector: "#submit"
   success:
     headers:
       status: 200
