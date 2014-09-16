@@ -1,6 +1,8 @@
 extends layout
+
 block content
-  form(method='POST', action='/forms/submitRequiredSelect', role="form")
+
+  form(method='POST', action='/forms/submitFormData', role="form")
     .row
       h3 Prefix
       select(name="prefix")#prefix
@@ -11,7 +13,33 @@ block content
         option Miss
       br
       br
-      input(type='text', id='req_firstname', name='firstName',
-      class='form-control', placeholder='Enter First Name')
+      input(type='hidden' id='bioId' value='bioId')
+      input(type='text', id='firstname', name='firstName', class='form-control', placeholder='Enter First Name')
+      input(type='text', id='lastname', name='lastName', class='form-control', placeholder='Enter Last Name')
+      input(type='text', id='streetAddress1', name='streetAddress1', class='form-control', placeholder='Address 1')
+      input(type='text', id='streetAddress2', name='streetAddress2', class='form-control', placeholder='Address 2')
+      input(type='text', id='city', name='city', class='form-control', placeholder='City')
+      select(name="state")#state
+        option(value='') Select One
+        option MD
+        option VA
+        option WY
       br
-      input(type='submit', id='submitRequiredSelect', name='submitRequiredSelect', value='Submit Prefix', class='btn btn-default')
+      input(type='text', id='zipcode', name='zipcode', class='form-control', placeholder='Enter Zip')
+      input(type='text', id='phonenumber', name='phonenumber', class='form-control', placeholder='Enter Phone')
+      input(type='text', id='email', name='email', class='form-control', placeholder='Enter Email')
+      input(type='text', id='verifyemail', name='verifyemail', class='form-control', placeholder='Verify Email')
+      br
+      select(name="topic")#topic
+        option(value='') Select One
+        option Agriculture
+        option Other
+      br
+      input(type='text', id='subject', name='subject', class='form-control', placeholder='Enter Subject')
+      input(type='text', id='message', name='message', class='form-control', placeholder='Enter Message')
+      select(name="response")#response
+        option(value='') Select One
+        option yes
+        option no
+      br
+      input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')

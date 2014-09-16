@@ -3,7 +3,7 @@ contact_form:
   method: post
   action: ""
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/requiredSelect"
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/M000933"
     - select:
       - name: prefix
         selector: "#prefix"
@@ -23,19 +23,19 @@ contact_form:
           - Other
     - fill_in:
       - name: firstname
-        selector: "#req_firstname"
+        selector: "#firstname"
         value: $NAME_FIRST
         required: true
       - name: lastname
-        selector: "#req_lastname"
+        selector: "#lastname"
         value: $NAME_LAST
         required: true
       - name: message
-        selector: "#req_message"
+        selector: "#message"
         value: $MESSAGE
         required: true
       - name: subject
-        selector: "#req_subject"
+        selector: "#subject"
         value: $SUBJECT
         required: true
     - click_on:

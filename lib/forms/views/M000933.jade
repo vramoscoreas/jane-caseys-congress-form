@@ -1,0 +1,26 @@
+extends layout
+
+block content
+
+  form(method='POST', action='/forms/submitFormData', role="form")
+    .row
+      h3 Prefix
+      select(name="prefix")#prefix
+        option Select One
+        option Mr.
+        option Mrs.
+        option Ms.
+        option Miss
+      br
+      br
+      input(type='text', id='firstname', name='firstName', class='form-control', placeholder='Enter First Name')
+      br
+      select(name="topic")#topic
+        option Select One
+        option Agriculture
+        option Other
+      br
+      input(type='text', id='subject', name='subject', class='form-control', placeholder='Enter Subject')
+      input(type='text', id='message', name='message', class='form-control', placeholder='Enter Message')
+      br
+      input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')

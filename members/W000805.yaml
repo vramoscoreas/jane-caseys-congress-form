@@ -3,25 +3,29 @@ contact_form:
   method: post
   action: ""
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/requiredSelect"
-    - select:
-      - name: prefix
-        selector: "#prefix"
-        value: $NAME_PREFIX
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/twoStep"
+    - fill_in:
+      - name: zipCode
+        selector: "#zipCode"
+        value: $ADDRESS_ZIP5
         required: true
-        options:
-          - Mr.
-          - Mrs.
-          - Ms.
-          - Miss
+    - click_on:
+      - value: Next Step
+        selector: "#submitOne"
+    - find:
+      - selector: "#two"
     - fill_in:
       - name: firstname
-        selector: "#req_firstname"
+        selector: "#firstname"
         value: $NAME_FIRST
+        required: true
+      - name: email
+        selector: "#email"
+        value: $EMAIL
         required: true
     - click_on:
       - value: Submit
-        selector: "#submit"
+        selector: "#submitTwo"
   success:
     headers:
       status: 200

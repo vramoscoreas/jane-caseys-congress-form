@@ -3,25 +3,80 @@ contact_form:
   method: post
   action: ""
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/requiredSelect"
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/K000384"
     - select:
-        - name: prefix
-          selector: "#prefix"
-          value: $NAME_PREFIX
-          required: true
-          options:
-            - Mr.
-            - Mrs.
-            - Ms.
-            - Miss
+      - name: prefix
+        selector: "#prefix"
+        value: $NAME_PREFIX
+        required: true
+        options:
+          - Mr.
+          - Mrs.
+          - Ms.
+          - Miss
+      - name: topic
+        selector: "#topic"
+        value: $TOPIC
+        required: true
+        options:
+          - Agriculture
+          - Other
+      - name: state
+        selector: "#state"
+        value: $ADDRESS_STATE_POSTAL_ABBREV
+        required: Yes
+        options: US_STATES
+      - name: response
+        selector: "#response"
+        value: "yes"
+        required: Yes
     - fill_in:
-        - name: firstname
-          selector: "#req_firstname"
-          value: $NAME_FIRST
-          required: true
+      - name: firstname
+        selector: "#firstname"
+        value: $NAME_FIRST
+        required: true
+      - name: lastname
+        selector: "#lastname"
+        value: $NAME_LAST
+        required: Yes
+      - name: streetAddress1
+        selector: "#streetAddress1"
+        value: $ADDRESS_STREET
+        required: Yes
+      - name: streetAddress2
+        selector: "#streetAddress2"
+        value: $ADDRESS_STREET_2
+      - name: city
+        selector: "#city"
+        value: $ADDRESS_CITY
+        required: Yes
+      - name: zipcode
+        selector: "#zipcode"
+        value: $ADDRESS_ZIP5
+        required: Yes
+      - name: phonenumber
+        selector: "#phonenumber"
+        value: $PHONE
+        required: Yes
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: Yes
+      - name: verifyemail
+        selector: "#verifyemail"
+        value: $EMAIL
+        required: Yes
+      - name: subject
+        selector: "[name='subject']"
+        value: $SUBJECT
+        required: Yes
+      - name: message
+        selector: "#message"
+        value: $MESSAGE
+        required: Yes
     - click_on:
-        - value: Submit
-          selector: "#submit"
+      - value: Submit
+        selector: "#submit"
   success:
     headers:
       status: 200
