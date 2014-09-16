@@ -39,7 +39,7 @@ contact_form:
           required: true
     - click_on:
         - value: Submit
-          selector: "#submitRequiredSelect"
+          selector: "#submit"
   success:
     headers:
       status: 200
