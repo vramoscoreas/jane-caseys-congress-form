@@ -14,11 +14,11 @@ contact_form:
           - Mrs.
           - Ms.
           - Miss
-      - fill_in:
-        - name: firstname
-          selector: "#req_firstname"
-          value: $NAME_FIRST
-          required: true
+    - fill_in:
+      - name: firstname
+        selector: "#req_firstname"
+        value: $NAME_FIRST
+        required: true
     - click_on:
       - value: Submit
         selector: "#submit"
