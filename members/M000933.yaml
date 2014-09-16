@@ -20,7 +20,7 @@ contact_form:
         required: true
         options:
           - Agriculture
-            - Other
+          - Other
     - fill_in:
       - name: firstname
         selector: "#req_firstname"
