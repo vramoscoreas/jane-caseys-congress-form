@@ -4,6 +4,7 @@ block content
 
   form(method='POST', action='/forms/twoStepSubmit', class='form-inline', role='form' id='two')
     .form-group
+      input(type='hidden' id='bioId' value='#{bioId}')
       input(type='text', id='firstname', name='firstName', class='form-control', placeholder='Enter First Name', required)
       input(type='text', id='email', name='email', class='form-control', placeholder='Enter Email', required)
-    input(type='submit', id='submitTwo', name="submitTwo", value='Submit', class='btn btn-default')
+      input(type='submit', id='submitTwo', name="submitTwo", value='Submit', class='btn btn-default')
