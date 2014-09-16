@@ -25,6 +25,10 @@ contact_form:
           selector: "#req_firstname"
           value: $NAME_FIRST
           required: true
+        - name: lastname
+          selector: "#req_lastname"
+          value: $NAME_LAST
+          required: true
         - name: message
           selector: "#req_message"
           value: $MESSAGE
