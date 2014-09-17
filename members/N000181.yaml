@@ -1,9 +1,9 @@
-bioguide: C007770
+bioguide: N000181
 contact_form:
   method: post
   action: ""
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/captcha"
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/N000181"
     - fill_in:
       - name: recaptcha_response_field
         selector: "#recaptcha_response_field"

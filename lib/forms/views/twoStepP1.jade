@@ -4,6 +4,6 @@ block content
 
   form(method='POST', action='/forms/twoStepTest', class='form-inline', role='form')
     .form-group
-      input(type='hidden' id='bioId' value='#{bioId}')
-      input(type='text', id='zipCode', name='zipCode', class='form-control', placeholder='Enter Zip', required)
-      input(type='submit', id='submitOne', name="submitOne", value='Next Step', class='btn btn-default')
+      input(type='text' id='bioid' name='bioid' value='#{bioId}')
+      input(type='text', id='zipcode', name='zipcode', class='form-control', placeholder='Enter Zip', required)
+      input(type='submit', id='submitone', name="submitone", value='Next Step', class='btn btn-default')
