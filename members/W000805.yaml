@@ -4,28 +4,39 @@ contact_form:
   action: ""
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/W000805"
-    - fill_in:
-      - name: zipCode
-        selector: "#zipCode"
-        value: $ADDRESS_ZIP5
+    - select:
+      - name: prefix
+        selector: "#prefix"
+        value: $NAME_PREFIX
         required: true
-    - click_on:
-      - value: Next Step
-        selector: "#submitOne"
-    - find:
-      - selector: "#two"
-    - fill_in:
-      - name: firstname
-        selector: "#firstname"
-        value: $NAME_FIRST
+        options:
+          - Mr.
+          - Mrs.
+          - Ms.
+          - Miss
+      - name: topic
+        selector: "#topic"
+        value: $TOPIC
         required: true
-      - name: email
-        selector: "#email"
-        value: $EMAIL
+        options:
+          - Agriculture
+          - Other
+    - fill_in:
+      - name: lastname
+        selector: "#lastname"
+        value: $NAME_LAST
+        required: true
+      - name: message
+        selector: "#message"
+        value: $MESSAGE
+        required: true
+      - name: subject
+        selector: "#subject"
+        value: $SUBJECT
         required: true
     - click_on:
       - value: Submit
-        selector: "#submitTwo"
+        selector: "#submit"
   success:
     headers:
       status: 200

@@ -13,13 +13,15 @@ Setup
 Forms Available
 ---------------
 
-* Captcha
+* One Step
 * Two step
+* ReCaptcha
+
 
 | Address          | BioID   | Chamber   | Form Type  | Key Value |
 | ---------------- | ------- | --------- | ---------- | --------- |
 | 3201 Landover St.<br>Apt. 621<br>Alexandria, VA 22305 | K000384 | US Senate | One Step | firstname |
-| 3201 Landover St.<br>Apt. 621<br>Alexandria, VA 22305 | M000933 | US House | One Step | lastname |
-| 3201 Landover St.<br>Apt. 621<br>Alexandria, VA 22305 | W000805 | US Senate | Two Step | email |
+| 3201 Landover St.<br>Apt. 621<br>Alexandria, VA 22305 | M000933 | US Senate | One Step | lastname |
+| 3201 Landover St.<br>Apt. 621<br>Alexandria, VA 22305 | W000805 | US House | Two Step | email |
 | 264 Clovis Avenue<br>Suite 206<br>Clovis, CA 93612 | N000181 | US House | ReCaptcha | recaptcharesponse |
 
