@@ -3,7 +3,7 @@ contact_form:
   method: post
   action: ""
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/twoStep"
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/W000805"
     - fill_in:
       - name: zipCode
         selector: "#zipCode"
