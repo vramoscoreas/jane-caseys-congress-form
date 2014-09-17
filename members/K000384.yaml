@@ -35,12 +35,12 @@ contact_form:
         selector: "#firstname"
         value: $NAME_FIRST
         required: true
-      - name: streetAddress1
-        selector: "#streetAddress1"
+      - name: streetaddress1
+        selector: "#streetaddress1"
         value: $ADDRESS_STREET
         required: Yes
-      - name: streetAddress2
-        selector: "#streetAddress2"
+      - name: streetaddress2
+        selector: "#streetaddress2"
         value: $ADDRESS_STREET_2
       - name: city
         selector: "#city"
