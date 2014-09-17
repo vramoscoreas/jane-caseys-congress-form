@@ -54,14 +54,6 @@ contact_form:
         selector: "#phonenumber"
         value: $PHONE
         required: Yes
-      - name: email
-        selector: "#email"
-        value: $EMAIL
-        required: Yes
-      - name: verifyemail
-        selector: "#verifyemail"
-        value: $EMAIL
-        required: Yes
       - name: subject
         selector: "[name='subject']"
         value: $SUBJECT
