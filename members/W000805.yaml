@@ -13,7 +13,6 @@ contact_form:
           - Mr.
           - Mrs.
           - Ms.
-          - Miss
       - name: topic
         selector: "#topic"
         value: $TOPIC
