@@ -21,6 +21,10 @@ contact_form:
           - Agriculture
           - Other
     - fill_in:
+      - name: address_state_full
+        selector: "#address_state_full"
+        value: $ADDRESS_STATE_FULL
+        required: true
       - name: lastname
         selector: "#lastname"
         value: $NAME_LAST
