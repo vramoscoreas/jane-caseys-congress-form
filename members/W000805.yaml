@@ -13,13 +13,6 @@ contact_form:
           - Mr.
           - Mrs.
           - Ms.
-      - name: topic
-        selector: "#topic"
-        value: $TOPIC
-        required: true
-        options:
-          - Agriculture
-          - Other
     - fill_in:
       - name: lastname
         selector: "#lastname"

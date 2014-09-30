@@ -14,13 +14,6 @@ contact_form:
           - Mrs.
           - Ms.
           - Miss
-      - name: topic
-        selector: "#topic"
-        value: $TOPIC
-        required: true
-        options:
-          - Agriculture
-          - Other
     - fill_in:
       - name: lastname
         selector: "#lastname"

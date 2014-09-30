@@ -14,13 +14,6 @@ contact_form:
           - Mrs.
           - Ms.
           - Miss
-      - name: topic
-        selector: "#topic"
-        value: $TOPIC
-        required: true
-        options:
-          - Agriculture
-          - Other
       - name: state
         selector: "#state"
         value: $ADDRESS_STATE_POSTAL_ABBREV
