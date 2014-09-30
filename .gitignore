@@ -28,3 +28,6 @@ node_modules
 
 # Post data from submissions
 postData.txt
+
+# vim swap files
+*.sw[a-z]
