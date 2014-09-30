@@ -4,22 +4,6 @@ contact_form:
   action: ""
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/M000702"
-    - select:
-      - name: prefix
-        selector: "#prefix"
-        value: $NAME_PREFIX
-        required: true
-        options:
-          - Mr.
-          - Mrs.
-          - Ms.
-      - name: topic
-        selector: "#topic"
-        value: $TOPIC
-        required: true
-        options:
-          - Agriculture
-          - Other
     - fill_in:
       - name: address_zip_plus_4
         selector: "#address_zip_plus_4"
