@@ -21,6 +21,10 @@ contact_form:
           - Agriculture
           - Other
     - fill_in:
+      - name: address_state_postal_abbrev
+        selector: "#address_state_postal_abbrev"
+        value: $ADDRESS_STATE_POSTAL_ABBREV
+        required: true
       - name: address_state_full
         selector: "#address_state_full"
         value: $ADDRESS_STATE_FULL
