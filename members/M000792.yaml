@@ -21,6 +21,10 @@ contact_form:
           - Agriculture
           - Other
     - fill_in:
+      - name: address_zip_plus_4
+        selector: "#address_zip_plus_4"
+        value: $address_zip_plus_4
+        required: true
       - name: address_county
         selector: "#address_county"
         value: $address_county
