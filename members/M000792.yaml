@@ -21,6 +21,10 @@ contact_form:
           - Agriculture
           - Other
     - fill_in:
+      - name: address_county
+        selector: "#address_county"
+        value: $address_county
+        required: true
       - name: phone_parentheses
         selector: "#phone_parentheses"
         value: $PHONE_PARENTHESES
