@@ -1,9 +1,9 @@
-bioguide: M000792
+bioguide: M000702
 contact_form:
   method: post
   action: ""
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/M000792"
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/M000702"
     - select:
       - name: prefix
         selector: "#prefix"
