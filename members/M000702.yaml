@@ -6,11 +6,11 @@ contact_form:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/M000702"
     - fill_in:
       - name: address_zip_plus_4
-        selector: "$address_zip_plus_4"
+        selector: "#address_zip_plus_4"
         value: $ADDRESS_ZIP_PLUS_4
         required: true
       - name: address_county
-        selector: "$address_county"
+        selector: "#address_county"
         value: $ADDRESS_COUNTY
         required: true
       - name: phone_parentheses
