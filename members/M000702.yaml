@@ -21,9 +21,29 @@ contact_form:
           - Agriculture
           - Other
     - fill_in:
+      - name: streetaddress1
+        selector: "#streetaddress1"
+        value: $ADDRESS_STREET
+        required: true
+      - name: streetaddress2
+        selector: "#streetaddress2"
+        value: $ADDRESS_STREET_2
+        required: true
+      - name: city
+        selector: "#city"
+        value: $ADDRESS_CITY
+        required: true
+      - name: state
+        selector: "#state"
+        value: $ADDRESS_STATE_POSTAL_ABBREV
+        required: true
+      - name: zipcode
+        selector: "#zipcode"
+        value: $ADDRESS_STATE_ZIP_PLUS_4
+        required: true
       - name: address_zip_plus_4
         selector: "#address_zip_plus_4"
-        value: $address_zip_plus_4
+        value: $ADDRESS_ZIP_PLUS_4
         required: true
       - name: address_county
         selector: "#address_county"
