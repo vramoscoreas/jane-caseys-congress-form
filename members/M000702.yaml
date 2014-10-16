@@ -17,10 +17,6 @@ contact_form:
         selector: "#city"
         value: $ADDRESS_CITY
         required: true
-      - name: state
-        selector: "#state"
-        value: $ADDRESS_STATE_POSTAL_ABBREV
-        required: true
       - name: zipcode
         selector: "#zipcode"
         value: $ADDRESS_ZIP_PLUS_4
