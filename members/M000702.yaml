@@ -21,6 +21,10 @@ contact_form:
         selector: "#zipcode"
         value: $ADDRESS_ZIP_PLUS_4
         required: true
+      - name: zip5
+        selector: "#zip5"
+        value: $ADDRESS_ZIP_5
+        required: true
       - name: address_county
         selector: "#address_county"
         value: $ADDRESS_COUNTY
