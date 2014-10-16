@@ -69,6 +69,10 @@ contact_form:
         selector: "#subject"
         value: $SUBJECT
         required: true
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
     - click_on:
       - value: Submit
         selector: "#submit"
