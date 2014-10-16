@@ -17,16 +17,16 @@ contact_form:
         selector: "#city"
         value: $ADDRESS_CITY
         required: true
-      - name: zipcode
-        selector: "#zipcode"
+      - name: address_zip_plus_4
+        selector: "#address_zip_plus_4"
         value: $ADDRESS_ZIP_PLUS_4
         required: true
-      - name: zip5
-        selector: "#zip5"
+      - name: address_zip_5
+        selector: "#address_zip_5"
         value: $ADDRESS_ZIP_5
         required: true
-      - name: zip4
-        selector: "#zip4"
+      - name: address_zip_4
+        selector: "#address_zip_4"
         value: $ADDRESS_ZIP_4
         required: true
       - name: address_county
