@@ -1,0 +1,40 @@
+bioguide: F000444
+contact_form:
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/F000444"
+    - select:
+      - name: topic
+        selector: "#topic"
+        value: $TOPIC
+        required: true
+        options:
+          Civil Rights: JUD.CIVIL
+          Consumer Affairs: CPSC
+          Defense and Military: DEF
+          Education: ED
+          Energy: EN
+          Environment: ENV
+          Federal Agency Problems: CASE
+          Federal Employees: GOV.FEDS
+          Foreign Relations: FOR
+          Government Affairs and Congress: GOV
+          Grant Requests: CASE
+          Gun Control: GUN CONTROL
+          Health: HEA
+          Health - Medicare: MCARE
+          Homeland Security: TERROR
+          Housing and Real Estate: HUD
+          Human Rights: FOR.HUMAN RIGHTS
+          Immigration: IMM
+          "Judiciary, Justice and Crime": JUD
+          "Labor, Retirement and Pensions": LAB
+    - click_on:
+      - value: Submit
+        selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"

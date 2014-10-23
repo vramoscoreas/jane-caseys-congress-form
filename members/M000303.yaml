@@ -1,0 +1,32 @@
+bioguide: M000303
+contact_form:
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/M000303"
+    - select:
+      - name: topic
+        selector: "#topic"
+        value: $TOPIC
+        required: true
+        options:
+          Local Community Issues: CASE
+          Postal Issues: POST
+          Religion: JUD.RELIGION
+          "Science, Technology and Space": SCI
+          Seniors: SNR
+          Social Security: SSA
+          Taxes: TAX
+          "Telecommunications, Phone, Cable, TV, Etc.": COMM
+          Transportation: TRAN
+          Trade: FOR.TRADE
+          Veterans: VET
+          Miscellaneous: MISC
+    - click_on:
+      - value: Submit
+        selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"

@@ -1,0 +1,29 @@
+bioguide: F000448
+contact_form:
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/F000448"
+    - select:
+      - name: topic
+        selector: "#topic"
+        value: $TOPIC
+        required: true
+        options:
+          Civil Rights: JUD.CIVIL
+          Agriculture: AG
+          Animals: ENV.ANIMALS
+          Arts and Entertainment: ART
+          Banking and Finance: BANK
+          Budget and Economy: BUD
+          Business and Industry: BUS
+          Children and Families: JUD.CHILDREN
+    - click_on:
+      - value: Submit
+        selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
+
