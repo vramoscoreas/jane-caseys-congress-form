@@ -3,39 +3,10 @@ contact_form:
   method: POST
   action: "/htbin/formproc/mcdermott/contact.txt&display=/webforms/new/thank_you-contact.shtml"
   steps:
-    - visit: https://forms.house.gov/mcdermott/webforms/new/contact.shtml
-    - fill_in:
-        - name: required-first
-          selector: "#mainbodyContentleft form input[name='required-first']"
-          value: $NAME_FIRST
-          required: true
-        - name: required-last
-          selector: "#mainbodyContentleft form input[name='required-last']"
-          value: $NAME_LAST
-          required: true
-        - name: required-email_address
-          selector: "#mainbodyContentleft form input[name='required-email_address']"
-          value: $EMAIL
-          required: true
-        - name: required-address
-          selector: "#mainbodyContentleft form input[name='required-address']"
-          value: $ADDRESS_STREET
-          required: true
-        - name: required-city
-          selector: "#mainbodyContentleft form input[name='required-city']"
-          value: $ADDRESS_CITY
-          required: true
-        - name: required-phone
-          selector: "#mainbodyContentleft form input[name='required-phone']"
-          value: $PHONE
-          required: true
-        - name: required-message
-          selector: "#mainbodyContentleft form textarea[name='required-message']"
-          value: $MESSAGE
-          required: true
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/M000404"
     - select:
         - name: required-issue
-          selector: "#mainbodyContentleft form select[name='required-issue']"
+          selector: "#topic"
           value: $TOPIC
           required: true
           options:
@@ -95,8 +66,8 @@ contact_form:
             Welfare: WELFARE
             "Women's Issues": WOMEN
     - click_on:
-        - value: Send Email
-          selector: "#mainbodyContentleft form input[type='submit'][value='Send Email']"
+      - value: Submit
+        selector: "#submit"
     - find:
         - selector: "h2.contentheading"
 
