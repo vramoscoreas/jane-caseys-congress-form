@@ -1,0 +1,62 @@
+bioguide: M001111
+contact_form:
+  method: POST
+  action: http://www.murray.senate.gov/public/index.cfm/contactme
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/M001111"
+    - select:
+      - name: field_58409530-3430-4481-9b78-4434bd9620eb
+        selector: "#topic"
+        value: $TOPIC
+        required: Yes
+        options:
+          "Economic Stimulus/Financial Services" : "FIN"
+          "Mortgage Assistance" : "MORTGAGE HELP"
+          "Need Help with a Federal Agency/Military Personnel" : "CASE"
+          "Abortion" : "ABO"
+          "Aging" : "AGI"
+          "Agriculture" : "AGRI"
+          "Animal Welfare" : "ANWE"
+          "Arts" : "ARTS"
+          "Asbestos" : "ASBESTOS"
+          "Banking" : "BANK"
+          "Budget" : "BUD"
+          "Children and Families" : "CHLDFAM"
+          "Judiciary" : "JUD"
+          "Defense" : "DEF"
+          "Education" : "EDU"
+          "Elections and Congressional Affairs" : "ELCON"
+          "Energy" : "ENER"
+          "Environment and Natural Resources" : "ENV"
+          "Fisheries" : "FISH"
+          "Foreign Policy" : "FOR"
+          "Health Care" : "HECA"
+          "Homeland Security/Terrorism" : "HOMELAND"
+          "Housing" : "HOU"
+          "Immigration" : "IMM"
+          "Iraq" : "IRAQ"
+          "Labor and Workforce" : "LABOR"
+          "Law Enforcement and Firearms" : "LEG"
+          "LGBT" : "GAYRTS"
+          "Medicaid" : "MEDICAID"
+          "Medicare" : "MEDICARE"
+          "Postal Affairs" : "POSTAL"
+          "Social Security" : "SOCSEC"
+          "Space" : "SPASCI"
+          "Small Business" : "SMBUS"
+          "Taxes" : "TAX"
+          "Technology and Telecommunications" : "TNT"
+          "Trade" : "TRADE"
+          "Transportation" : "TRANS"
+          "Veterans" : "VETS"
+          "Welfare" : "WELF"
+          "Women" : "WOMENS"
+    - click_on:
+      - value: Submit
+        selector: "form.uniForm input[type='submit']"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: Thank you for your message!
+
