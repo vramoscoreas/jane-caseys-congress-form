@@ -5,7 +5,7 @@ block content
     .row
       input(type='text' id='bioid' name='bioid' value='#{bioId}')
       br
-      select(name="topic", required)#topic
+    select(name="topic", required)#topic
       option(value='') Select One 
       option(value='AFGHANISTAN') Afghanistan
       option(value='AG') Agriculture
@@ -61,9 +61,9 @@ block content
       option(value='UNEMPLOYMENT') Unemployment
       option(value='VETS') Veterans
       option(value='WELFARE') Welfare
-      option(value='WOMEN') Women's Issues
-      br
-      input(type='text', id='subject', name='subject', class='form-control', placeholder='Enter Subject', required)
-      input(type='text', id='message', name='message', class='form-control', placeholder='Enter Message', required)
-      br
-      input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
+      option(value='WOMEN') Women\'s Issues
+    br
+    input(type='text', id='subject', name='subject', class='form-control', placeholder='Enter Subject', required)
+    input(type='text', id='message', name='message', class='form-control', placeholder='Enter Message', required)
+    br
+    input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
