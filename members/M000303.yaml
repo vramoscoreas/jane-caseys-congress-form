@@ -1,9 +1,9 @@
 bioguide: M000303
 contact_form:
   method: POST
-  action: http://www.mccain.senate.gov/public/index.cfm/contact-form
+  action: http://ngpvan-contact-jane-casey.herokuapp.com/forms/M000303
   steps:
-    - visit: http://www.mccain.senate.gov/public/index.cfm/contact-form
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/M000303"
     - fill_in:
       - name: field_d5a73635-88fa-4b32-b8b5-274d2f97d77e
         selector: "#field_d5a73635-88fa-4b32-b8b5-274d2f97d77e"
