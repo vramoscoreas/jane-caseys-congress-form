@@ -17,18 +17,20 @@
   },
   "dependencies": {
     "body-parser": "*",
-    "yaml": "*",
-    "nodebootstrap-server": "^0.1.0",
-    "nodebootstrap-clustering": "*",
-    "express": "3.x",
     "config": "*",
+    "express": "3.x",
     "hbs": "2.x",
+    "jade": "~1.3.1",
+    "js-yaml": "^3.2.2",
     "less": "1.x",
     "less-middleware": "*",
-    "metalogger": "*",
     "lodash": "~2.4.1",
-    "jade": "~1.3.1",
-    "request": "~2.36.0"
+    "metalogger": "*",
+    "nodebootstrap-clustering": "*",
+    "nodebootstrap-server": "^0.1.0",
+    "request": "~2.36.0",
+    "yaml": "*",
+    "yaml-js": "^0.1.0"
   },
   "devDependencies": {
     "assert": "*",
