@@ -8,7 +8,7 @@ contact_form:
       - name: field_58409530-3430-4481-9b78-4434bd9620eb
         selector: "#topic"
         value: $TOPIC
-        required: Yes
+        required: true
         options:
           "Economic Stimulus/Financial Services" : "FIN"
           "Mortgage Assistance" : "MORTGAGE HELP"
