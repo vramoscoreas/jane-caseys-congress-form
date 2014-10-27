@@ -70,9 +70,8 @@ contact_form:
         selector: "#submit"
     - find:
         - selector: "h2.contentheading"
-
   success:
     headers:
       status: 200
     body:
-      contains: Thank you for taking the time to convey your thoughts to Jim.
+      contains: "Success!"
