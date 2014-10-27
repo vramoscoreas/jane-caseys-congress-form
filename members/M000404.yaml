@@ -5,71 +5,69 @@ contact_form:
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/M000404"
     - select:
-        - name: required-issue
-          selector: "#topic"
-          value: $TOPIC
-          required: true
-          options:
-            Afghanistan: AFGHANISTAN
-            Agriculture: AG
-            Animals: ANIMAL
-            Arts/Public Television: ARTS
-            Banking: BANKING
-            Budget: BUDGET
-            "Children's Issues": CHILDREN
-            Civil Rights: CIVILRIGHTS
-            Congress: CONGRESS
-            Congressional Ethics: ETHICS
-            Crime: CRIME
-            Defense: DEFENSE
-            Eagle Scout Request: EAGLE
-            Economy Issues: ECONOMY
-            Education Issues: EDUCATION
-            Elections: ELECTIONS
-            Energy: ENERGY
-            Environment: ENVIRO-GEN
-            Environment - Timber: ENVIRO-TIMBER
-            Food And Drug Administration: FDA
-            General: GENERAL
-            Gun Control: GUN
-            Health: HEALTH
-            HIV/AIDS: HIV/AIDS
-            Homeland Security: HOMELAND SECURITY
-            Housing: HOUSING
-            Human Rights: HUMANRIGHTS
-            Immigration: IMMIGRATION
-            Internet: INTERNET
-            Insurance: INSURANCE
-            International Relations: INTERNATL
-            Iraq: IRAQ
-            Job Creation: JOB
-            Legal Issues: JUDICIARY
-            Labor: LABOR
-            Gay And Lesbian Issues: LESBIAN/GAY
-            Medicaid: MEDICAID
-            Medicare: MEDICARE
-            Minimum Wage: MINWAGE
-            Miscellaneous: GENERAL
-            Occupational Safety: OSHA
-            Postal Service: POSTAL
-            Religious Freedom: RELIGION
-            Reproductive Rights: ABORTION
-            Science And Technology: SCIENCE
-            Social Security: SOCSEC
-            Taxes: TAX
-            Telecommunications/FCC: TELECOM
-            Tours Requests: TOUR
-            Trade: TRADE
-            Transportation: TRANS
-            Unemployment: UNEMPLOYMENT
-            Veterans: VETS
-            Welfare: WELFARE
-            "Women's Issues": WOMEN
+      - name: required-issue
+        selector: "#topic"
+        value: $TOPIC
+        required: true
+        options:
+          Afghanistan: AFGHANISTAN
+          Agriculture: AG
+          Animals: ANIMAL
+          Arts/Public Television: ARTS
+          Banking: BANKING
+          Budget: BUDGET
+          "Children's Issues": CHILDREN
+          Civil Rights: CIVILRIGHTS
+          Congress: CONGRESS
+          Congressional Ethics: ETHICS
+          Crime: CRIME
+          Defense: DEFENSE
+          Eagle Scout Request: EAGLE
+          Economy Issues: ECONOMY
+          Education Issues: EDUCATION
+          Elections: ELECTIONS
+          Energy: ENERGY
+          Environment: ENVIRO-GEN
+          Environment - Timber: ENVIRO-TIMBER
+          Food And Drug Administration: FDA
+          General: GENERAL
+          Gun Control: GUN
+          Health: HEALTH
+          HIV/AIDS: HIV/AIDS
+          Homeland Security: HOMELAND SECURITY
+          Housing: HOUSING
+          Human Rights: HUMANRIGHTS
+          Immigration: IMMIGRATION
+          Internet: INTERNET
+          Insurance: INSURANCE
+          International Relations: INTERNATL
+          Iraq: IRAQ
+          Job Creation: JOB
+          Legal Issues: JUDICIARY
+          Labor: LABOR
+          Gay And Lesbian Issues: LESBIAN/GAY
+          Medicaid: MEDICAID
+          Medicare: MEDICARE
+          Minimum Wage: MINWAGE
+          Miscellaneous: GENERAL
+          Occupational Safety: OSHA
+          Postal Service: POSTAL
+          Religious Freedom: RELIGION
+          Reproductive Rights: ABORTION
+          Science And Technology: SCIENCE
+          Social Security: SOCSEC
+          Taxes: TAX
+          Telecommunications/FCC: TELECOM
+          Tours Requests: TOUR
+          Trade: TRADE
+          Transportation: TRANS
+          Unemployment: UNEMPLOYMENT
+          Veterans: VETS
+          Welfare: WELFARE
+          "Women's Issues": WOMEN
     - click_on:
       - value: Submit
         selector: "#submit"
-    - find:
-        - selector: "h2.contentheading"
   success:
     headers:
       status: 200

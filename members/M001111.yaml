@@ -53,7 +53,7 @@ contact_form:
           "Women" : "WOMENS"
     - click_on:
       - value: Submit
-        selector: "form.uniForm input[type='submit']"
+        selector: "#submit"
   success:
     headers:
       status: 200

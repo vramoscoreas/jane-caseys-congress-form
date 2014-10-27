@@ -37,7 +37,7 @@ contact_form:
           Veterans: VET.GEN
     - click_on:
       - value: Submit
-        selector: ".buttonHolder input"
+        selector: "#submit"
   success:
     headers:
       status: 200
