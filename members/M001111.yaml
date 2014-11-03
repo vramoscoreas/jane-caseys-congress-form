@@ -51,6 +51,11 @@ contact_form:
           "Veterans" : "VETS"
           "Welfare" : "WELF"
           "Women" : "WOMENS"
+    - fill_in:
+      - name: firstname
+        selector: "#firstname"
+        value: $FIRST_NAME
+        required: true
     - click_on:
       - value: Submit
         selector: "#submit"

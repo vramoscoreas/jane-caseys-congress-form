@@ -65,6 +65,11 @@ contact_form:
           Veterans: VETS
           Welfare: WELFARE
           "Women's Issues": WOMEN
+    - fill_in:
+      - name: firstname
+        selector: "#firstname"
+        value: $FIRST_NAME
+        required: true
     - click_on:
       - value: Submit
         selector: "#submit"

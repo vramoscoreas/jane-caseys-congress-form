@@ -35,6 +35,11 @@ contact_form:
           Technology: TECH
           Transportation: TRN.GEN
           Veterans: VET.GEN
+    - fill_in:
+      - name: firstname
+        selector: "#firstname"
+        value: $FIRST_NAME
+        required: true
     - click_on:
       - value: Submit
         selector: "#submit"
