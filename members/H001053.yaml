@@ -1,0 +1,31 @@
+bioguide: H001053
+contact_form:
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/H001053"
+    - fill_in:
+      - name: campaignuuid
+        selector: "#campaignuuid"
+        value: $CAMPAIGN_UUID
+        required: true
+      - name: permalink
+        selector: "#permalink"
+        value: $PERMALINK
+        required: true
+      - name: orgurl
+        selector: "#orgurl"
+        value: $ORG_URL
+        required: true
+      - name: orgname
+        selector: "#orgname"
+        value: $ORG_NAME
+        required: true
+    - click_on:
+      - value: Submit
+        selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
