@@ -1,9 +1,9 @@
-bioguide: M000933
+bioguide: B001292
 contact_form:
   method: post
   action: ""
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/M000933"
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/B001292"
     - fill_in:
       - name: zipcode
         selector: "#zipcode"
