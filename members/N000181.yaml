@@ -13,7 +13,7 @@ contact_form:
         required: true
     - click_on:
       - value: Submit
-        selector: "#submitCaptcha"
+        selector: "#submitcaptcha"
   success:
     headers:
       status: 200
