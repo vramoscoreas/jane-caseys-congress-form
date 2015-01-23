@@ -14,7 +14,7 @@ Forms Available
 ---------------
 
 * One Step
-* Two step
+* Two step 
 * ReCaptcha 
 
 
