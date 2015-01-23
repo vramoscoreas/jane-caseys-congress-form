@@ -40,6 +40,14 @@ contact_form:
         selector: "#firstname"
         value: $NAME_FIRST
         required: true
+      - name: message
+        selector: "#message"
+        value: $MESSAGE
+        required: true   
+      - name: subject
+        selector: "#subject"
+        value: $SUBJECT
+        required: true
     - click_on:
       - value: Submit
         selector: "#submit"
