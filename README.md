@@ -34,4 +34,6 @@ Forms Available
 | 836 NE 58th St<br />Seattle, WA 98105 | M000404 | US House | Topic one step | firstname |
 | 836 NE 58th St<br />Seattle, WA 98105 | M001111 | US Senate | Topic one step | firstname |
 | 205 E 5th St<br />Moscow, ID 83843 | L000573 | US House | Form does not submit | N/A |
+| 205 E 5th St<br />Moscow, ID 83843 | R000584 | US House | Form does not submit | N/A |
+| 205 E 5th St<br />Moscow, ID 83843 | C000880 | US House | Form does not submit | N/A |
 | 1115 Kennesaw Ridge Rd<br />Columbia, MO 65202 | H001053 | US House | Additional Org Fields | orgname |
