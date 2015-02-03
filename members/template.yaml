@@ -8,7 +8,7 @@ contact_form:
       - name:
         selector:
         value:
-        required: true
+        required:
     - select:
       - name:
         selector:
