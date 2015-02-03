@@ -26,9 +26,6 @@ contact_form:
         selector: "#subject"
         value: $SUBJECT
         required: true
-    - click_on:
-      - value: Submit
-        selector: "#submitbreakthis"
   success:
     headers:
       status: 200
