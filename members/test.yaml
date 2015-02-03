@@ -1,0 +1,61 @@
+bioguide: test
+contact_form:
+  method: post
+  action: "/forms/solveTest"
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/test"
+    - select:
+      - name: prefix
+        selector: "#prefix"
+        value: $NAME_PREFIX
+        required: true
+        options:
+          - Mr.
+          - Mrs.
+          - Ms.
+      - name: required-issue
+        selector: "#topic"
+        value: $TOPIC
+        required: true
+        options:
+          Afghanistan: AFGHANISTAN
+          Agriculture: AG
+          Animals: ANIMAL
+    - fill_in:
+      - name: firstname
+        selector: "div#firstName > input.form-control"
+        value: $NAME_FIRST
+        required: true
+      - name: middlename
+        selector: "[placeholder='Enter Middle Name']"
+        value: $NAME_MIDDLE
+      - name: lastname
+        selector: "#lastname"
+        value: $NAME_LAST
+        required: true
+      - name: message
+        selector: "#message"
+        value: $MESSAGE
+        required: true
+      - name: subject
+        selector: ".subject"
+        value: $SUBJECT
+        required: true
+      - name: recaptcha_response_field
+        selector: "#recaptcha_response_field"
+        captcha_selector: "img#recaptcha_challenge_image"
+        captcha_id_selector: "#recaptcha_challenge_field"
+        value: $CAPTCHA_SOLUTION
+        required: true
+    - check:
+      - name: response
+        selector: input[type='checkbox'][value='Yes']
+        value: Yes
+    - click_on:
+      - value: Submit
+        selector: "[name='submitcaptcha']"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
