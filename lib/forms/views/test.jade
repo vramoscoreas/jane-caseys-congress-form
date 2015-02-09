@@ -30,12 +30,4 @@ block content
       input(type='checkbox', value='No')
       | No
       br
-      script(src="http://www.google.com/recaptcha/api/challenge?k=#{publicKey}")
-      noscript
-        iframe(src="http://www.google.com/recaptcha/api/noscript?k=#{publicKey}",
-        height="300", width="500", frameborder="0")
-        br
-        textarea(name="recaptchachallenge", rows="3", cols="40")
-        input(type="hidden", name="recaptcharesponse", value="manual_challenge")
-
       input(type='submit', name='submitcaptcha', value='Check Recaptcha', class='btn btn-default')
