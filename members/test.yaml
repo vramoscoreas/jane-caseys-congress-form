@@ -26,9 +26,6 @@ contact_form:
         selector: "div#firstName > input.form-control"
         value: $NAME_FIRST
         required: true
-      - name: middlename
-        selector: "[placeholder='Enter Middle Name']"
-        value: $NAME_MIDDLE
       - name: lastname
         selector: "#lastname"
         value: $NAME_LAST
