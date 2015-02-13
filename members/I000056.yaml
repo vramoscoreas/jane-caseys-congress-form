@@ -1,0 +1,69 @@
+bioguide: I000056
+contact_form:
+method: post
+action: ""
+steps:
+- visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/I000056"
+- select:
+- name: prefix
+selector: "#prefix"
+value: $NAME_PREFIX
+required: true
+options:
+- Mr.
+- Mrs.
+- Ms.
+- Miss
+- name: state
+selector: "#state"
+value: $ADDRESS_STATE_POSTAL_ABBREV
+required: Yes
+options: US_STATES
+- name: response
+selector: "#response"
+value: "yes"
+required: Yes
+- fill_in:
+- name: firstname
+selector: "#firstname"
+value: $NAME_FIRST
+required: true
+- name: streetaddress1
+selector: "#streetaddress1"
+value: $ADDRESS_STREET
+required: Yes
+- name: streetaddress2
+selector: "#streetaddress2"
+value: $ADDRESS_STREET_2
+- name: city
+selector: "#city"
+value: $ADDRESS_CITY
+required: Yes
+- name: zipcode
+selector: "#zipcode"
+value: $ADDRESS_ZIP5
+required: Yes
+- name: phonenumber
+selector: "#phonenumber"
+value: $PHONE
+required: Yes
+- name: captcha
+selector: "#recaptcha_response_field"
+value: $RECAPTCHA_RESPONSE_FIELD
+required: Yes
+- name: subject
+selector: "[name='subject']"
+value: $SUBJECT
+required: Yes
+- name: message
+selector: "#message"
+value: $MESSAGE
+required: Yes
+- click_on:
+- value: Submit
+selector: "#submit"
+success:
+headers:
+status: 200
+body:
+contains: "Success!"
