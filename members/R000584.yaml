@@ -1,36 +1,21 @@
 bioguide: R000584
 contact_form:
-  method: post
-  action: ""
-  steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/R000584"
-    - select:
-      - name: prefix
-        selector: "#prefix"
-        value: $NAME_PREFIX
-        required: true
-        options:
-          - Mr.
-          - Mrs.
-          - Ms.
-    - fill_in:
-      - name: lastname
-        selector: "#lastname"
-        value: $NAME_LAST
-        required: true
-      - name: message
-        selector: "#message"
-        value: $MESSAGE
-        required: true
-      - name: subject
-        selector: "#subject"
-        value: $SUBJECT
-        required: true
-    - click_on:
-      - value: Submit
-        selector: "#submit"
-  success:
-    headers:
-      status: 200
-    body:
-      contains: "Success!"
+method: post
+action: ""
+steps:
+- visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/R000584"
+- fill_in:
+- name: recaptcha_response_field
+selector: "#recaptcha_response_field"
+captcha_selector: "img#recaptcha_challenge_image"
+captcha_id_selector: "#recaptcha_challenge_field"
+value: $CAPTCHA_SOLUTION
+required: true
+- click_on:
+- value: Submit
+selector: "#submitcaptcha"
+success:
+headers:
+status: 200
+body:
+contains: "Success!"
