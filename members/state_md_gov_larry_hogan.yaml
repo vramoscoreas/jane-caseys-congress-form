@@ -19,12 +19,20 @@ contact_form:
         value: $TOPIC
         required: true
         options:
-          - Agriculture
-          - Animals
-          - Banking
-          - Boy Scouts
-          - Budget
-          - Other          
+          - Constituent Services
+          - Disabilities
+          - Economic Development
+          - Education Issues
+          - Energy Issues
+          - Environmental Issues
+          - General Comments
+          - General Complaint
+          - Health Care Issues
+          - Higher Education
+          - Legislative Issues
+          - Public Safety Issues
+          - Transportation Issues
+          - Veterans Issues
     - fill_in:
       - name: lastname
         selector: "#lastname"
