@@ -1,48 +1,48 @@
 bioguide: SWe00120
 contact_form:
-method: post
-action: ""
-steps:
-- visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/SWe00120"
-- select:
-- name: prefix
-selector: "#prefix"
-value: $NAME_PREFIX
-required: true
-options:
-- Mr.
-- Mrs.
-- Ms.
-- Miss
-- fill_in:
-- name: lastname
-selector: "#lastname"
-value: $NAME_LAST
-required: true
-- name: message
-selector: "#message"
-value: $MESSAGE
-required: true
-- name: topic
-selector: "#topic"
-value: $TOPIC
-required: true
-options:
-- Agriculture
-- Animals
-- Banking
-- Boy Scouts
-- Budget
-- Other
-- name: subject
-selector: "#subject"
-value: $SUBJECT
-required: true
-- click_on:
-- value: Submit
-selector: "#submit"
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/SWe00120"
+    - select:
+      - name: prefix
+        selector: "#prefix"
+        value: $NAME_PREFIX
+        required: true
+    options:
+      - Mr.
+      - Mrs.
+      - Ms.
+      - Miss
+    - fill_in:
+      - name: lastname
+        selector: "#lastname"
+        value: $NAME_LAST
+        required: true
+    - name: message
+      selector: "#message"
+      value: $MESSAGE
+      required: true
+    - name: topic
+      selector: "#topic"
+      value: $TOPIC
+      required: true
+      options:
+        - Agriculture
+        - Animals
+        - Banking
+        - Boy Scouts
+        - Budget
+        - Other
+    - name: subject
+      selector: "#subject"
+      value: $SUBJECT
+      required: true
+  - click_on:
+    - value: Submit
+      selector: "#submit"
 success:
-headers:
-status: 200
-body:
-contains: "Success!"
+  headers:
+    status: 200
+  body:
+    contains: "Success!"
