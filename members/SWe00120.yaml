@@ -9,40 +9,40 @@ contact_form:
         selector: "#prefix"
         value: $NAME_PREFIX
         required: true
-    options:
-      - Mr.
-      - Mrs.
-      - Ms.
-      - Miss
+        options:
+          - Mr.
+          - Mrs.
+          - Ms.
+          - Miss
+      - name: topic          
+        selector: "#topic"
+        value: $TOPIC
+        required: true
+        options:
+          - Agriculture
+          - Animals
+          - Banking
+          - Boy Scouts
+          - Budget
+          - Other          
     - fill_in:
       - name: lastname
         selector: "#lastname"
         value: $NAME_LAST
         required: true
-    - name: message
-      selector: "#message"
-      value: $MESSAGE
-      required: true
-    - name: topic
-      selector: "#topic"
-      value: $TOPIC
-      required: true
-      options:
-        - Agriculture
-        - Animals
-        - Banking
-        - Boy Scouts
-        - Budget
-        - Other
-    - name: subject
-      selector: "#subject"
-      value: $SUBJECT
-      required: true
-  - click_on:
-    - value: Submit
-      selector: "#submit"
-success:
-  headers:
-    status: 200
-  body:
-    contains: "Success!"
+      - name: message
+        selector: "#message"
+        value: $MESSAGE
+        required: true
+      - name: subject
+        selector: "#subject"
+        value: $SUBJECT
+        required: true
+    - click_on:
+      - value: Submit
+        selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
