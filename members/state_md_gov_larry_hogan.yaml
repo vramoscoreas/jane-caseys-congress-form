@@ -1,9 +1,9 @@
-bioguide: SWe00120
+bioguide: state_md_gov_larry_hogan
 contact_form:
   method: post
   action: ""
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/SWe00120"
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/state_md_gov_larry_hogan"
     - select:
       - name: prefix
         selector: "#prefix"
