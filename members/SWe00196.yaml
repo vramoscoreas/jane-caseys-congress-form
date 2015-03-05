@@ -1,0 +1,39 @@
+bioguide: SWe00196
+contact_form:
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/SWe00196"
+    - iframe:
+      - name: iframe
+      - selector: "#iframe" 
+    - select:
+      - name: prefix
+        selector: "#prefix"
+        value: $NAME_PREFIX
+        required: true
+        options:
+          - Mr.
+          - Mrs.
+          - Ms.
+    - fill_in:
+      - name: lastname
+        selector: "#lastname"
+        value: $NAME_LAST
+        required: true
+      - name: message
+        selector: "#message"
+        value: $MESSAGE
+        required: true
+      - name: subject
+        selector: "#subject"
+        value: $SUBJECT
+        required: true
+    - click_on:
+      - value: Submit
+        selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
