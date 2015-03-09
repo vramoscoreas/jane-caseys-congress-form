@@ -5,6 +5,10 @@ contact_form:
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/C001096"
     - fill_in:
+      - name: phonenumber
+        selector: "#phonenumber"
+        value: $PHONE
+        required: Yes
       - name: recaptcha_response_field
         selector: "#recaptcha_response_field"
         captcha_selector: "img#recaptcha_challenge_image"
