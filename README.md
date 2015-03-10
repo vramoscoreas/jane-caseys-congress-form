@@ -45,3 +45,4 @@ Forms Available
 | 3003 32nd Avenue South<br />Fargo, ND 58103 | H001069 | US Senator | ReCAPTCHA | N/A |
 | 3003 32nd Avenue South<br />Fargo, ND 58103 | H001061 | US Senator | ReCAPTCHA | N/A |
 | 811 Saint Michaels Drive<br />Santa Fe, NM 87505 | SWe00196 | Governor | iframe | firstname |
+| 5727 South Lewis Avenue<br />Tulsa, OK 74105 | state_ok_gov_mary_fallin | Governor | non-image CAPTCHA | N/A |

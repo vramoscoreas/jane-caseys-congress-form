@@ -1,0 +1,21 @@
+bioguide: state_ok_gov_mary_fallin
+contact_form:
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/state_ok_gov_mary_fallin"
+    - fill_in:
+      - name: captchaResponse
+        selector: "#captchaResponse"
+        captcha_selector: "img#captchaImg"
+        captcha_id_selector: "#captchaImg"
+        value: $CAPTCHA_SOLUTION
+        required: true
+    - click_on:
+      - value: Submit
+        selector: "#submitcaptcha"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
