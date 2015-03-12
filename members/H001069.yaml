@@ -4,6 +4,56 @@ contact_form:
   action: ""
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/H001069"
+    - select:
+      - name: field_2443af65-5fb0-455b-b747-645741ead991
+        selector: "#topic"
+        value: $TOPIC
+        required: true
+        options:
+         Other:Other
+         Aging:Aging
+         Agriculture:Agriculture
+         Animal Welfare:Animal Welfare
+         Appropriations:Appropriations
+         Banking:Banking
+         Budget, Government Spending:Budget, Government Spending
+         Civil Rights:Civil Rights
+         Commerce:Commerce
+         Communications:Communications
+         Congratulations:Congratulations
+         Crime:Crime
+         Defense:Defense
+         Drugs:Drugs
+         Economy:Economy
+         Education:Education
+         Elections:Elections
+         Energy:Energy
+         Environment:Environment
+         Family:Family
+         Filibuster:Filibuster
+         Foreign Affairs:Foreign Affairs
+         Gun Control:Gun Control
+         Health:Health
+         Homeland Security:Homeland Security
+         Housing:Housing
+         Immigration:Immigration
+         IND:Native American Affairs
+         Judiciary:Judiciary
+         Labor:Labor
+         Medicaid:Medicaid
+         Medicare:Medicare
+         Military:Military
+         Postal Service:Postal Service
+         Public Lands and Parks:Public Lands and Parks
+         Science and Technology:Science and Technology
+         Small Business:Small Business
+         Social Security:Social Security
+         Taxes:Taxes
+         Trade:Trade
+         Transportation:Transportation
+         Veterans:Veterans
+         Welfare:Welfare
+         Women's Issues:Women's Issues
     - fill_in:
       - name: recaptcha_response_field
         selector: "#recaptcha_response_field"
