@@ -2,6 +2,48 @@ extends layout
 
 block content
 
+  form(method='POST', action='/forms/twoStepTest', class='form-inline', role='form')
+    .form-group
+      input(type='text' id='bioid' name='bioid' value='#{bioId}')
+      select(name="topic", required)#topic
+        option(value='') Select One	  
+        option Addiction Services
+        option Agriculture
+        option Arts and History
+        option Banking
+        option Birth/Death Certificates
+        option Business
+        option Children and Families
+        option Child Support
+        option Civil Service Commission
+        option Consumer Affairs
+        option Corrections
+        option Developmental Disabilities
+        option Division on Elections
+        option Education
+        option Environment
+        option Family Care/Medicaid
+        option Health
+        option Housing
+        option Human Services
+        option Insurance
+        option Invitations/Scheduling
+        option Labor
+        option Law and Public Safety
+        option Licensing Boards
+        option Lottery
+        option Mental Health Services
+        option Military and Veterans Affairs
+        option Pensions and Retirements
+        option Public Utilities
+        option Requesting Proclamations / Special Letter
+        option Superstorm Sandy/CDBG
+        option Taxation
+        option Temporary Disability
+        option Transportation / Motor Vehicles
+        option Unclaimed Property
+        option Unemployment
+      input(type='submit', id='SubTopics', name="Submit", value='Continue...', class='blue_btn_submit') 
   form(method='POST', action='/forms/submitFormData', role="form")
     .row
       h3 Prefix
@@ -104,44 +146,6 @@ block content
         option MP
         option PR
         option VI
-      select(name="topic", required)#topic
-        option(value='') Select One	  
-        option Addiction Services
-        option Agriculture
-        option Arts and History
-        option Banking
-        option Birth/Death Certificates
-        option Business
-        option Children and Families
-        option Child Support
-        option Civil Service Commission
-        option Consumer Affairs
-        option Corrections
-        option Developmental Disabilities
-        option Division on Elections
-        option Education
-        option Environment
-        option Family Care/Medicaid
-        option Health
-        option Housing
-        option Human Services
-        option Insurance
-        option Invitations/Scheduling
-        option Labor
-        option Law and Public Safety
-        option Licensing Boards
-        option Lottery
-        option Mental Health Services
-        option Military and Veterans Affairs
-        option Pensions and Retirements
-        option Public Utilities
-        option Requesting Proclamations / Special Letter
-        option Superstorm Sandy/CDBG
-        option Taxation
-        option Temporary Disability
-        option Transportation / Motor Vehicles
-        option Unclaimed Property
-        option Unemployment
       select(name="subtopic", required)#subtopic
         option(value='') Select One
         option --Abuse
