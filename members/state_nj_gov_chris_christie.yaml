@@ -51,6 +51,7 @@ contact_form:
           selector: "#govmail input[name='Submit']"
     - find:
         - selector: "input[name='submit']"
+  steps:
     - select:
         - name: sub-topic
           selector: "select[name='SubTopics']"
