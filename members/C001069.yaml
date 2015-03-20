@@ -1,99 +1,150 @@
 bioguide: C001069
 contact_form:
   method: post
-  action: ""
+  action: /email-joe1/
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/C001069"
     - fill_in:
-      - name: streetaddress1
-        selector: "#streetaddress1"
+      - name: firstname
+        selector: "#req_firstname"
+        value: $NAME_FIRST
+        required: true
+      - name: lastname
+        selector: "#req_lastname"
+        value: $NAME_LAST
+        required: true
+      - name: street
+        selector: "#req_street"
         value: $ADDRESS_STREET
         required: true
-      - name: streetaddress2
-        selector: "#streetaddress2"
+      - name: street2
+        selector: "#address2"
         value: $ADDRESS_STREET_2
         required: false
       - name: city
-        selector: "#city"
+        selector: "#req_city"
         value: $ADDRESS_CITY
         required: true
-      - name: address_zip_plus_4
-        selector: "#address_zip_plus_4"
-        value: $ADDRESS_ZIP_PLUS_4
-        required: true
-      - name: address_zip_5
-        selector: "#address_zip_5"
+      - name: zipcode
+        selector: "#req_zip"
         value: $ADDRESS_ZIP5
         required: true
-      - name: address_zip_4
-        selector: "#address_zip_4"
+      - name: zipfour
+        selector: "#zip4"
         value: $ADDRESS_ZIP4
         required: true
-      - name: address_county
-        selector: "#address_county"
-        value: $ADDRESS_COUNTY
-        required: true
-      - name: phone_parentheses
-        selector: "#phone_parentheses"
-        value: $PHONE_PARENTHESES
-        required: true
-      - name: phone_hyphens
-        selector: "#phone_hyphens"
-        value: $PHONE_HYPHENS
-        required: true
-      - name: phone_area_code
-        selector: "#phone_area_code"
-        value: $PHONE_AREA_CODE
-        required: true
-      - name: phone_exchange
-        selector: "#phone_exchange"
-        value: $PHONE_EXCHANGE_CODE
-        required: true
-      - name: phone_subscriber
-        selector: "#phone_subscriber"
-        value: $PHONE_SUBSCRIBER_NUMBER
+      - name: emailaddress
+        selector: "#req_email"
+        value: $EMAIL
         required: true
       - name: phone
         selector: "#phone"
         value: $PHONE
-        required: true
-      - name: address_state_postal_abbrev
-        selector: "#address_state_postal_abbrev"
-        value: $ADDRESS_STATE_POSTAL_ABBREV
-        required: true
-      - name: address_state_full
-        selector: "#address_state_full"
-        value: $ADDRESS_STATE_FULL
-        required: true
-      - name: lastname
-        selector: "#lastname"
-        value: $NAME_LAST
-        required: true
-      - name: firstname
-        selector: "#firstname"
-        value: $NAME_FIRST
-        required: true
-      - name: fullname
-        selector: "#fullname"
-        value: $NAME_FULL
-        required: true
-      - name: message
-        selector: "#message"
-        value: $MESSAGE
-        required: true
+        required: false
       - name: subject
-        selector: "#subject"
+        selector: "#req_subject"
         value: $SUBJECT
         required: true
-      - name: email
-        selector: "#email"
-        value: $EMAIL
+      - name: message
+        selector: "#req_message"
+        value: $MESSAGE
         required: true
+    - select:
+      - name: prefix
+        selector: "#prefix"
+        value: $NAME_PREFIX
+        required: true
+        options:
+          Mr.: "Mr. "
+          Mrs.: Mrs.
+          Ms.: Ms.
+          Miss: Miss
+          Dr.: Dr.
+          Hon.: Hon.
+          Rev.: Rev.
+          Rabbi: Rabbi
+      - name: state
+        selector: "#req_state"
+        value: $ADDRESS_STATE_POSTAL_ABBREV
+        required: true
+        options:
+          - AK
+          - AL
+          - AR
+          - AZ
+          - CA
+          - CO
+          - CT
+          - DC
+          - DE
+          - FL
+          - GA
+          - HI
+          - IA
+          - ID
+          - IL
+          - IN
+          - KS
+          - KY
+          - LA
+          - MA
+          - MD
+          - ME
+          - MI
+          - MN
+          - MO
+          - MS
+          - MT
+          - NC
+          - ND
+          - NE
+          - NH
+          - NJ
+          - NM
+          - NV
+          - NY
+          - OH
+          - OK
+          - OR
+          - PA
+          - PR
+          - RI
+          - SC
+          - SD
+          - TS
+          - TX
+          - UT
+          - VA
+          - VT
+          - WA
+          - WI
+          - WV
+          - WY
+      - name: response
+        selector: "#response"
+        value: "Yes"
+        required: false
+        options:
+          "Yes": "Yes"
+          "No": "No"
+    - uncheck:
+      - name: newsletter
+        selector: "#newsletter"
+        value: ENEWS.SUBSCRIBE
+      - name: newsletter2
+        selector: "#newsletter2"
+        value: ENEWS.SENIORS
+      - name: newsletter3
+        selector: "#newsletter3"
+        value: ENEWS.GRANTS
     - click_on:
-      - value: Submit
-        selector: "#submit"
+      - value: Send Email
+        selector: "#submitButton"
+    - find:
+      - value: THANK YOU
+        selector: "h1"
   success:
     headers:
       status: 200
     body:
-      contains: "Success!"
+      contains: THANK YOU
