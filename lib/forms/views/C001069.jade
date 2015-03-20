@@ -3,8 +3,8 @@ extends layout
 block content
 
   form(method='POST', action='/forms/submitFormData', role="form")
-    .row
-      h3 Prefix
+    .form-group
+      h4 Prefix
       select(name="prefix", required)#prefix
         option(value='') Select One
         option Select One
