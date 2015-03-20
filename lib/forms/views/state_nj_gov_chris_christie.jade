@@ -146,6 +146,11 @@ block content
         option MP
         option PR
         option VI
+      br
+      input(type='text', id='zipcode', name='zipcode', class='form-control', placeholder='Enter Zip', required)
+      input(type='text', id='phonenumber', name='phonenumber', class='form-control', placeholder='Enter Phone', required)
+      input(type='text', id='subject', name='subject', class='form-control', placeholder='Enter Subject', required)
+      input(type='text', id='message', name='message', class='form-control', value='Default Message', required)
       h4 Subtopic
       select(name="subtopic", required)#subtopic
         option(value='') Select One
@@ -209,11 +214,5 @@ block content
         option --Telephone/Water, Gas and Electric Rates
         option --Veterans Affairs
         option --Welfare/Food Stamps	
-      br
-      input(type='text', id='zipcode', name='zipcode', class='form-control', placeholder='Enter Zip', required)
-      input(type='text', id='phonenumber', name='phonenumber', class='form-control', placeholder='Enter Phone', required)
-      br
-      input(type='text', id='subject', name='subject', class='form-control', placeholder='Enter Subject', required)
-      input(type='text', id='message', name='message', class='form-control', value='Default Message', required)
       br
       input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
