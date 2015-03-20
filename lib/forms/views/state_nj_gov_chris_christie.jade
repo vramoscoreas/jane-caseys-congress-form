@@ -47,10 +47,9 @@ block content
       input(type='submit', id='SubTopics', name="Submit", value='Continue...', class='blue_btn_submit') 
   form(method='POST', action='/forms/submitFormData', role="form")
     .row
-      h3 Prefix
+      h4 Prefix
       select(name="prefix", required)#prefix
         option(value='') Select One
-        option Select One
         option Captain
         option Chief
         option Councilman
@@ -147,6 +146,7 @@ block content
         option MP
         option PR
         option VI
+      h4 Subtopic
       select(name="subtopic", required)#subtopic
         option(value='') Select One
         option --Abuse
