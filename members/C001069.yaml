@@ -55,71 +55,70 @@ contact_form:
           value: $NAME_PREFIX
           required: true
           options:
-            - "Mr."
-            - "Mrs."
-            - "Ms."
-            - "Miss"
-            - "Dr."
-            - "Hon."
-            - "Rev."
-            - "Rabbi"
+            - "Mr.": "Mr."
+            - "Mrs.": "Mrs."
+            - "Ms.": "Ms."
+            - "Miss": "Miss"
+            - "Dr.": "Dr."
+            - "Hon.": "Hon."
+            - "Rev.": "Rev."
+            - "Rabbi": "Rabbi"
         - name: state
           selector: "#req_state"
           value: $ADDRESS_STATE_POSTAL_ABBREV
           required: true
           options:
-            - AK
-            - AL
-            - AR
-            - AZ
-            - CA
-            - CO
-            - CT
-            - DC
-            - DE
-            - FL
-            - GA
-            - HI
-            - IA
-            - ID
-            - IL
-            - IN
-            - KS
-            - KY
-            - LA
-            - MA
-            - MD
-            - ME
-            - MI
-            - MN
-            - MO
-            - MS
-            - MT
-            - NC
-            - ND
-            - NE
-            - NH
-            - NJ
-            - NM
-            - NV
-            - NY
-            - OH
-            - OK
-            - OR
-            - PA
-            - PR
-            - RI
-            - SC
-            - SD
-            - TS
-            - TX
-            - UT
-            - VA
-            - VT
-            - WA
-            - WI
-            - WV
-            - WY
+            - "AL": "Alabama"
+            - "AK": "Alaska"
+            - "AZ": "Arizona"
+            - "AR": "Arkansas"
+            - "CA": "California"
+            - "CO": "Colorado"
+            - "CT": "Connecticut"
+            - "DC": "Dist. of Col."
+            - "DE": "Delaware"
+            - "FL": "Florida"
+            - "GA": "Georgia"
+            - "HI": "Hawaii"
+            - "ID": "Idaho"
+            - "IL": "Illinois"
+            - "IN": "Indiana"
+            - "IA": "Iowa"
+            - "KS": "Kansas"
+            - "KY": "Kentucky"
+            - "LA": "Louisiana"
+            - "ME": "Maine"
+            - "MD": "Maryland"
+            - "MA": "Massachusetts"
+            - "MI": "Michigan"
+            - "MN": "Minnesota"
+            - "MO": "Missouri"
+            - "MS": "Mississippi"
+            - "MT": "Montana"
+            - "NE": "Nebraska"
+            - "NV": "Nevada"
+            - "NH": "New Hampshire"
+            - "NJ": "New Jersey"			
+            - "NM": "New Mexico"
+            - "NY": "New York"
+            - "NC": "North Carolina"
+            - "ND": "North Dakota"
+            - "OH": "Ohio"
+            - "OK": "Oklahoma"
+            - "OR": "Oregon"
+            - "PA": "Pennsylvania"
+            - "RI": "Rhode Island"
+            - "SC": "South Carolina"
+            - "SD": "South Dakota"
+            - "TN": "Tennessee"
+            - "TX": "Texas"
+            - "UT": "Utah"
+            - "VT": "Vermont"
+            - "VA": "Virginia"
+            - "WA": "Washington"
+            - "WV": "West Virginia"
+            - "WI": "Wisconsin"
+            - "WY": "Wyoming"
         - name: response
           selector: "#response"
           value: "Yes"
