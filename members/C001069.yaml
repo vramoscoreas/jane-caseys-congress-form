@@ -55,14 +55,14 @@ contact_form:
           value: $NAME_PREFIX
           required: true
           options:
-            Mr.: "Mr. "
-            Mrs.: Mrs.
-            Ms.: Ms.
-            Miss: Miss
-            Dr.: Dr.
-            Hon.: Hon.
-            Rev.: Rev.
-            Rabbi: Rabbi
+            - "Mr."
+            - "Mrs."
+            - "Ms."
+            - "Miss"
+            - "Dr."
+            - "Hon."
+            - "Rev."
+            - "Rabbi"
         - name: state
           selector: "#req_state"
           value: $ADDRESS_STATE_POSTAL_ABBREV
