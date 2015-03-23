@@ -46,9 +46,6 @@ contact_form:
             - "Transportation / Motor Vehicles": "Transportation / Motor Vehicles"
             - "Unclaimed Property": "Unclaimed Property"
             - "Unemployment": "Unemployment"
-    - click_on:
-        - value: Continue...
-          selector: "#govmail input[name='Submit']"
     - find:
         - selector: "input[name='submit']"
   steps:
