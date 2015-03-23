@@ -2,7 +2,7 @@ extends layout
 
 block content
 
-  form(method='POST', action='/forms/twoStepTest', class='form-inline', role='form')
+  form(method='POST', action='/forms/submitFormData', class='form-inline', role='form')
     .form-group
       input(type='text' id='bioid' name='bioid' value='#{bioId}')
       h4 Topic
@@ -44,9 +44,6 @@ block content
         option Transportation / Motor Vehicles
         option Unclaimed Property
         option Unemployment
-      input(type='submit', id='SubTopics', name="Submit", value='Continue...', class='blue_btn_submit') 
-  form(method='POST', action='/forms/submitFormData', role="form")
-    .row
       h4 Prefix
       select(name="prefix", required)#prefix
         option(value='') Select One
