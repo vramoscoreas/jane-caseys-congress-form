@@ -9,7 +9,7 @@ block content
         option Select One
         option Mr.
         option Mrs.
-		option Dr.
+        option Dr.
         option Ms.
       br
       input(type='text' id='bioid' name='bioid' value='#{bioId}')
@@ -47,7 +47,7 @@ block content
         option MS
         option MT
         option NE
-		option NJ
+	option NJ
         option NV
         option NH
         option NM
@@ -74,12 +74,11 @@ block content
       input(type='text', id='phone', name='phone', class='form-control', placeholder='Phone', required)
       input(type='text', id='email', name='email', class='form-control', placeholder='Email', required)
       br
-	  select(name="response", required)#response
+      select(name="response", required)#response
         option(value='') Select One
         option yes
         option no
       input(type='text', id='subject', name='subject', class='form-control', placeholder='Enter Subject', required)
       input(type='text', id='message', name='message', class='form-control', placeholder='Enter Message', required)
-
       br
       input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
