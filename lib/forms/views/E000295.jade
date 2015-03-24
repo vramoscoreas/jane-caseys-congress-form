@@ -1,0 +1,134 @@
+extends layout
+
+block content
+
+  form(method='POST', action='/forms/submitFormData', role="form")
+    .row
+      h4 Prefix
+      select(name="prefix", required)#prefix
+        option Select One
+        option Mr.
+        option Mrs.
+		    option Ms.
+		    option Mr. and Mrs.
+		    option Dr.
+		    option Dr. and Mrs.
+		    option Reverend
+		    option Sister
+		    option Pastor
+		    option The Honorable
+		    option Representative
+      br
+      br
+      input(type='text' id='bioid' name='bioid' value='#{bioId}')
+      input(type='text', id='firstname', name='firstname', class='form-control', placeholder='Enter First Name', required)
+      input(type='text', id='lastname', name='lastname', class='form-control', placeholder='Enter Last Name', required)
+      input(type='text', id='streetaddress1', name='streetaddress1', class='form-control', placeholder='Address 1', required)  
+      input(type='text', id='streetaddress2', name='streetaddress2', class='form-control', placeholder='Address 2')	  
+      input(type='text', id='city', name='city', class='form-control', placeholder='City', required)
+      input(type='text', id='address_zip_5', name='address_zip_5', class='form-control', placeholder='Zip', required)
+      input(type='text', id='phone', name='phone', class='form-control', placeholder='Phone')
+      select(name="state")#state
+        option(value='') Select One
+		    option AA
+		    option AE
+		    option AP
+        option AL
+        option AK
+        option AZ
+        option AR
+        option CA
+        option CO
+        option CT
+        option DC
+        option DE
+        option FL
+        option GA
+        option HI
+        option ID
+        option IL
+        option IN
+        option IA
+        option KS
+        option KY
+        option LA
+        option ME
+        option MD
+        option MA
+        option MI
+        option MN
+        option MO
+        option MS
+        option MT
+        option NE
+        option NJ
+        option NV
+        option NH
+        option NM
+        option NY
+        option NC
+        option ND
+        option OH
+        option OK
+        option OR
+        option PA
+        option RI
+        option SC
+        option SD
+        option TN
+        option TX
+        option UT
+        option VT
+        option VA
+        option WA
+        option WV
+        option WI
+        option WY
+      br
+      input(type='text', id='email', name='email', class='form-control', placeholder='Email', required)      
+      input(type='text', id='subject', name='subject', class='form-control', placeholder='Enter Subject', required)
+      input(type='text', id='message', name='message', class='form-control', placeholder='Enter Message', required)
+      select(name="response", required)#response
+        option(value='') Select One
+        option yes
+        option no      
+      h4 Topic
+      select(name="topic", required)#topic
+        option(value='') Select One	  
+        option Advocacy
+        option Agriculture: AGR
+        option Animal: ANI
+        option Banking/Finance: BANKING/FINANCE
+        option Budget: BUD
+        option Business: BUS
+        option Defense: DEF
+        option Education: EDU
+        option Energy: ENE
+        option Environmental: ENV
+        option Government Reform: GOV
+        option Guns/2nd Amendment: GUNS/2ND AMENDMENT
+        option Health: HEA
+        option Homeland Security: HOM
+        option Housing: HOU
+        option Immigration: IMM
+        option International Relations: INT
+        option Judiciary: JUD
+        option Labor: LAB
+        option Life/Abortion: LIFE/ABORTION
+        option Marriage: MARRIAGE
+        option Medicare and Medicaid: MED
+        option Other: OTHER
+        option Pensions: PENSIONS
+        option Seniors and Aging: SEN
+        option Spending: SPENDING
+        option Social Security: SSEC
+        option Taxes: TAX
+        option Technology: TECHNOLOGY
+        option Telecommunications: TEL
+        option Transportation: TRA
+        option Trade: TRD
+        option Veterans: VET
+        option Welfare: WEL
+      br
+      br
+      input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
