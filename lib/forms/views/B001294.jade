@@ -4,7 +4,7 @@ block content
 
   form(method='POST', action='/forms/submitFormData', role="form")
     .row
-      h3 Prefix
+      h4 Prefix
       select(name="prefix", required)#prefix
         option Select One
         option Mr.
@@ -18,7 +18,7 @@ block content
       input(type='text', id='lastname', name='lastname', class='form-control', placeholder='Enter Last Name', required)
       input(type='text', id='streetaddress1', name='streetaddress1', class='form-control', placeholder='Address 1', required)      
       input(type='text', id='city', name='city', class='form-control', placeholder='City', required)
-      input(type='text', id='address_zip_5', name='address_zip_5', class='form-control', required)
+      input(type='text', id='address_zip_5', name='address_zip_5', class='form-control', placeholder='Zip', required)
       input(type='text', id='phone', name='phone', class='form-control', placeholder='Phone', required)
       select(name="state")#state
         option(value='') Select One
@@ -80,42 +80,40 @@ block content
       h4 Topic
       select(name="topic", required)#topic
         option(value='') Select One	  
-        option Addiction Services
-        option Agriculture
-        option Arts and History
-        option Banking
-        option Birth/Death Certificates
-        option Business
-        option Children and Families
-        option Child Support
-        option Civil Service Commission
-        option Consumer Affairs
-        option Corrections
-        option Developmental Disabilities
-        option Division on Elections
-        option Education
-        option Environment
-        option Family Care/Medicaid
-        option Health
-        option Housing
-        option Human Services
-        option Insurance
-        option Invitations/Scheduling
-        option Labor
-        option Law and Public Safety
-        option Licensing Boards
-        option Lottery
-        option Mental Health Services
-        option Military and Veterans Affairs
-        option Pensions and Retirements
-        option Public Utilities
-        option Requesting Proclamations / Special Letter
-        option Superstorm Sandy/CDBG
-        option Taxation
-        option Temporary Disability
-        option Transportation / Motor Vehicles
-        option Unclaimed Property
-        option Unemployment
+        option Advocacy: "14886"
+        option Agriculture and Food: "72"
+        option Animals: "9982"
+        option Armed Forcs and National Security: "10012"
+        option Arts, Culture, Religion: "10039"
+        option Civil Rights and Liberties, Minority Issues: "10055"
+        option Commerce: "10073"
+        option Congress: "10095"
+        option Crime and Law Enforcement: "10109"
+        option Economics and Public Finance: "10135"
+        option Education: "73"
+        option Emergency Management: "10168"
+        option Energy: "10177"
+        option Environmental Protection: "14814"
+        option Families: "10209"
+        option Finance and Financial Sector: "10219"
+        option Foreign Trade and International Finance: "10236"
+        option Government Operations and Politics: "10250"
+        option Health: "74"
+        option Housing and Community Development: "10346"
+        option Immigration: "10360"
+        option International Affairs: "10370"
+        option Labor and Employment: "10390"
+        option Law: "10406"
+        option Native Americans: "10424"
+        option Private Legislation: "14873"
+        option Public Lands and Natural Resources: "10432"
+        option Science, Technology, Communications: "10447"
+        option Social Sciences and History: "10471"
+        option Social Welfare: "10479"
+        option Sports and Recreation: "10485"
+        option Taxation: "10493"
+        option Transportation and Public Works: "81"
+        option Water Resources Development: "10528"
       br
       br
       input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
