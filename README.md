@@ -46,3 +46,5 @@ Forms Available
 | 3003 32nd Avenue South<br />Fargo, ND 58103 | H001061 | US Senator | ReCAPTCHA | N/A |
 | 811 Saint Michaels Drive<br />Santa Fe, NM 87505 | SWe00196 | Governor | iframe | firstname |
 | 5727 South Lewis Avenue<br />Tulsa, OK 74105 | state_ok_gov_mary_fallin | Governor | non-image CAPTCHA | N/A |
+| 501 Sycamore St.<br />Waterloo, IA 50703 | E000295 | US Senator | Freshmen Member | N/A |
+| 501 Sycamore St.<br />Waterloo, IA 50703 | B001294 | US House | Freshmen Member | N/A |
