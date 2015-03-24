@@ -4,7 +4,13 @@ block content
 
   form(method='POST', action='/forms/submitFormData', role="form")
     .row
-
+      h3 Prefix
+      select(name="prefix", required)#prefix
+        option Select One
+        option Mr.
+        option Mrs.
+		    option Dr.
+        option Ms.
       br
       input(type='text' id='bioid' name='bioid' value='#{bioId}')
       input(type='text', id='firstname', name='firstname', class='form-control', placeholder='Enter First Name', required)
