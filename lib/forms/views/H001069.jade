@@ -9,52 +9,6 @@ block content
          iframe(src="http://www.google.com/recaptcha/api/noscript?k=#{publicKey}",
              height="300", width="500", frameborder="0")
          br
-	       select(name="topic", required)#topic
-            option(value='Other') Other
-            option(value='Aging') Aging
-            option(value='Agriculture') Agriculture
-            option(value='Animal Welfare') Animal Welfare
-            option(value='Appropriations') Appropriations
-            option(value='Banking') Banking
-            option(value='Budget, Government Spending') Budget, Government Spending
-            option(value='Civil Rights') Civil Rights
-            option(value='Commerce') Commerce
-            option(value='Communications') Communications
-            option(value='Congratulations') Congratulations
-            option(value='Crime') Crime
-            option(value='Defense') Defense
-            option(value='Drugs') Drugs
-            option(value='Economy') Economy
-            option(value='Education') Education
-            option(value='Elections') Elections
-            option(value='Energy') Energy
-            option(value='Environment') Environment
-            option(value='Family') Family
-            option(value='Filibuster') Filibuster
-            option(value='Foreign Affairs') Foreign Affairs
-            option(value='Gun Control') Gun Control
-            option(value='Health') Health
-            option(value='Homeland Security') Homeland Security
-            option(value='Housing') Housing
-            option(value='Immigration') Immigration
-            option(value='IND') Native American Affairs
-            option(value='Judiciary') Judiciary
-            option(value='Labor') Labor
-            option(value='Medicaid') Medicaid
-            option(value='Medicare') Medicare
-            option(value='Military') Military
-            option(value='Postal Service') Postal Service
-            option(value='Public Lands and Parks') Public Lands and Parks
-            option(value='Science and Technology') Science and Technology
-            option(value='Small Business') Small Business
-            option(value='Social Security') Social Security
-            option(value='Taxes') Taxes
-            option(value='Trade') Trade
-            option(value='Transportation') Transportation
-            option(value='Veterans') Veterans
-            option(value='Welfare') Welfare
-            option(value='Women's Issues') Women's Issues
-         br
          textarea(name="recaptchachallenge", rows="3", cols="40")
          input(type="hidden", name="recaptcharesponse", value="manual_challenge")
       input(type='text' id='bioid' name='bioid' value='#{bioId}')
