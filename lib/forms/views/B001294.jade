@@ -12,6 +12,7 @@ block content
         option Dr.
         option Ms.
       br
+      br
       input(type='text' id='bioid' name='bioid' value='#{bioId}')
       input(type='text', id='firstname', name='firstname', class='form-control', placeholder='Enter First Name', required)
       input(type='text', id='lastname', name='lastname', class='form-control', placeholder='Enter Last Name', required)
@@ -76,6 +77,45 @@ block content
       input(type='text', id='email', name='email', class='form-control', placeholder='Email', required)      
       input(type='text', id='subject', name='subject', class='form-control', placeholder='Enter Subject', required)
       input(type='text', id='message', name='message', class='form-control', placeholder='Enter Message', required)
-
+      h4 Topic
+      select(name="topic", required)#topic
+        option(value='') Select One	  
+        option Addiction Services
+        option Agriculture
+        option Arts and History
+        option Banking
+        option Birth/Death Certificates
+        option Business
+        option Children and Families
+        option Child Support
+        option Civil Service Commission
+        option Consumer Affairs
+        option Corrections
+        option Developmental Disabilities
+        option Division on Elections
+        option Education
+        option Environment
+        option Family Care/Medicaid
+        option Health
+        option Housing
+        option Human Services
+        option Insurance
+        option Invitations/Scheduling
+        option Labor
+        option Law and Public Safety
+        option Licensing Boards
+        option Lottery
+        option Mental Health Services
+        option Military and Veterans Affairs
+        option Pensions and Retirements
+        option Public Utilities
+        option Requesting Proclamations / Special Letter
+        option Superstorm Sandy/CDBG
+        option Taxation
+        option Temporary Disability
+        option Transportation / Motor Vehicles
+        option Unclaimed Property
+        option Unemployment
+      br
       br
       input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
