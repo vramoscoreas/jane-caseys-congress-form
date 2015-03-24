@@ -4,8 +4,6 @@ contact_form:
   action: /forms/writeyourrep/
   steps: 
   - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/B001294"
-  - find: 
-    - selector: "#ctl00_ctl09_FirstName"
   - fill_in: 
     - name: ctl00$ctl09$FirstName
       selector: "#ctl00_ctl09_FirstName"
