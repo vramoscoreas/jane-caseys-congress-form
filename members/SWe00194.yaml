@@ -1,7 +1,7 @@
 bioguide: SWe00194
 contact_form:
   method: post
-  action: /cgi-bin/governor/govmail/govmail_1c_new.pl
+  action: ""
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/SWe00194"
     - select:
@@ -46,9 +46,6 @@ contact_form:
             - "Transportation / Motor Vehicles": "Transportation / Motor Vehicles"
             - "Unclaimed Property": "Unclaimed Property"
             - "Unemployment": "Unemployment"
-    - find:
-        - selector: "input[name='submit']"
-  steps:
     - select:
         - name: sub-topic
           selector: "select[name='SubTopics']"
