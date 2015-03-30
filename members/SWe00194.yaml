@@ -46,7 +46,6 @@ contact_form:
           - "Transportation / Motor Vehicles": "Transportation / Motor Vehicles"
           - "Unclaimed Property": "Unclaimed Property"
           - "Unemployment": "Unemployment"
-    - select:
       - name: sub-topic
         selector: "select[name='subtopic']"
         value: $SUBTOPIC1
@@ -114,48 +113,37 @@ contact_form:
           - "Welfare/Food Stamps": "--Welfare/Food Stamps"
     - fill_in:
       - name: firstName
-        selector: "input[name='first']"
+        selector: "#firstname"
         value: $NAME_FIRST
         required: true
       - name: lastName
-        selector: "input[name='last']"
+        selector: "#lastname"
         value: $NAME_LAST
         required: true
       - name: street
-        selector: "input[name='address1']"
+        selector: "#streetaddress1"
         value: $ADDRESS_STREET
         required: true
       - name: street2
-        selector: "input[name='address2']"
+        selector: "#streetaddress2"
         value: $ADDRESS_STREET_2
       - name: city
-        selector: "input[name='city']"
+        selector: "#city"
         value: $ADDRESS_CITY
         required: true
       - name: zip5
-        selector: "input[name='zip']"
+        selector: "#zipcode"
         value: $ADDRESS_ZIP5
-      - name: phoneAreaCode
-        selector: "input[name='areacode']"
-        value: $PHONE_AREA_CODE
-        required: true
-      - name: phoneExchange
-        selector: "input[name='exch']"
-        value: $PHONE_EXCHANGE_CODE
-        required: true
       - name: phoneNumber
-        selector: "input[name='phone']"
-        value: $PHONE_SUBSCRIBER_NUMBER
+        selector: "#phonenumber"
+        value: $PHONE
         required: true
-      - name: email
-        selector: "input[name='email']"
-        value: $EMAIL
       - name: subject
-        selector: "input[name='subject']"
+        selector: "#subject"
         value: $SUBJECT
         required: true
       - name: message
-        selector: "textarea[name='message']"
+        selector: "#message"
         value: $MESSAGE
         required: true
     - select: 
@@ -191,7 +179,7 @@ contact_form:
           - "The Honorable": "The Honorable"
       - name: stateFull
         selector: "select[name='state']"
-        value: $ADDRESS_STATE_FULL
+        value: $ADDRESS_STATE_POSTAL_ABBREV
         required: true
         options:
           - "NJ": "New Jersey"
