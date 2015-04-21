@@ -26,7 +26,7 @@ Forms Available
 | 264 Clovis Avenue<br>Suite 206<br>Clovis, CA 93612 | N000181 | US House | ReCaptcha | recaptcharesponse |
 | 4721 Rosedale Ave.<br>Apt. 504<br>Bethesda, MD 20814 | V000128 | US House| Topic | topic |
 | 4721 Rosedale Ave.<br>Apt. 504<br>Bethesda, MD 20814 | C000141 | US Senate | One Step | lastname |
-| 4721 Rosedale Ave.<br>Apt. 504<br>Bethesda, MD 20814 | M000702 | US Senate | One Step, inferred fields | phone_number_parentheses |
+| 4721 Rosedale Ave.<br>Apt. 504<br>Bethesda, MD 20814 | M000702 | US Senate | One Step, inferred fields | phone_number_parentheses; phone_no_area_code |
 | 1 Estate Cane<br>St. Croix, VI 00840 | P000610 | US House | One Step | lastname |
 | PO Box 7248<br>Pago Pago, AS 96799 | R000600 | US House | One Step | lastname |
 | 35 H Road-Route 109<br>Acton, MA 04001 | C001035 | US Senate | Missing Other Bioids| lastname |
