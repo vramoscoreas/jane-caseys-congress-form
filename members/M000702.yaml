@@ -53,7 +53,7 @@ contact_form:
         selector: "#phone_subscriber"
         value: $PHONE_SUBSCRIBER_NUMBER
         required: true
-      - name: phone_subscriber
+      - name: phone_no_area_code
         selector: "#phone_no_area_code"
         value: $PHONE_NO_AREA_CODE
         required: true
