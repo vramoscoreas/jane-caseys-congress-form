@@ -4,28 +4,16 @@ contact_form:
   action: ""
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/H001061"
-    - iframe:
-      - name: iframe1
-        selector: "div.g-recaptcha div div iframe[src^='https://www.google.com']"
     - fill_in:
       - name: recaptcha_response_field
-        captcha_selector: "html body div.fbc-payload > img"
+        selector: "#recaptcha_response_field"
+        captcha_selector: "img#recaptcha_challenge_image"
+        captcha_id_selector: "#recaptcha_challenge_field"
         value: $CAPTCHA_SOLUTION
-        selector: "#response"
         required: true
     - click_on:
-      - value: recaptchaSubmit
-        selector: "div.fbc-button-verify > input"
-    - copy_paste:
-      - name: copy_captcha_cpde
-        copy_selector: "div.fbc-verification-token > textarea"
-        paste_selector: "#g-recaptcha-response"
-    - iframe:
-      - name: parent1
-        back: true
-      - click_on:
-        - value: Submit
-          selector: "#submitcaptcha"
+      - value: Submit
+        selector: "#submitcaptcha"
   success:
     headers:
       status: 200
