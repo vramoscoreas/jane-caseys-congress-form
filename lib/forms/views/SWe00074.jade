@@ -5,7 +5,7 @@ block content
   form(method='POST', action='?', role="form")
     .row
       script(src="https://www.google.com/recaptcha/api.js" async defer)
-         div(data-sitekey='#{publicKey}', class='g-recaptcha')
+      div(data-sitekey='#{publicKey}', class='g-recaptcha')
          br
          textarea(name="g-recaptcha", rows="3", cols="40")
          input(type="hidden", name="recaptcharesponse", value="manual_challenge")
