@@ -2,10 +2,10 @@ extends layout
 
 block content
 
-  form(method='POST', action=?, role="form")
+  form(method='POST', action='/forms/solveRecaptcha', role="form")
     .row
-      script(src="https://www.google.com/recaptcha/api.js" async defer)
-      iframe(src="https://www.google.com", name="iframe1",
-             height="352", width="302", frameborder="0", data-sitekey="#{publicKey}", class="g-recaptcha")
+      script(src="https://www.google.com/recaptcha/api.js")
+      iframe(src="https://www.google.com/recaptcha/api.js", name="iframe1",
+             height="352", width="302", frameborder="0")
          br
          input(type='text' id='bioid' name='bioid' value='#{bioId}')
