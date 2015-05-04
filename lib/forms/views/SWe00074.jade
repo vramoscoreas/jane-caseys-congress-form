@@ -4,7 +4,7 @@ block content
 
   form(method='POST', action='/forms/solveRecaptcha', role="form")
     .row
-      script(src="https://www.google.com/recaptcha/api.js" async defer")
+      script(src="https://www.google.com/recaptcha/api.js" async defer)
       noscript
          iframe(src="http://www.google.com/recaptcha/api/noscript?k=#{publicKey}",
              height="300", width="500", frameborder="0")
