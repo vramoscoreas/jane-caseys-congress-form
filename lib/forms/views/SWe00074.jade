@@ -4,9 +4,9 @@ block content
 
   form(method='POST', action='/forms/solveRecaptcha', role="form")
     .row
-      script(src="http://www.google.com/recaptcha/api/challenge?k=#{publicKey}")
+      script(src="https://www.google.com/recaptcha/api.js?k=#{publicKey}")
       noscript
-         iframe(src="http://www.google.com/recaptcha/api/noscript?k=#{publicKey}",
+         iframe(src="https://www.google.com/recaptcha/api/fallback?k=#{publicKey}",
              height="300", width="500", frameborder="0")
          br
          textarea(name="recaptchachallenge", rows="3", cols="40")
