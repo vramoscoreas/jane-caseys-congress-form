@@ -6,10 +6,8 @@ block content
     .row
       script(src="https://www.google.com/recaptcha/api.js" async defer)
       div(data-sitekey='#{publicKey}', class='g-recaptcha')
-        iframe(src="https://www.google.com/recaptcha/api/fallback?k=#{publicKey}", name="iframe1", title="recaptcha widget")
+        iframe(src="https://www.google.com/recaptcha/api.js", name="iframe1", title="recaptcha widget")
          br
-         textarea(name="g-recaptcha", rows="3", cols="40")
-         input(type="hidden", name="recaptcharesponse", value="manual_challenge")
-         input(type='text', name="recaptcha_response_field", id="recaptcha_response_field",)
+         textarea(name="g-recaptcha-response", name="g-recaptcha-response", class="g-recaptcha-response", width="250", height="80")
       input(type='text' id='bioid' name='bioid' value='#{bioId}')
       input(type='submit', id='recaptchaSubmit', name='recaptchaSubmit', value='Submit CAPTCHA')
