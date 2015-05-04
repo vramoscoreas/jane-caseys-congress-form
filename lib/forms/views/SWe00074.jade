@@ -6,7 +6,8 @@ block content
     .row
       script(src="https://www.google.com/recaptcha/api.js" async defer")
       noscript
-         div.g-recaptcha(data-sitekey="k=#{publicKey}")
+         iframe(src="http://www.google.com/recaptcha/api/noscript?k=#{publicKey}",
+             height="300", width="500", frameborder="0")
          br
          textarea(name="recaptchachallenge", rows="3", cols="40")
          input(type="hidden", name="recaptcharesponse", value="manual_challenge")
