@@ -49,3 +49,4 @@ Forms Available
 | 501 Sycamore St.<br />Waterloo, IA 50703 | E000295 | US Senator | Freshmen Member | N/A |
 | 501 Sycamore St.<br />Waterloo, IA 50703 | B001294 | US House | Freshmen Member | N/A |
 | 30 Schuyler Place<br />Morristown, NJ 07960 | SWe00194 | Governor | Subtopic | N/A |
+| 8021 W Florissant Ave<br />Jennings, MO 63136 | B000575 | US Senator | 2,000 character limit for message | N/A |
