@@ -26,6 +26,9 @@ contact_form:
         selector: "#subject"
         value: $SUBJECT
         required: true
+      - name: phone
+        selector: "#phone"
+        value: $PHONE
   success:
     headers:
       status: 200
