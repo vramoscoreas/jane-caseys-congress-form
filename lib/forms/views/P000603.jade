@@ -6,6 +6,6 @@ block content
     .row
       script(src="https://www.google.com/recaptcha/api.js" async defer)
       iframe(src="https://www.google.com", name="iframe1",
-             height="352", width="302", frameborder="0", class="g-recaptcha")
+             height="352", width="302", frameborder="0", data-sitekey="#{publicKey}", class="g-recaptcha")
          br
          input(type='text' id='bioid' name='bioid' value='#{bioId}')
