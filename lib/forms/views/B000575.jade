@@ -1,0 +1,80 @@
+extends layout
+
+block content
+
+  form(method='POST', action='/forms/submitFormData', role="form")
+    .row
+
+      br
+      input(type='text' id='bioid' name='bioid' value='#{bioId}')
+
+	  input(type='text', id='firstname', name='firstname', class='form-control', placeholder='Enter First Name', required)
+      input(type='text', id='lastname', name='lastname', class='form-control', placeholder='Enter Last Name', required)
+      input(type='text', id='streetaddress1', name='streetaddress1', class='form-control', placeholder='Address 1', required)
+      input(type='text', id='streetaddress2', name='streetaddress2', class='form-control', placeholder='Address 2')
+      input(type='text', id='city', name='city', class='form-control', placeholder='City', required)	  
+      input(type='text', id='address_zip_5', name='address_zip_5', class='form-control', required)
+
+      br
+	  select(name="state")#state
+        option(value='') Select One
+        option CA
+        option MD
+        option VA
+        option WY
+      input(type='text', id='phone', name='phone', class='form-control', placeholder='Phone', required)
+      input(type='text', id='email', name='email', class='form-control', placeholder='Email', required)	  
+      input(type='text', id='subject', name='subject', class='form-control', placeholder='Enter Subject', required)
+      input(type='text', id='message', name='message', class='form-control', placeholder='Enter Message', required)
+
+	  br
+      select(name="topic", required)#topic
+        option Abortion
+        option Agriculture
+        option Animal Rights
+        option Budget/Spending
+        option Business
+        option Civil Rights
+        option Commerce
+        option Congratulations/Birthdays
+        option Crime/Drugs
+        option Debt Ceiling
+        option Defense
+        option Education
+        option Elections
+        option Energy
+        option Environment
+        option Family Values
+        option Foreign Relations
+        option Health
+        option Homeland Security
+        option Housing
+        option Immigration
+        option Intelligence
+        option Jobs
+        option Judiciary
+        option Labor
+        option Medicare
+        option Parks and Public Lands
+        option Pension/Retirement
+        option Postal
+        option Regulatory Reform
+        option Religion
+        option Science/Technology
+        option Second Amendment
+        option Senate Procedure
+        option Small Business
+        option Social Security
+        option Taxes
+        option Telecommunications
+        option Tobacco
+        option Trade
+        option Transportation
+        option Unemployment
+        option Veterans
+        option Water/Rivers
+        option Welfare
+        option Other
+		
+      br
+      input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
