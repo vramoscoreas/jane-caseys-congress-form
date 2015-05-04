@@ -7,5 +7,7 @@ block content
       script(src="https://www.google.com/recaptcha/api.js" async defer)
       div(class='g-recaptcha', data-sitekey='#{publicKey}')
          br
+         textarea(name="g-recaptcha", rows="3", cols="40")
+         input(type="hidden", name="recaptcharesponse", value="manual_challenge")
       input(type='text' id='bioid' name='bioid' value='#{bioId}')
       input(type='submit', id='submitcaptcha', name='submitcaptcha', value='Check Recaptcha', class='btn btn-default')
