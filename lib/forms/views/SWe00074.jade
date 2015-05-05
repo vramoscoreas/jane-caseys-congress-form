@@ -2,12 +2,10 @@ extends layout
 
 block content
 
-  form(method='POST', action='webform.cfm', role="form")
+  form(method='POST', action='/forms/solveNewRecaptcha', role="form")
     .row
-      script(src="https://www.google.com/recaptcha/api.js" async defer)
       noscript
-      div(data-sitekey='#{publicKey}', class='g-recaptcha')
-        iframe(src="https://www.google.com/recaptcha/api/fallback?k=#{publicKey}", frameborder="0" scrolling="no", width="302", height="352", border-style="none")
-         br
+      div(data-sitekey='#{newPublicKey}', class='g-recaptcha')
+
       input(type='text' id='bioid' name='bioid' value='#{bioId}')
       input(type='submit', id='recaptchaSubmit', name='recaptchaSubmit', value='Submit CAPTCHA')
