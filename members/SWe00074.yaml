@@ -1,7 +1,7 @@
 bioguide: SWe00074
 contact_form:
   method: post
-  action: webform.cfm
+  action: http://gov.idaho.gov/ourgov/contact.aspx
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/SWe00074"
     - wait:
