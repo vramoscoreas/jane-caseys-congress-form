@@ -21,8 +21,7 @@ contact_form:
         selector: "div.fbc-button-verify > input"
     - copy_paste:
       - name: copy_captcha_cpde
-        copy_selector: "div.fbc-verification-token &
-gt; textarea"
+        copy_selector: "div.fbc-verification-token & gt; textarea"
         paste_selector: "#g-recaptcha-response"
     - iframe:
       - name: parent1
