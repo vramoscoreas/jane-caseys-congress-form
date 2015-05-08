@@ -3,7 +3,7 @@ contact_form:
   method: post
   action: "http://www.paul.senate.gov/connect/email-rand"
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/P000603"
+    - visit: "http://www.paul.senate.gov/connect/email-rand"
     - wait:
       - value: 2
     - iframe:
