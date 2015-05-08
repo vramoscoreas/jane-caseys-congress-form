@@ -1,11 +1,12 @@
+	
 bioguide: SWe00074
 contact_form:
   method: post
-  action: ""
+  action: webform.cfm
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/SWe00074"
+    - visit: "http://gov.idaho.gov/ourgov/contact.html"
     - wait:
-      - value: 2
+      - value: 1
     - iframe:
       - name: iframe1
         selector: "div.g-recaptcha div div iframe[src^='https://www.google.com']"
@@ -20,10 +21,23 @@ contact_form:
         selector: "div.fbc-button-verify > input"
     - copy_paste:
       - name: copy_captcha_cpde
-        copy_selector: "div.fbc-verification-token > textarea"
+        copy_selector: "div.fbc-verification-token &
+gt; textarea"
         paste_selector: "#g-recaptcha-response"
     - iframe:
       - name: parent1
+        back: true
+    - fill_in:
+      - name: recaptcha_response_field
+        captcha_selector: "body img"
+        value: $CAPTCHA_SOLUTION
+        selector: "#default-response"
+        required: true
+    - click_on:
+      - value: recaptchaSubmit
+        selector: "#recaptcha-verify-button"
+    - iframe:
+      - name: parent2
         back: true
     - fill_in:
       - name: firstName
