@@ -1,9 +1,9 @@
-bioguide: K000384
+bioguide: MAL000362
 contact_form:
   method: post
   action: ""
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/K000384"
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/MAL000362"
     - select:
       - name: prefix
         selector: "#prefix"
