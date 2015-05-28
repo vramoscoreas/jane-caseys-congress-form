@@ -6,39 +6,21 @@ block content
     .row
 
       br
+      input(type='text', id='message', name='message', class='form-control', placeholder='Enter Message', required)
+      
+      br
       input(type='text' id='bioid' name='bioid' value='#{bioId}')
       
       br
-      input(type='text', id='fname', name='fname', class='form-control', placeholder='Enter First Name', required)
-      input(type='text', id='lname', name='lname', class='form-control', placeholder='Enter Last Name', required)
-      input(type='text', id='address', name='address', class='form-control', placeholder='Address', required)  
+      input(type='text', id='firstname', name='firstname', class='form-control', placeholder='Enter First Name', required)
+      input(type='text', id='lastname', name='lastname', class='form-control', placeholder='Enter Last Name', required)
+      input(type='text', id='email', name='email', class='form-control', placeholder='Email', required)    
+      input(type='text', id='streetaddress1', name='streetaddress1', class='form-control', placeholder='Address 1', required)  
       input(type='text', id='city', name='city', class='form-control', placeholder='City', required)
-      input(type='text', id='zip', name='zip', class='form-control', required)  
-      input(type='text', id='phone', name='phone', class='form-control', required)
-      input(type='text', id='email', name='email', class='form-control', placeholder='Email', required)      
-      input(type='text', id='subject', name='subject', class='form-control', placeholder='Enter Subject', required)
-      input(type='text', id='message', name='message', class='form-control', placeholder='Enter Message', required)
-	  
-      br
-      select(name="topic", required)#topic
-        option(value='other') Select One
-        option Child Welfare
-        option Education
-        option Environment and Natural Resources
-        option Health Care
-        option Jobs and the Economy
-        option Public Safety
-        option State Budget
-        option Other
-      select(name="response", required)#WayToRespond
-        option(value='Email') Select One
-        option Email
-        option Telephone
-        option Postal Mail
-        option No Response Needed
-		
-      br
-      input(type='text', id='math_qna', name='math_qna', class='form-control', placeholder='Q&A', required)    
+      input(type='text', id='address_zip_5', name='address_zip_5', class='form-control', required)  
       
+      br
+      input(type='text', id='TextBoxQ', name='TextBoxQ', class='form-control', placeholder='Q&A', required)   
+            
       br
       input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
