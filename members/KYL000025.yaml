@@ -3,7 +3,7 @@ contact_form:
   method: post
   action: S011.aspx
   steps:
-    - visit: "http://www.lrc.ky.gov/Messages/S011.aspx"
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/KYL000025"
     - fill_in:
         - name: firstname
           selector: "#First_Name"
