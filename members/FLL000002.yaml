@@ -39,8 +39,8 @@ contact_form:
         required: true
     - math:
       - name: math_qna
-        question_selector: "label[for='math-test']"
-        answer_selector: "#math-test"
+        question_selector: "label[for='mathtest']"
+        answer_selector: "#mathtest"
   success:
     headers:
       status: 200
