@@ -5,65 +5,42 @@ contact_form:
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/FLL000002"
     - fill_in:
-        - name: message
-          selector: "#Comment"
-          value: $MESSAGE
-          required: true
-        - name: fname
-          selector: "#FirstName"
-          value: $NAME_FIRST
-          required: true
-        - name: lname
-          selector: "#LastName"
-          value: $NAME_LAST
-          required: true
-        - name: email
-          selector: "#EmailAddress"
-          value: $EMAIL
-          required: true
-        - name: address
-          selector: "#MailingAddress"
-          value: $ADDRESS_STREET
-          required: false
-        - name: city
-          selector: "#City"
-          value: $ADDRESS_CITY
-          required: true
-        - name: zip
-          selector: "#Zip"
-          value: $ADDRESS_ZIP5
-          required: true
-        - name: phone
-          selector: "#Telephone"
-          value: $PHONE
-          required: false
-    - select:
-        - name: topic
-          selector: "#Topic"
-          value: Other
-          required: true
-          options:
-           - Child Welfare
-           - Education
-           - Environment and Natural Resources
-           - Health Care
-           - Jobs and the Economy
-           - Public Safety
-           - State Budget
-           - Other
-        - name: response
-          selector: "#WayToRespond"
-          value: Email
-          required: true
-          options:
-           - Email
-           - Telephone
-           - Postal Mail
-           - No Response Needed
+      - name: message
+        selector: "#Comment"
+        value: $MESSAGE
+        required: true
+      - name: fname
+        selector: "#FirstName"
+        value: $NAME_FIRST
+        required: true
+      - name: lname
+        selector: "#LastName"
+        value: $NAME_LAST
+        required: true
+      - name: email
+        selector: "#EmailAddress"
+        value: $EMAIL
+        required: true
+      - name: address
+        selector: "#MailingAddress"
+        value: $ADDRESS_STREET
+        required: true
+      - name: city
+        selector: "#City"
+        value: $ADDRESS_CITY
+        required: true
+      - name: zip
+        selector: "#Zip"
+        value: $ADDRESS_ZIP5
+        required: true
+      - name: phone
+        selector: "#Telephone"
+        value: $PHONE
+        required: true
     - math:
-        - name: math_qna
-          question_selector: "label[for='math-test']"
-          answer_selector: "#math-test"
+      - name: math_qna
+        question_selector: "label[for='math-test']"
+        answer_selector: "#math-test"
   success:
     headers:
       status: 200
