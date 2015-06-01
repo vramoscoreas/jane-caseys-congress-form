@@ -4,11 +4,6 @@ contact_form:
   action: /_Email
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/FLL000002"
-    - click_on:
-        - value: Contact
-          selector: ".contactSenator"
-    - wait:
-        - value: 5
     - fill_in:
         - name: message
           selector: "#Comment"
@@ -69,13 +64,6 @@ contact_form:
         - name: math_qna
           question_selector: "label[for='math-test']"
           answer_selector: "#math-test"
-    - click_on:
-        - value: Unsub
-          selector: "#ReceiveUpdates"
-        - value: Submit
-          selector: "#submitEmailForm"
-    - wait:
-        - value: 5
   success:
     headers:
       status: 200
