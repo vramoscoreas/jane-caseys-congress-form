@@ -37,29 +37,6 @@ contact_form:
           selector: "#Telephone"
           value: $PHONE
           required: false
-    - select:
-        - name: topic
-          selector: "#Topic"
-          value: Other
-          required: true
-          options:
-           - Child Welfare
-           - Education
-           - Environment and Natural Resources
-           - Health Care
-           - Jobs and the Economy
-           - Public Safety
-           - State Budget
-           - Other
-        - name: response
-          selector: "#WayToRespond"
-          value: Email
-          required: true
-          options:
-           - Email
-           - Telephone
-           - Postal Mail
-           - No Response Needed
     - math:
         - name: math_qna
           question_selector: "label[for='math-test']"
