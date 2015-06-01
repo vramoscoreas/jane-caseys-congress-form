@@ -41,6 +41,9 @@ contact_form:
       - name: math_qna
         question_selector: "label[for='mathtest']"
         answer_selector: "#mathtest"
+    - click_on:
+      - value: Send Message
+        selector: "#submitEmailForm"
   success:
     headers:
       status: 200
