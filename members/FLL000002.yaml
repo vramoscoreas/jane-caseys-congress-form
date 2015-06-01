@@ -1,7 +1,7 @@
 bioguide: FLL000002
 contact_form:
   method: post
-  action: /_Email
+  action:
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/FLL000002"
     - fill_in:
