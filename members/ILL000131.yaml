@@ -29,6 +29,9 @@ contact_form:
           selector: "#feedback_submitted_address"
           value: $ADDRESS_STREET
           required: true
+    - click_on:
+      - value: Submit
+        selector: ".submit-button"
   success:
     headers:
       status: 200
