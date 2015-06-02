@@ -1,37 +1,34 @@
 bioguide: ILL000131
 contact_form:
   method: post
-  action: ""
+  action: 
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/ILL000131"
     - fill_in:
-      - name: message
-        selector: "#message"
-        value: $MESSAGE
-        required: true
-      - name: firstname
-        selector: "#firstname"
-        value: $NAME_FIRST
-        required: true
-      - name: lastname
-        selector: "#lastname"
-        value: $NAME_LAST
-        required: true
-      - name: email
-        selector: "#email"
-        value: $EMAIL
-        required: true
-      - name: phone
-        selector: "#phone"
-        value: $PHONE
-        required: true
-      - name: address_state_full
-        selector: "#address_state_full"
-        value: $ADDRESS_STATE_FULL
-        required: true
-    - click_on:
-      - value: Submit
-        selector: "#submit"
+        - name: message
+          selector: "#feedback_content"
+          value: $MESSAGE
+          required: true
+        - name: name
+          selector: "#feedback_first_name"
+          value: $NAME_FIRST
+          required: true
+        - name: name
+          selector: "#feedback_last_name"
+          value: $NAME_LAST
+          required: true
+        - name: email
+          selector: "#feedback_email"
+          value: $EMAIL
+          required: true
+        - name: phone
+          selector: "#feedback_mobile_number"
+          value: $PHONE
+          required: false
+        - name: address
+          selector: "#feedback_submitted_address"
+          value: $ADDRESS_STREET
+          required: true
   success:
     headers:
       status: 200
