@@ -25,9 +25,9 @@ contact_form:
         selector: "#phone"
         value: $PHONE
         required: true
-      - name: address_state_full
-        selector: "#address_state_full"
-        value: $ADDRESS_STATE_FULL
+      - name: address_full
+        selector: "#address_full"
+        value: $ADDRESS_FULL
         required: true
     - click_on:
       - value: Submit
