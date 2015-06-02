@@ -1,0 +1,39 @@
+bioguide: WIL000461
+contact_form:
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/WIL000461"
+    - fill_in:
+      - name: message
+        selector: "#message"
+        value: $MESSAGE
+        required: true
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
+      - name: fullname
+        selector: "#fullname"
+        value: $NAME_FULL
+        required: true
+      - name: streetaddress1
+        selector: "#streetaddress1"
+        value: $ADDRESS_STREET
+        required: true
+      - name: citystatezip
+        selector: "#citystatezip"
+        value: $ADDRESS_CITY_STATE_ZIP
+        required: true
+      - name: phone
+        selector: "#phone"
+        value: $PHONE
+        required: true
+    - click_on:
+      - value: Submit
+        selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
