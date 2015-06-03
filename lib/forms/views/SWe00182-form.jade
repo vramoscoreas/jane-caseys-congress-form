@@ -22,5 +22,8 @@ block content
       input(type='text', id='message', name='message', class='form-control', placeholder='Enter Message', required)	  
 
       br
-      input(type='text', id='address_state_full', name='address_state_full', class='form-control', placeholder='Full State Name', required)
+      h4 State
+      select(name="address_state_full", required)#address_state_full
+        option Select One
+        option Nebraska
       input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
