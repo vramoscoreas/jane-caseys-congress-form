@@ -1,0 +1,74 @@
+bioguide: SWe00182
+contact_form:
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/SWe00182"
+    - iframe:
+      - name: iframe1
+        selector: "div.g-recaptcha div div iframe[src^='https://www.google.com']"	
+    - fill_in:
+      - name: recaptcha_response_field
+        selector: "#recaptcha_response_field"
+        captcha_selector: "img#recaptcha_challenge_image"
+        captcha_id_selector: "#recaptcha_challenge_field"
+        value: $CAPTCHA_SOLUTION
+        required: true
+    - click_on:
+      - value: recaptchaSubmit
+        selector: "div.fbc-button-verify > input"	
+    - copy_paste:
+      - name: copy_captcha_cpde
+        copy_selector: "div.fbc-verification-token > textarea"
+        paste_selector: "#g-recaptcha-response"
+    - iframe:
+      - name: parent1
+        back: true
+    - fill_in:
+        - name: firstname
+          selector: "#firstname"
+          value: $NAME_FIRST
+          required: true
+        - name: lastname
+          selector: "#lastname"
+          value: $NAME_LAST
+          required: true
+        - name: email
+          selector: "#email"
+          value: $EMAIL
+          required: true
+        - name: streetaddress1
+          selector: "#streetaddress1"
+          value: $ADDRESS_STREET
+          required: true
+        - name: city
+          selector: "#city"
+          value: $ADDRESS_CITY
+          required: true
+        - name: address_zip_5
+          selector: "#address_zip_5"
+          value: $ADDRESS_ZIP5
+          required: true
+        - name: phone
+          selector: "#phone"
+          value: $PHONE
+          required: true
+        - name: message
+          selector: "#message"
+          value: $MESSAGE
+          required: true
+    - select:
+      - name: address_state_full
+        selector: "#address_state_full"
+        value: $ADDRESS_STATE_FULL
+        required: true
+        options:
+          - Nebraska
+    - click_on:
+        - value: Submit
+          selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
