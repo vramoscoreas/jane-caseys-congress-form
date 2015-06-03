@@ -73,6 +73,10 @@ contact_form:
         selector: "#address_full"
         value: $ADDRESS_FULL
         required: true
+      - name: address_city_state_zip
+        selector: "#address_city_state_zip"
+        value: $ADDRESS_CITY_STATE_ZIP
+        required: true
       - name: lastname
         selector: "#lastname"
         value: $NAME_LAST
