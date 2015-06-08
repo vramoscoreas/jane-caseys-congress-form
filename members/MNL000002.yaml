@@ -1,17 +1,17 @@
 bioguide: MNL000002
 contact_form:
   method: post
-  action: ""
+  action: 
   usePhantomJsLogging: true
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/MNL000002"
     - fill_in:
-      - name: firstname
-        selector: "#firstname"
+      - name: fname
+        selector: "#FirstName"
         value: $NAME_FIRST
         required: true
-      - name: lastname
-        selector: "#lastname"
+      - name: lname
+        selector: "#LastName"
         value: $NAME_LAST
         required: true
       - name: streetaddress1
@@ -19,27 +19,27 @@ contact_form:
         value: $ADDRESS_STREET
         required: true
       - name: city
-        selector: "#city"
+        selector: "#City"
         value: $ADDRESS_CITY
         required: true
       - name: address_state_postal_abbrev
         selector: "#address_state_postal_abbrev"
         value: $ADDRESS_STATE_POSTAL_ABBREV
         required: true
-      - name: address_zip_5
-        selector: "#address_zip_5"
+      - name: zip
+        selector: "#Zip"
         value: $ADDRESS_ZIP5
         required: true
       - name: email
-        selector: "#email"
+        selector: "#EmailAddress"
         value: $EMAIL
         required: true
       - name: subject
-        selector: "#subject"
+        selector: "#Subject"
         value: $SUBJECT
         required: true
       - name: message
-        selector: "#message"
+        selector: "#Comment"
         value: $MESSAGE
         required: true
     - click_on:
