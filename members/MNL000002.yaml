@@ -6,12 +6,12 @@ contact_form:
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/MNL000002"
     - fill_in:
-      - name: fname
-        selector: "#FirstName"
+      - name: firstname
+        selector: "#firstname"
         value: $NAME_FIRST
         required: true
-      - name: lname
-        selector: "#LastName"
+      - name: lastname
+        selector: "#lastname"
         value: $NAME_LAST
         required: true
       - name: streetaddress1
@@ -19,27 +19,27 @@ contact_form:
         value: $ADDRESS_STREET
         required: true
       - name: city
-        selector: "#City"
+        selector: "#city"
         value: $ADDRESS_CITY
         required: true
       - name: address_state_postal_abbrev
         selector: "#address_state_postal_abbrev"
         value: $ADDRESS_STATE_POSTAL_ABBREV
         required: true
-      - name: zip
-        selector: "#Zip"
+      - name: address_zip_5
+        selector: "#address_zip_5"
         value: $ADDRESS_ZIP5
         required: true
       - name: email
-        selector: "#EmailAddress"
+        selector: "#email"
         value: $EMAIL
         required: true
       - name: subject
-        selector: "#Subject"
+        selector: "#subject"
         value: $SUBJECT
         required: true
       - name: message
-        selector: "#Comment"
+        selector: "#message"
         value: $MESSAGE
         required: true
     - click_on:
