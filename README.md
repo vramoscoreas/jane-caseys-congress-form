@@ -52,5 +52,5 @@ Forms Available
 | 8021 W Florissant Ave<br />Jennings, MO 63136 | B000575 | US Senator | 2,000 character limit for message | N/A |
 | 650 Dundee Rd<br />Northbrook, IL 60062 | D000613 | US House | 2,000 character limit for message | message |
 | 222 Liberty St.<br />Lowell, MA 01851 | MAL000362 | MA Lower | One Step | firstname |
-| PO Box 991<br />Union, KY 41091 | KYL000025 | KY Senator | Anti-spam Q&A | N/A |
+| PO Box 991<br />Union, KY 41091 | KYL000025 | KY Senator | Anti-spam Hot or Cold Q&A | N/A |
 | 898 Malabar Rd SE<br />Palm Bay, FL 32907 | FLL000002 | FL Senator | Anti-spam Math Q&A | N/A | 
