@@ -2,7 +2,9 @@ extends layout
 
 block content
 
-  form(method='POST', action='/forms/submitFormData', role="form")
+  include triggerAlert
+
+  form(method='POST', action='/forms/submitFormDataAlert', role="form")
     .row
 
       br
