@@ -70,6 +70,10 @@ contact_form:
         selector: "#firstname"
         value: $FIRST_NAME
         required: true
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
     - click_on:
       - value: Submit
         selector: "#submit"

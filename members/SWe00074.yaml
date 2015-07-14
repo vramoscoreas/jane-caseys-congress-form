@@ -66,6 +66,10 @@ contact_form:
         selector: "#messageTextbox"
         value: $MESSAGE
         required: true
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
     - select:
       - name: prefix
         selector: "#prefixDropDown"

@@ -38,6 +38,10 @@ contact_form:
         selector: ".subject"
         value: $SUBJECT
         required: true
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
     - check:
       - name: response
         selector: input[type='checkbox'][value='Yes']
