@@ -4,126 +4,62 @@ block content
 
   form(method='POST', action='/forms/submitFormData', role="form")
     .row
-      h4 Prefix
+      h3 Prefix
       select(name="prefix", required)#prefix
-        option Select One
+        option(value='') Select One
         option Mr.
         option Mrs.
         option Ms.
-        option Mr. and Mrs.
-        option Dr.
-        option Dr. and Mrs.
-        option Reverend
-        option Sister
-        option Pastor
-        option The Honorable
-        option Representative
-        option Senator
-      br
+        option Miss
+		option Dr.
+		
       br
       input(type='text' id='bioid' name='bioid' value='#{bioId}')
       input(type='text', id='firstname', name='firstname', class='form-control', placeholder='Enter First Name', required)
-      input(type='text', id='lastname', name='lastname', class='form-control', placeholder='Enter Last Name', required)
-      input(type='text', id='streetaddress1', name='streetaddress1', class='form-control', placeholder='Address 1', required)      
+      input(type='text', id='streetaddress1', name='streetaddress1', class='form-control', placeholder='Address 1', required)
+      input(type='text', id='streetaddress2', name='streetaddress2', class='form-control', placeholder='Address 2')
       input(type='text', id='city', name='city', class='form-control', placeholder='City', required)
-      input(type='text', id='address_zip_5', name='address_zip_5', class='form-control', placeholder='Zip', required)
-      input(type='text', id='phone', name='phone', class='form-control', placeholder='Phone', required)
       select(name="state")#state
         option(value='') Select One
-        option AA
-        option AE
-        option AP
-        option AL
-        option AK
-        option AZ
-        option AR
         option CA
-        option CO
-        option CT
-        option DC
-        option DE
-        option FL
-        option GA
-        option HI
-        option ID
-        option IL
-        option IN
-        option IA
-        option KS
-        option KY
-        option LA
-        option ME
         option MD
-        option MA
-        option MI
-        option MN
-        option MO
-        option MS
-        option MT
-        option NE
-        option NJ
-        option NV
-        option NH
-        option NM
-        option NY
-        option NC
-        option ND
-        option OH
-        option OK
-        option OR
-        option PA
-        option RI
-        option SC
-        option SD
-        option TN
-        option TX
-        option UT
-        option VT
         option VA
-        option WA
-        option WV
-        option WI
         option WY
+		
       br
-      input(type='text', id='email', name='email', class='form-control', placeholder='Email', required)      
+      input(type='text', id='zipcode', name='zipcode', class='form-control', placeholder='Enter Zip', required)
+      input(type='text', id='phonenumber', name='phonenumber', class='form-control', placeholder='Enter Phone', required)
+      br
       input(type='text', id='subject', name='subject', class='form-control', placeholder='Enter Subject', required)
-      input(type='text', id='message', name='message', class='form-control', placeholder='Enter Message', required)
-      h4 Topic
-      select(name="topic", required)#topic
-        option(value='') Select One	  
-        option Agriculture
-        option Animal
-        option Banking/Finance
-        option Budget
-        option Business
-        option Defense
-        option Education
-        option Energy
-        option Environmental
-        option Government Reform
-        option Guns/2nd Amendment
-        option Health
-        option Homeland Security
-        option Housing
-        option Immigration
-        option International Relations
-        option Judiciary
-        option Labor
-        option Life/Abortion
-        option Marriage
-        option Medicare and Medicaid
-        option Other
-        option Pensions
-        option Seniors and Aging
-        option Spending
-        option Social Security
-        option Taxes
-        option Technology
-        option Telecommunications
-        option Transportation
-        option Trade
-        option Veterans
-        option Welfare
+      input(type='text', id='message', name='message', class='form-control', value='Default Message', required)
+		
       br
+      select(name="topic", required)#topic
+        option(value='') Select One
+        option(value='BOR.SEC') Border Security
+        option(value='BGT.GEN') Budget
+        option(value='CIVLIB') Civil Liberties
+        option(value='DEF') Defense
+        option(value='JOBS') Economy and Jobs
+        option(value='ED') Education
+        option(value='ENE.GEN') Energy
+        option(value='ENV.GEN') Environment
+        option(value='FEMA') First Responders
+        option(value='FOR.GEN') Foreign Affairs
+        option(value='GUN CONTROL') Gun Violence
+        option(value='HLT.GEN') Health Care
+        option(value='HOU.GEN') Housing
+        option(value='IMM.GEN') Immigration
+        option(value='INDIAN') Indian Affairs
+        option(value='LAW.ENFORCE') Law Enforcement
+        option(value='KM1') Miscellaneous
+        option(value='NAT.SEC') National Security
+        option(value='SS.GEN') Seniors and Social Security
+        option(value='SM BUS') Small Business
+        option(value='TAX.GEN') Taxes
+        option(value='TECH') Technology
+        option(value='TRN.GEN') Transportation
+        option(value='VET.GEN') Veterans
+		
       br
       input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
