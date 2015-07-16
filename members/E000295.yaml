@@ -1,9 +1,9 @@
-bioguide: E000295 
+bioguide: E000295
 contact_form:
   method: post
   action: ""
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/B000575"
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/E000295"
     - select:
       - name: prefix
         selector: "#prefix"
