@@ -19,10 +19,6 @@ contact_form:
         value: $ADDRESS_STATE_POSTAL_ABBREV
         required: Yes
         options: US_STATES
-      - name: response
-        selector: "#response"
-        value: "yes"
-        required: Yes
     - fill_in:
       - name: firstname
         selector: "#firstname"
