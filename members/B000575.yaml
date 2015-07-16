@@ -28,9 +28,6 @@ contact_form:
         selector: "#streetaddress1"
         value: $ADDRESS_STREET
         required: Yes
-      - name: streetaddress2
-        selector: "#streetaddress2"
-        value: $ADDRESS_STREET_2
       - name: city
         selector: "#city"
         value: $ADDRESS_CITY
