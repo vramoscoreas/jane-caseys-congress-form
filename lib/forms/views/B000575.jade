@@ -8,66 +8,31 @@ block content
       br
       input(type='text' id='bioid' name='bioid' value='#{bioId}')
 
-      input(type='text', id='field_4f83841c-3472-434f-9981-a5c91d68b253', name='field_4f83841c-3472-434f-9981-a5c91d68b253', class='form-control', placeholder='Enter First Name', required)
-      input(type='text', id='field_83e1f87a-3924-48b3-ae00-115adc633ae9', name='field_83e1f87a-3924-48b3-ae00-115adc633ae9', class='form-control', placeholder='Enter Last Name', required)
-      input(type='text', id='field_51d627cb-d6ca-44c8-bc60-6ee5ebb42bc8', name='field_51d627cb-d6ca-44c8-bc60-6ee5ebb42bc8', class='form-control', placeholder='Address 1', required)
-      input(type='text', id='field_2182c802-8c04-470b-965a-2b3524fd44fa', name='field_2182c802-8c04-470b-965a-2b3524fd44fa', class='form-control', placeholder='Address 2')
-      input(type='text', id='field_46305235-87d9-4708-a3d5-8fc54a49fe78', name='field_46305235-87d9-4708-a3d5-8fc54a49fe78', class='form-control', placeholder='City', required)	  
-      input(type='text', id='field_383cf00f-8254-4d45-bc7e-d3c3b3a2f6b8', name='field_383cf00f-8254-4d45-bc7e-d3c3b3a2f6b8', class='form-control', required)
-
-      br
-      input(type='text', id='field_6f798c07-d038-46ce-be19-8d706a3e6b88', name='field_6f798c07-d038-46ce-be19-8d706a3e6b88', class='form-control', placeholder='Phone', required)
-      input(type='text', id='field_8c4a91ac-459d-41dd-b577-43769d4f5798', name='field_8c4a91ac-459d-41dd-b577-43769d4f5798', class='form-control', placeholder='Email', required)	  
-      input(type='text', id='field_1fcd0a32-c2b6-40e7-9d3f-18de98bf7997', name='field_1fcd0a32-c2b6-40e7-9d3f-18de98bf7997', class='form-control', placeholder='Enter Message', required)
-
-      br
-      select(name="field_ff576494-50ce-42fc-aff0-a14f510dc4d8", required)#field_ff576494-50ce-42fc-aff0-a14f510dc4d8
-        option Abortion
-        option Agriculture
-        option Animal Rights
-        option Budget/Spending
-        option Business
-        option Civil Rights
-        option Commerce
-        option Congratulations/Birthdays
-        option Crime/Drugs
-        option Debt Ceiling
-        option Defense
-        option Education
-        option Elections
-        option Energy
-        option Environment
-        option Family Values
-        option Foreign Relations
-        option Health
-        option Homeland Security
-        option Housing
-        option Immigration
-        option Intelligence
-        option Jobs
-        option Judiciary
-        option Labor
-        option Medicare
-        option Parks and Public Lands
-        option Pension/Retirement
-        option Postal
-        option Regulatory Reform
-        option Religion
-        option Science/Technology
-        option Second Amendment
-        option Senate Procedure
-        option Small Business
-        option Social Security
-        option Taxes
-        option Telecommunications
-        option Tobacco
-        option Trade
-        option Transportation
-        option Unemployment
-        option Veterans
-        option Water/Rivers
-        option Welfare
-        option Other
+	  h3 Prefix
+      select(name="prefix", required)#prefix
+        option(value='') Select One
+        option Mr.
+        option Mrs.
+        option Ms.
+        option Miss
+		option Dr.
 		
+      br
+      input(type='text', id='firstname', name='firstname', class='form-control', placeholder='Enter First Name', required)
+      input(type='text', id='lastname', name='lastname', class='form-control', placeholder='Enter Last Name', required)
+      input(type='text', id='streetaddress1', name='streetaddress1', class='form-control', placeholder='Address 1', required)
+      input(type='text', id='streetaddress2', name='streetaddress2', class='form-control', placeholder='Address 2')
+
+	  br
+      input(type='text', id='city', name='city', class='form-control', placeholder='City', required)	  
+      input(type='text', id='address_zip_5', name='address_zip_5', class='form-control', required)
+      input(type='text', id='address_state_postal_abbrev', name='address_state_postal_abbrev', class='form-control', placeholder='State Postal Abbrev', required)	  
+      input(type='text', id='phone', name='phone', class='form-control', placeholder='Phone', required)
+      input(type='text', id='email', name='email', class='form-control', placeholder='Email', required)
+
+      br
+      input(type='text', id='subject', name='subject', class='form-control', placeholder='Enter Subject', required)
+      input(type='text', id='message', name='message', class='form-control', placeholder='Enter Message', required)
+
       br
       input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
