@@ -24,6 +24,10 @@ contact_form:
         selector: "#first_name"
         value: $NAME_FIRST
         required: true
+      - name: lastname
+        selector: "#lastname"
+        value: $NAME_LAST
+        required: true
       - name: streetaddress1
         selector: "#streetaddress1"
         value: $ADDRESS_STREET
