@@ -1,7 +1,7 @@
 bioguide: B000575
 contact_form:
   method: post
-  action: ""
+  action: "fake/action"
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/B000575"
     - select:
