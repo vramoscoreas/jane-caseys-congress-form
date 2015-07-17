@@ -21,7 +21,7 @@ contact_form:
         options: US_STATES
     - fill_in:
       - name: firstname
-        selector: "#first_name"
+        selector: "#firstname"
         value: $NAME_FIRST
         required: true
       - name: streetaddress1
