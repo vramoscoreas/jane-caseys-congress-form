@@ -20,8 +20,8 @@ contact_form:
         required: Yes
         options: US_STATES
     - fill_in:
-      - name: first_name
-        selector: "#first_name"
+      - name: firstname
+        selector: "#firstname"
         value: $NAME_FIRST
         required: true
       - name: lastname
@@ -32,10 +32,6 @@ contact_form:
         selector: "#streetaddress1"
         value: $ADDRESS_STREET
         required: Yes
-      - name: streetaddress2
-        selector: "#streetaddress2"
-        value: $ADDRESS_STREET_2
-        required: false
       - name: city
         selector: "#city"
         value: $ADDRESS_CITY
