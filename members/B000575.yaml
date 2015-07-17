@@ -20,8 +20,8 @@ contact_form:
         required: Yes
         options: US_STATES
     - fill_in:
-      - name: firstname
-        selector: "#firstname"
+      - name: first_name
+        selector: "#first_name"
         value: $NAME_FIRST
         required: true
       - name: lastname
