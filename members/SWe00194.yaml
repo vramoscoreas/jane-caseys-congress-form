@@ -146,6 +146,10 @@ contact_form:
         selector: "#message"
         value: $MESSAGE
         required: true
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
     - select: 
       - name: prefix
         selector: "select[name='prefix']"

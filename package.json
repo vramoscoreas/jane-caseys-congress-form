@@ -16,6 +16,7 @@
     "node": ">=0.8.8"
   },
   "dependencies": {
+    "bluebird": "^2.9.33",
     "body-parser": "*",
     "config": "*",
     "express": "3.x",
@@ -29,6 +30,7 @@
     "nodebootstrap-clustering": "*",
     "nodebootstrap-server": "^0.1.0",
     "request": "~2.36.0",
+    "romis": "0.0.5",
     "yaml": "*",
     "yaml-js": "^0.1.0"
   },

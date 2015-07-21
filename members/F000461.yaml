@@ -29,6 +29,10 @@ contact_form:
       - name: phone
         selector: "#phone"
         value: $PHONE
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
   success:
     headers:
       status: 200

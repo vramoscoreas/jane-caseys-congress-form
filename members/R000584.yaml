@@ -11,6 +11,11 @@ contact_form:
         captcha_id_selector: "#recaptcha_challenge_field"
         value: $CAPTCHA_SOLUTION
         required: true
+    - fill_in:
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
     - click_on:
       - value: Submit
         selector: "#submitcaptcha"

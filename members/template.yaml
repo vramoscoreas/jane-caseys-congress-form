@@ -9,6 +9,11 @@ contact_form:
         selector:
         value:
         required: true
+    - fill_in:
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
     - select:
       - name:
         selector:
