@@ -31,6 +31,7 @@
     "nodebootstrap-server": "^0.1.0",
     "request": "~2.36.0",
     "romis": "0.0.5",
+    "uuid": "^2.0.1",
     "yaml": "*",
     "yaml-js": "^0.1.0"
   },
