@@ -26,13 +26,13 @@ contact_form:
         selector: "#lastname"
         value: $NAME_LAST
         required: true
-      - name: message
-        selector: "#message"
-        value: $MESSAGE
-        required: true
       - name: subject
         selector: "#subject"
         value: $SUBJECT
+        required: true
+      - name: message
+        selector: "#message"
+        value: $MESSAGE
         required: true
     - click_on:
       - value: Submit
