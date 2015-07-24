@@ -1,7 +1,8 @@
 jane-caseys-congress-form
 =========================
 
-A set of fake pages to contact our beloved Jane Casey
+A set of fake pages to contact our beloved Jane Casey.
+The email textfield must be on each yaml and view.
 
 
 Setup
