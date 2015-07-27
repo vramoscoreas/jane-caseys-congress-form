@@ -1,94 +1,60 @@
-bioguide: B001267
+bioguide: K000384
 contact_form:
   method: post
   action: ""
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/B001267"
-    - fill_in:
-      - name: streetaddress1
-        selector: "#streetaddress1"
-        value: $ADDRESS_STREET
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/K000384"
+    - select:
+      - name: prefix
+        selector: "#prefix"
+        value: $NAME_PREFIX
         required: true
-      - name: streetaddress2
-        selector: "#streetaddress2"
-        value: $ADDRESS_STREET_2
-        required: false
-      - name: city
-        selector: "#city"
-        value: $ADDRESS_CITY
-        required: true
-      - name: address_zip_plus_4
-        selector: "#address_zip_plus_4"
-        value: $ADDRESS_ZIP_PLUS_4
-        required: true
-      - name: address_zip_5
-        selector: "#address_zip_5"
-        value: $ADDRESS_ZIP5
-        required: true
-      - name: address_zip_4
-        selector: "#address_zip_4"
-        value: $ADDRESS_ZIP4
-        required: true
-      - name: address_county
-        selector: "#address_county"
-        value: $ADDRESS_COUNTY
-        required: true
-      - name: phone_parentheses
-        selector: "#phone_parentheses"
-        value: $PHONE_PARENTHESES
-        required: true
-      - name: phone_hyphens
-        selector: "#phone_hyphens"
-        value: $PHONE_HYPHENS
-        required: true
-      - name: phone_area_code
-        selector: "#phone_area_code"
-        value: $PHONE_AREA_CODE
-        required: true
-      - name: phone_exchange
-        selector: "#phone_exchange"
-        value: $PHONE_EXCHANGE_CODE
-        required: true
-      - name: phone_subscriber
-        selector: "#phone_subscriber"
-        value: $PHONE_SUBSCRIBER_NUMBER
-        required: true
-      - name: phone_no_area_code
-        selector: "#phone_no_area_code"
-        value: $PHONE_NO_AREA_CODE
-        required: true
-      - name: phone
-        selector: "#phone"
-        value: $PHONE
-        required: true
-      - name: address_state_postal_abbrev
-        selector: "#address_state_postal_abbrev"
+        options:
+          - Mr.
+          - Mrs.
+          - Ms.
+          - Miss
+      - name: state
+        selector: "#state"
         value: $ADDRESS_STATE_POSTAL_ABBREV
-        required: true
-      - name: address_state_full
-        selector: "#address_state_full"
-        value: $ADDRESS_STATE_FULL
-        required: true
-      - name: lastname
-        selector: "#lastname"
-        value: $NAME_LAST
-        required: true
+        required: Yes
+        options: US_STATES
+      - name: response
+        selector: "#response"
+        value: "yes"
+        required: Yes
+    - fill_in:
       - name: firstname
         selector: "#firstname"
         value: $NAME_FIRST
         required: true
-      - name: fullname
-        selector: "#fullname"
-        value: $NAME_FULL
-        required: true
+      - name: streetaddress1
+        selector: "#streetaddress1"
+        value: $ADDRESS_STREET
+        required: Yes
+      - name: streetaddress2
+        selector: "#streetaddress2"
+        value: $ADDRESS_STREET_2
+      - name: city
+        selector: "#city"
+        value: $ADDRESS_CITY
+        required: Yes
+      - name: zipcode
+        selector: "#zipcode"
+        value: $ADDRESS_ZIP5
+        required: Yes
+      - name: phonenumber
+        selector: "#phonenumber"
+        value: $PHONE
+        required: Yes
+      - name: subject
+        selector: "[name='subject']"
+        value: $SUBJECT
+        required: Yes
       - name: message
         selector: "#message"
         value: $MESSAGE
-        required: true
-      - name: subject
-        selector: "#subject"
-        value: $SUBJECT
-        required: true
+        required: Yes
       - name: email
         selector: "#email"
         value: $EMAIL
