@@ -1,0 +1,131 @@
+bioguide: B001267
+contact_form:
+  method: post
+  action: /?p=contact
+  steps:
+    - visit: ""
+    - find: 
+        - selector: "#gen-fieldid-3"
+    - fill_in:
+        - name: firstName
+          selector: "#gen-fieldid-3"
+          value: $NAME_FIRST
+          required: true
+        - name: lastName
+          selector: "#gen-fieldid-5"
+          value: $NAME_LAST
+          required: true
+        - name: Address1
+          selector: "#gen-fieldid-7"
+          value: $ADDRESS_STREET
+          required: true
+        - name: city
+          selector: "#gen-fieldid-11"
+          value: $ADDRESS_CITY
+          required: true
+        - name: zip
+          selector: "#gen-fieldid-15"
+          value: $ADDRESS_ZIP5
+          required: true
+        - name: phone
+          selector: "#gen-fieldid-17"
+          value: $PHONE
+          required: true
+        - name: email
+          selector: "#gen-fieldid-19"
+          value: $EMAIL
+          required: true
+        - name: vemail
+          selector: "#gen-fieldid-21"
+          value: $EMAIL
+          required: true
+        - name: Subject
+          selector: "#gen-fieldid-25"
+          value: $SUBJECT
+          required: true
+        - name: msg
+          selector: "#gen-fieldid-27"
+          value: $MESSAGE
+          required: true
+    - select:
+        - name: Prefix
+          selector: "#gen-fieldid-1"
+          value: $NAME_PREFIX
+          required: true
+          options:
+            "-- please select a prefix --": "null"
+            Mr.: Mr.
+            Mrs.: Mrs.
+            Ms.: Ms.
+            Mr. and Mrs.: Mr. and Mrs.
+            Miss: Miss
+            Dr.: Dr.
+            Dr. and Mrs.: Dr. and Mrs.
+            Dr. and Mr.: Dr. and Mr.
+            Admiral: Admiral
+            Captain: Captain
+            Chief Master Sergeant: Chief Master Sergeant
+            Colonel: Colonel
+            Commander: Commander
+            Corporal: Corporal
+            Father: Father
+            Lieutenant: Lieutenant
+            Lieutenant Colonel: Lieutenant Colonel
+            Master Sergeant: Master Sergeant
+            Reverend: Reverend
+            Sergeant: Sergeant
+            Second Lieutenant: Second Lieutenant
+            Sergeant Major: Sergeant Major
+            Sister: Sister
+            Technical Sergeant: Technical Sergeant
+        - name: Issue
+          selector: "#gen-fieldid-23"
+          value: $TOPIC
+          required: true
+          options:
+            "-- please select a topic --": "null"
+            Agriculture: Agriculture
+            Animal Rights: Animal Rights
+            Banking and Financial Services: Banking and Financial Services
+            Budget and Fiscal Responsibility: Budget and Fiscal Responsibility
+            Children and Families: Children and Families
+            Congratulatory or Commemorative Letter Requests: Congratulatory or Commemorative Letter Requests
+            Consumer Finance Protection Bureau: Consumer Finance Protection Bureau
+            Defense and Military: Defense and Military
+            Economy and Commerce: Economy and Commerce
+            Education: Education
+            Energy: Energy
+            Environment: Environment
+            Finance: Finance
+            Foreign Policy: Foreign Policy
+            Government Affairs: Government Affairs
+            Health Care: Health Care
+            Housing: Housing
+            Homeland Security: Homeland Security
+            Immigration: Immigration
+            Indian Affairs: Indian Affairs
+            Interior: "Interior "
+            International Trade: International Trade
+            Judiciary: Judiciary
+            Labor: Labor
+            Medicare and Medicaid: Medicare and Medicaid
+            Postal Affairs: Postal Affairs
+            Second Amendment: Second Amendment
+            Science and Technology: Science and Technology
+            Small Business: Small Business
+            Social Security: Social Security
+            Taxes: Taxes
+            Telecommunications: Telecommunications
+            Transportation: Transportation
+            Veterans Affairs: Veterans Affairs
+            U.S. Military Academies: U.S. Military Academies
+            "Women's Issues": "Women's Issues"
+            Other: Other
+    - click_on:
+        - value: Submit
+          selector: "form.-validate-form[name='thisForm'] input[name='formaction']"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: Thank you for submitting your comments.
