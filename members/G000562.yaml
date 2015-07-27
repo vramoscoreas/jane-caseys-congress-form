@@ -1,186 +1,103 @@
 bioguide: G000562
 contact_form:
   method: post
-  action: /content/contact-cory
+  action: ""
   steps:
-    - visit: ""
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/G000562"
     - fill_in:
-        - name: "submitted[constituent_information][first_name]"
-          selector: "#edit-submitted-constituent-information-first-name"
-          value: $NAME_FIRST
-          required: true
-        - name: "submitted[constituent_information][last_name]"
-          selector: "#edit-submitted-constituent-information-last-name"
-          value: $NAME_LAST
-          required: true
-        - name: "submitted[constituent_information][address_1]"
-          selector: "#edit-submitted-constituent-information-address-1"
-          value: $ADDRESS_STREET
-          required: true
-        - name: "submitted[constituent_information][city]"
-          selector: "#edit-submitted-constituent-information-city"
-          value: $ADDRESS_CITY
-          required: true
-        - name: "submitted[constituent_information][zip]"
-          selector: "#edit-submitted-constituent-information-zip"
-          value: $ADDRESS_ZIP5
-          required: true
-        - name: "submitted[constituent_information][email]"
-          selector: "#edit-submitted-constituent-information-email"
-          value: $EMAIL
-          required: true
-        - name: "submitted[message_details][please_type_the_subject_of_your_message]"
-          selector: "#edit-submitted-message-details-please-type-the-subject-of-your-message"
-          value: $SUBJECT
-          required: true
-        - name: "submitted[message_details][message]"
-          selector: "#edit-submitted-message-details-message"
-          value: $MESSAGE
-          required: true
-    - select:
-        - name: "submitted[constituent_information][prefix]"
-          selector: "#edit-submitted-constituent-information-prefix"
-          value: $NAME_PREFIX
-          required: true
-          options:
-            - Mr.
-            - Mrs.
-            - Ms.
-            - Mr. and Mrs.
-            - Dr.
-            - Dr. and Mrs.
-            - Reverend
-            - Sister
-            - Pastor
-            - The Honorable
-            - Representative
-            - Senator
-        - name: "submitted[constituent_information][state]"
-          selector: "#edit-submitted-constituent-information-state"
-          value: $ADDRESS_STATE_POSTAL_ABBREV
-          required: true
-          options:
-            - AA
-            - AE
-            - AP
-            - AL
-            - AK
-            - AZ
-            - AR
-            - CA
-            - CO
-            - CT
-            - DE
-            - DC
-            - FL
-            - GA
-            - HI
-            - ID
-            - IL
-            - IN
-            - IA
-            - KS
-            - KY
-            - LA
-            - ME
-            - MD
-            - MA
-            - MI
-            - MN
-            - MS
-            - MO
-            - MT
-            - NE
-            - NV
-            - NH
-            - NJ
-            - NM
-            - NY
-            - NC
-            - ND
-            - OH
-            - OK
-            - OR
-            - PA
-            - RI
-            - SC
-            - SD
-            - TN
-            - TX
-            - UT
-            - VT
-            - VA
-            - WA
-            - WV
-            - WI
-            - WY
-        - name: "submitted[message_details][topic]"
-          selector: "#edit-submitted-message-details-topic"
-          value: $TOPIC
-          required: true
-          options:
-            - Abortion
-            - Adoption
-            - Aging
-            - Agriculture
-            - Animal Welfare
-            - Appropriations
-            - Banking
-            - Campaign Finance
-            - Children
-            - Civil Rights
-            - Commerce
-            - Communications
-            - Congratulations
-            - Congressional Issues
-            - Crime
-            - Defense
-            - Drugs
-            - Economy
-            - Education Higher
-            - Education K through 12
-            - Elections
-            - Energy
-            - Environment
-            - Family
-            - Food Stamps
-            - Foreign Affairs
-            - Gun Control
-            - Health
-            - Homeland Security
-            - Housing
-            - Immigration
-            - Inauguration
-            - Insurance Health
-            - Insurance Other
-            - Interior
-            - Iran
-            - Iraq
-            - Judiciary
-            - Labor
-            - Medicaid
-            - Medicare
-            - Military
-            - NASA
-            - Nutrition
-            - Other
-            - Patents
-            - Pensions
-            - Securities
-            - Small Business
-            - Social Security
-            - Taxes
-            - Tobacco
-            - Trade
-            - Transportation
-            - Veterans
-            - Welfare
-            - "Women's Issues"
+      - name: streetaddress1
+        selector: "#streetaddress1"
+        value: $ADDRESS_STREET
+        required: true
+      - name: streetaddress2
+        selector: "#streetaddress2"
+        value: $ADDRESS_STREET_2
+        required: false
+      - name: city
+        selector: "#city"
+        value: $ADDRESS_CITY
+        required: true
+      - name: address_zip_plus_4
+        selector: "#address_zip_plus_4"
+        value: $ADDRESS_ZIP_PLUS_4
+        required: true
+      - name: address_zip_5
+        selector: "#address_zip_5"
+        value: $ADDRESS_ZIP5
+        required: true
+      - name: address_zip_4
+        selector: "#address_zip_4"
+        value: $ADDRESS_ZIP4
+        required: true
+      - name: address_county
+        selector: "#address_county"
+        value: $ADDRESS_COUNTY
+        required: true
+      - name: phone_parentheses
+        selector: "#phone_parentheses"
+        value: $PHONE_PARENTHESES
+        required: true
+      - name: phone_hyphens
+        selector: "#phone_hyphens"
+        value: $PHONE_HYPHENS
+        required: true
+      - name: phone_area_code
+        selector: "#phone_area_code"
+        value: $PHONE_AREA_CODE
+        required: true
+      - name: phone_exchange
+        selector: "#phone_exchange"
+        value: $PHONE_EXCHANGE_CODE
+        required: true
+      - name: phone_subscriber
+        selector: "#phone_subscriber"
+        value: $PHONE_SUBSCRIBER_NUMBER
+        required: true
+      - name: phone_no_area_code
+        selector: "#phone_no_area_code"
+        value: $PHONE_NO_AREA_CODE
+        required: true
+      - name: phone
+        selector: "#phone"
+        value: $PHONE
+        required: true
+      - name: address_state_postal_abbrev
+        selector: "#address_state_postal_abbrev"
+        value: $ADDRESS_STATE_POSTAL_ABBREV
+        required: true
+      - name: address_state_full
+        selector: "#address_state_full"
+        value: $ADDRESS_STATE_FULL
+        required: true
+      - name: lastname
+        selector: "#lastname"
+        value: $NAME_LAST
+        required: true
+      - name: firstname
+        selector: "#firstname"
+        value: $NAME_FIRST
+        required: true
+      - name: fullname
+        selector: "#fullname"
+        value: $NAME_FULL
+        required: true
+      - name: message
+        selector: "#message"
+        value: $MESSAGE
+        required: true
+      - name: subject
+        selector: "#subject"
+        value: $SUBJECT
+        required: true
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
     - click_on:
-        - value: Submit
-          selector: "#webform-client-form-78 input[name='op']"
+      - value: Submit
+        selector: "#submit"
   success:
     headers:
       status: 200
     body:
-      contains: "Thank you, your message has been received."
+      contains: "Success!"
