@@ -12,6 +12,10 @@ contact_form:
         value: $CAPTCHA_SOLUTION
         required: true
     - fill_in:
+      - name: phonenumber
+        selector: "#phonenumber"
+        value: $PHONE
+        required: Yes
       - name: email
         selector: "#email"
         value: $EMAIL
