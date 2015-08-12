@@ -1,9 +1,9 @@
-bioguide: SWe00074
+bioguide: state_ne_gov_pete_ricketts
 contact_form:
   method: post
   action: webform.cfm
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/SWe00074"
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/state_ne_gov_pete_ricketts"
     - wait:
       - value: 2
     - recaptcha:
