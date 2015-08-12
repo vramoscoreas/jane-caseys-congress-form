@@ -3,7 +3,7 @@ contact_form:
   method: post
   action: webform.cfm
   steps:
-    - visit: "http://gov.idaho.gov/ourgov/contact.html"
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/SWe00074"
     - wait:
       - value: 2
     - recaptcha:
@@ -25,7 +25,7 @@ contact_form:
         types: [image, audio]
     - fill_in:
       - name: email
-        selector: "#emailTextbox"
+        selector: "#email"
         value: $EMAIL
         required: true
     - click_on:
