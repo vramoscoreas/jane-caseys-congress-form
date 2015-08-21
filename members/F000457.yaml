@@ -1,0 +1,23 @@
+bioguide: F000457
+contact_form:
+  method: post
+  action: "fake/action2"
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/F000457"
+    - fill_in:
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: Yes
+      - name: phonenumber
+        selector: "#phonenumber"
+        value: $PHONE
+        required: Yes
+    - click_on:
+      - value: Submit
+        selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
