@@ -19,7 +19,11 @@ contact_form:
       - name: phonenumber
         selector: "#phonenumber"
         value: $PHONE
-        required: Yes 
+        required: Yes
+      - name: streetaddress2
+        selector: "#streetaddress2"
+        value: $ADDRESS_STREET_2
+        required: true
     - click_on:
       - value: Submit
         selector: "#submitcaptcha"
