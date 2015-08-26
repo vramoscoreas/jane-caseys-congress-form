@@ -32,6 +32,10 @@ contact_form:
       - name: phonenumber
         selector: "#phonenumber"
         value: $PHONE
+        required: true
+      - name: streetaddress2
+        selector: "#streetaddress2"
+        value: $ADDRESS_STREET_2
         required: true        
     - click_on:
       - value: Submit
