@@ -12,18 +12,14 @@ contact_form:
         value: $CAPTCHA_SOLUTION
         required: true
     - fill_in:
-      - name: phonenumber
-        selector: "#phonenumber"
-        value: $PHONE
-        required: true
       - name: email
         selector: "#email"
         value: $EMAIL
         required: true
-      - name: streetaddress2
-        selector: "#streetaddress2"
-        value: $ADDRESS_STREET_2
-        required: true        
+      - name: phonenumber
+        selector: "#phonenumber"
+        value: $PHONE
+        required: true
     - click_on:
       - value: Submit
         selector: "#submitcaptcha"
