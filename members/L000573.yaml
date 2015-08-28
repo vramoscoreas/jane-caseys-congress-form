@@ -23,7 +23,7 @@ contact_form:
       - name: streetaddress2
         selector: "#streetaddress2"
         value: $ADDRESS_STREET_2
-        required: false        
+        required: true        
     - click_on:
       - value: Submit
         selector: "#submitcaptcha"
