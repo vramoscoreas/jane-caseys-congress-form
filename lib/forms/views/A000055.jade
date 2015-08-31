@@ -5,5 +5,6 @@ block content
   form(method='POST', action='/forms/solveNewRecaptcha', role="form")
     .row
     input(type='text', id='email', name='email', class='form-control', placeholder='Email', required)
-    input(type='text', id='phonenumber', name='phonenumber', class='form-control', placeholder='Enter Phone', required)    
+    input(type='text', id='phonenumber', name='phonenumber', class='form-control', placeholder='Enter Phone')
+    input(type='text', id='streetaddress2', name='streetaddress2', class='form-control', placeholder='Address 2', required)    
     input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
