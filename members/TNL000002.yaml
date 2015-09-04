@@ -1,0 +1,35 @@
+bioguide: TNL000002
+contact_form:
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/TNL000002"
+    - fill_in:
+      - name: recaptcha_response_field
+        selector: "#recaptcha_response_field"
+        captcha_selector: "img#recaptcha_challenge_image"
+        captcha_id_selector: "#recaptcha_challenge_field"
+        value: $CAPTCHA_SOLUTION
+        required: true
+    - fill_in:
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
+      - name: phonenumber
+        selector: "#phonenumber"
+        value: $PHONE
+        required: true
+      - name: captcha
+        selector: "#fscf_captcha_code1"
+        captcha_selector: "#fscf_captcha_image1"
+        value: "$CAPTCHA_SOLUTION"
+        required: true        
+    - click_on:
+      - value: Submit
+        selector: "#submitcaptcha"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
