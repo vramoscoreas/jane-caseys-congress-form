@@ -6,6 +6,8 @@ block content
     .captchaForm
       img(src="http://www.tngopsenate.com/wp-content/plugins/si-contact-form/captcha/securimage_show.php" alt="captcha image" id="captchaImg")
       br
+         textarea(name="recaptchachallenge", rows="3", cols="40")
+         input(type="hidden", name="recaptcharesponse", value="manual_challenge")      
       input(type='text' id='captchaResponse' name='captchaResponse' value='#{bioId}')
       input(type='text', id='email', name='email', class='form-control', placeholder='Email', required)
       input(type='submit', id='submitcaptcha', name='submitcaptcha', value='Submit', class='btn btn-default')
