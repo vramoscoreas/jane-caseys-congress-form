@@ -19,7 +19,7 @@ contact_form:
         required: true        
     - click_on:
       - value: Submit
-        selector: "#recaptchaSubmit"
+        selector: "#submit"
   success:
     headers:
       status: 200
