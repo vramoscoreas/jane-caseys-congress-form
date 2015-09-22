@@ -1,9 +1,9 @@
-bioguide: SWe00194
+bioguide: state_nj_gov_chris_christie
 contact_form:
   method: post
   action: ""
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/SWe00194"
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/state_nj_gov_chris_christie"
     - select:
       - name: selected
         selector: "select[name='topic']"
