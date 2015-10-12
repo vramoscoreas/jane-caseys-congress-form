@@ -101,8 +101,8 @@ contact_form:
         selector "#topic"
         value: $TOPIC
         required: true
-      - name: subtopic
-        selector "#subtopic"
+      - name: subtopic1
+        selector "#subtopic1"
         value: $SUBTOPIC1
         required: true
       - name: subject
