@@ -3,7 +3,7 @@ contact_form:
   method: POST
   action: ""
   steps:
-    - visit: ""
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/F000062"
     - fill_in:
         - name: firstname
           selector: "#firstname"
