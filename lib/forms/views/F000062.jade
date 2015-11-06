@@ -36,8 +36,16 @@ block content
       	
       br
       h4 Topic
-      input(type='radio', name='topic', id='opts1', value='Abortion')
-      input(type='radio', name='topic', id='opts2', value='Animals')
+      label(for='opts1') Abortion
+        input(type='radio', name='topic', id='opts1', value='Abortion')
+      label(for='opts2') Animals
+        input(type='radio', name='topic', id='opts2', value='Animals')
+      label(for='opts3') Disabilities
+        input(type='radio', name='topic', id='opts3', value='Disabilities')
+      label(for='opts4') Economic Development
+        input(type='radio', name='topic', id='opts4', value='Economic Development')
+      label(for='opts5') Education Issues
+        input(type='radio', name='topic', id='opts5', value='Education Issues')
       
       br
       input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
