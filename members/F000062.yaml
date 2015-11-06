@@ -44,6 +44,9 @@ contact_form:
           options:
             Abortion: "#opts1"
             Animals: "#opts2"
+            Disabilities: "#opts3"
+            Economy: "#opts4"
+            Education: "#opts5"
     - select:
         - name: prefix
           selector: "#prefix"
