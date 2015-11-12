@@ -4,6 +4,12 @@ block content
 
   form(method='POST', action='/forms/submitFormData', role="form")
     .row
+      br
+      input(type='text' id='bioid' name='bioid' value='#{bioId}')
+      input(type='text', id='firstname', name='firstname', class='form-control', placeholder='Enter First Name', required)
+      input(type='text', id='lastname', name='lastname', class='form-control', placeholder='Enter Last Name', required)
+      input(type='text', id='address_zip_5', name='address_zip_5', class='form-control', placeholder='Enter Zip', required)
+      br
       h3 Prefix
       select(name="prefix", required)#prefix
         option(value='') Select One
@@ -11,11 +17,9 @@ block content
         option Mrs.
         option Ms.
         option Miss
+        option Dr.
+        option The Honorable        
       br
-      br
-      input(type='text' id='bioid' name='bioid' value='#{bioId}')
-      input(type='text', id='firstname', name='firstname', class='form-control', placeholder='Enter First Name', required)
-      input(type='text', id='lastname', name='lastname', class='form-control', placeholder='Enter Last Name', required)
-      input(type='text', id='address_zip_5', name='address_zip_5', class='form-control', placeholder='Enter Zip', required)
+      input(type='text', id='address_country', name='address_country', class='form-control', placeholder='Enter a country', required)
       br
       input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
