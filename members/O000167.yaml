@@ -63,6 +63,45 @@ contact_form:
           - The Biden Family
           - The First Family
           - Other
+    - fill_in:
+      - name: edit-submitted-message
+        selector: "#edit-submitted-message"
+        value: $MESSAGE
+        required: true
+      - name: edit-submitted-delivery-agent-name
+        selector: "#edit-submitted-delivery-agent-name"
+        value: EveryAction
+        required: true
+      - name: edit-submitted-delivery-agent-first-name
+        selector: "#edit-submitted-delivery-agent-first-name"
+        value: Mike
+        required: true
+      - name: edit-submitted-delivery-agent-last-name
+        selector: "#edit-submitted-delivery-agent-last-name"
+        value: Liddell
+        required: true
+      - name: edit-submitted-delivery-agent-email
+        selector: "#edit-submitted-delivery-agent-email"
+        value: advocacysupport@everyaction.com
+        required: true
+      - name: edit-submitted-delivery-agent-phone
+        selector: "#edit-submitted-delivery-agent-phone"
+        value: 202-370-8050
+      - name: edit-submitted-delivery-agent-title
+        selector: "#edit-submitted-delivery-agent-title"
+        value: General Manager, Digital
+      - name: edit-submitted-delivery-agent-organization
+        selector: "#edit-submitted-delivery-agent-organization"
+        value: EveryAction
+      - name: edit-submitted-delivery-agent-street
+        selector: "#edit-submitted-delivery-agent-street"
+        value: 1101 15TH ST NW STE 500
+      - name: edit-submitted-delivery-agent-zip
+        selector: "#edit-submitted-delivery-agent-zip"
+        value: 20005-5006
+      - name: edit-submitted-delivery-agent-city
+        selector: "#edit-submitted-delivery-agent-city"
+        value: Washington
     - select:
       - name: submitted[delivery_agent_state]
         selector: "#edit-submitted-delivery-agent-state"
