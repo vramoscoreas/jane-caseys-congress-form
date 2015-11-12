@@ -1,0 +1,119 @@
+bioguide: O000167
+contact_form:
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/O000167"
+    - fill_in:
+        - name: firstname
+          selector: "#firstname"
+          value: $NAME_FIRST
+          required: true
+        - name: lastname
+          selector: "#lastname"
+          value: $NAME_LAST
+          required: true
+        - name: address_zip_5
+          selector: "#address_zip_5"
+          value: $ADDRESS_ZIP5
+          required: true
+    - select:
+        - name: prefix
+          selector: "#prefix"
+          value: $NAME_PREFIX
+          required: true
+          options:
+            - Mr.
+            - Mrs.
+            - Ms.
+            - Miss
+            - Dr.
+            - The Honorable
+        - name: address_country
+          selector: "#address_country"
+          value: United States
+          required: true			  
+        - select:
+          - name: field_6544a2ff-bc89-4c03-b786-c7927f5bc6f7
+            selector: "#topic"
+            value: $TOPIC
+            required: true
+            options:
+              - Afghanistan & Iraq
+              - Civil Rights
+              - Economy
+              - Education
+              - Energy
+              - Environment
+              - Foreign Policy
+              - Health Care
+              - Homeland Security
+              - Housing
+              - Immigration
+              - Job Creation
+              - Middle Class Task Force
+              - Recovery Act
+              - Science & Technology
+              - Seniors
+              - Taxes
+              - Transportation
+              - Veterans
+              - Help with a Federal Agency
+              - The Administration
+              - The Biden Family
+              - The First Family
+              - Other
+    - fill_in:
+        - name: submitted[message]
+          selector: "#edit-submitted-message"
+          value: $MESSAGE
+          required: true
+        - name: submitted[delivery_agent_name]
+          selector: "#edit-submitted-delivery-agent-name"
+          value: EveryAction
+          required: true
+        - name: submitted[delivery_agent_first_name]
+          selector: "#edit-submitted-delivery-agent-first-name"
+          value: Mike
+          required: true
+        - name: submitted[delivery_agent_last_name]
+          selector: "#edit-submitted-delivery-agent-last-name"
+          value: Liddell
+          required: true
+        - name: submitted[delivery_agent_email]
+          selector: "#edit-submitted-delivery-agent-email"
+          value: advocacysupport@everyaction.com
+          required: true
+        - name: submitted[delivery_agent_phone]
+          selector: "#edit-submitted-delivery-agent-phone"
+          value: 202-370-8050
+        - name: submitted[delivery_agent_title]
+          selector: "#edit-submitted-delivery-agent-title"
+          value: General Manager, Digital
+        - name: submitted[delivery_agent_organization]
+          selector: "#edit-submitted-delivery-agent-organization"
+          value: EveryAction
+        - name: submitted[delivery_agent_street]
+          selector: "#edit-submitted-delivery-agent-street"
+          value: 1101 15TH ST NW STE 500
+        - name: submitted[delivery_agent_zip]
+          selector: "#edit-submitted-delivery-agent-zip"
+          value: 20005-5006
+        - name: submitted[delivery_agent_city]
+          selector: "#edit-submitted-delivery-agent-city"
+          value: Washington
+    - select:
+        - name: submitted[delivery_agent_state]
+          selector: "#edit-submitted-delivery-agent-city"
+          value: DC
+        - name: submitted[delivery_agent_country]
+          selector: "#edit-submitted-delivery-agent-country"
+          value: United States		  
+    - click_on:
+        - value: Submit
+          selector: "#submit"		  
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
