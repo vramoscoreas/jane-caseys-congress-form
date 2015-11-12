@@ -32,7 +32,37 @@ contact_form:
       - name: address_country
         selector: "#address_country"
         value: United States
-        required: true          
+        required: true
+    - select:
+      - name: topic
+        selector: "#topic"
+        value: $TOPIC
+        required: true
+        options:
+          Afghanistan and Iraq
+          Civil Rights
+          Economy
+          Education
+          Energy
+          Environment
+          Foreign Policy
+          Health Care
+          Homeland Security
+          Housing
+          Immigration
+          Job Creation
+          Middle Class Task Force
+          Recovery Act
+          Science and Technology
+          Seniors
+          Taxes
+          Transportation
+          Veterans
+          Help with a Federal Agency
+          The Administration
+          The Biden Family
+          The First Family
+          Other        
     - click_on:
       - value: Submit
         selector: "#submit"
