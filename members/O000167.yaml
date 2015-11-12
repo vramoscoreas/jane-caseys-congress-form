@@ -103,10 +103,10 @@ contact_form:
         selector: "#edit-submitted-delivery-agent-city"
         value: Washington
     - select:
-      - name: submitted[delivery_agent_state]
+      - name: edit-submitted-delivery-agent-state
         selector: "#edit-submitted-delivery-agent-state"
         value: DC
-      - name: submitted[delivery_agent_country]
+      - name: edit-submitted-delivery-agent-country
         selector: "#edit-submitted-delivery-agent-country"
         value: United States	      
     - click_on:
