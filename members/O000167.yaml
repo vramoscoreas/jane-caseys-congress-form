@@ -17,18 +17,6 @@ contact_form:
           selector: "#address_zip_5"
           value: $ADDRESS_ZIP5
           required: true
-    - select:
-        - name: prefix
-          selector: "#prefix"
-          value: $NAME_PREFIX
-          required: true
-          options:
-            - Mr.
-            - Mrs.
-            - Ms.
-            - Miss
-            - Dr.
-            - The Honorable
     - click_on:
         - value: Submit
           selector: "#submit"		  
