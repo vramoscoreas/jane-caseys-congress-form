@@ -43,7 +43,7 @@ contact_form:
           required: true
           options:
             Abortion: "#opts1"
-            Animals: "#opts2"
+            Government Affairs: "#opts2"
             Disabilities: "#opts3"
             Economy: "#opts4"
             Education: "#opts5"
