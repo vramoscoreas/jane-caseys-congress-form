@@ -11,6 +11,65 @@ Setup
 1. Run `npm install` then `npm start`
 2. To run as a developer, run `node app.js`
 
+Notes on Adding Forms
+---------------------
+
+1. Views' `form` tag should have the following attributes:
+  - `method` attribute should be `POST`
+  - `action` attribute should be `/forms/submitFormData` (for most cases)
+    - You can optionally include `?key={field}` at the end of the `action`, where `{field}` would be the `name` attribute value for a input within the form. Doing this will setup the key value for the post data to be associated with value of that field.
+2. Views should extend `layout` and put their content within `block content`
+3. Views should be in the `/views/forms` directory
+
+## Example usage of `?key={field}`
+#### Example 1: Using default `email` key
+```jade
+extends layout
+
+block content
+
+  form(method='POST', action='/forms/submitFormData', role="form")
+    .row
+      input(type='text', id='e', name='email', class='form-control', placeholder='Email', required)
+      input(type='text', id='p', name='phonenumber', class='form-control', placeholder='Enter Phone')
+      input(type='text', id='s', name='streetaddress', class='form-control', placeholder='Address', required)
+
+      input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
+
+```
+If `?key=` is not present in the form's `action`, then the `email` field will be used for the post data's key value. The above jade will use the default, email as its key.
+Suppose to filled out the above form with the following data:
+- `email`: 'fake@email.com`
+- `phonenumber`: '1112223333`
+- `streetaddress`: `1 main st`
+
+To only see the post data from this post, you visit: `/forms/postData?key=fake@email.com`
+
+#### Example 2: Using `phonenumber` (or anything else) key
+```jade
+extends layout
+
+block content
+
+  form(method='POST', action='/forms/submitFormData?key=phonenumber', role="form")
+    .row
+      input(type='text', id='e', name='email', class='form-control', placeholder='Email', required)
+      input(type='text', id='p', name='phonenumber', class='form-control', placeholder='Enter Phone')
+      input(type='text', id='s', name='streetaddress', class='form-control', placeholder='Address', required)
+
+      input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
+
+```
+Note that the form's `action` ends with `?key=phonenumber`. This means the post data will use the value of the `phonenumber` input as the key for the post data.
+Suppose to filled out the above form with the following data:
+- `email`: 'fake2@email.com`
+- `phonenumber`: '1112220000`
+- `streetaddress`: `2 main st`
+
+To only see the post data from this post, you visit: `/forms/postData?key=1112220000`
+
+
+
 Forms Available
 ---------------
 
