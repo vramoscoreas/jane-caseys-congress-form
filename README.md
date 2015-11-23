@@ -21,7 +21,7 @@ Notes on Adding Forms
 2. Views should extend `layout` and put their content within `block content`
 3. Views should be in the `/views/forms` directory
 
-## Example usage of `?key={field}`
+### Example usage of `?key={field}`
 #### Example 1: Using default `email` key
 ```jade
 extends layout
