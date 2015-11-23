@@ -8,8 +8,12 @@ The email textfield must be on each yaml and view.
 Setup
 -----
 
-1. Run `npm install` then `npm start`
-2. To run as a developer, run `node app.js`
+1. Run `npm install`
+2. Install [PostgreSQL](http://www.postgresql.org/download/). (Using [Homebrew](http://brew.sh/): `brew install postgres`)
+3. Start PostgreSQL
+  - If on Mac, run `postgres -D /usr/local/var/postgres`
+  - If on Windows, navigate to installation (by default: `C:\Program Files\PostgreSQL\{version}`) then goto the `\scripts` directory and run `runpsql.bat`. Hit enter 4 times to use default startup values.
+4. To run app, run `npm start` or `node app.js`
 
 Notes on Adding Forms
 ---------------------
