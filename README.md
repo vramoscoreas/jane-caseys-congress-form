@@ -39,8 +39,8 @@ block content
 ```
 If `?key=` is not present in the form's `action`, then the `email` field will be used for the post data's key value. The above jade will use the default, email as its key.
 Suppose to filled out the above form with the following data:
-- `email`: 'fake@email.com`
-- `phonenumber`: '1112223333`
+- `email`: `fake@email.com`
+- `phonenumber`: `1112223333`
 - `streetaddress`: `1 main st`
 
 To only see the post data from this post, you visit: `/forms/postData?key=fake@email.com`
@@ -62,8 +62,8 @@ block content
 ```
 Note that the form's `action` ends with `?key=phonenumber`. This means the post data will use the value of the `phonenumber` input as the key for the post data.
 Suppose to filled out the above form with the following data:
-- `email`: 'fake2@email.com`
-- `phonenumber`: '1112220000`
+- `email`: `fake2@email.com`
+- `phonenumber`: `1112220000`
 - `streetaddress`: `2 main st`
 
 To only see the post data from this post, you visit: `/forms/postData?key=1112220000`
