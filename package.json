@@ -25,5 +25,8 @@
   },
   "devDependencies": {
     "jshint": "2.7.0"
+  },
+  "scripts": {
+    "postinstall":"bower install"
   }
 }

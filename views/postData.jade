@@ -1,18 +1,11 @@
 extends layout
+
 block content
-
-    form(method='POST', action=action||'/forms/postData', role="form")
-        input(type='submit', id='submit', name='submit',
-        value='Clear Post Data', class='btn btn-default')
-
-
-    textarea(cols=200, rows='auto', id='data')
-      = postData
-
-
-    script(src="//code.jquery.com/jquery-1.11.0.min.js")
-    script(type='text/javascript').
-      $(function() {
-         $('textarea').height($('textarea').prop('scrollHeight'));
-      });
-
+   .well
+      h1='Place holder for new and improved UI'
+      hr
+      h4='GET /api/data'
+      p='Use endpoint for fetching data. Can append ?key={key} or ?id={id} to query'
+      br
+      h4='POST /api/data'
+      p='Use endpoint for deleting data. Can append ?key={key} or ?id={id} to narrow the delete'

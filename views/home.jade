@@ -13,3 +13,7 @@ block content
   .row
     .col-md-6
       a(href='/forms/W000805') One Step
+
+  .row
+    if(error)
+      p(class='text-danger')='Error: '+error
