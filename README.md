@@ -8,8 +8,8 @@ The email textfield must be on each yaml and view.
 Setup
 -----
 
-1. Run ```./setup.sh```
-2. To run as a developer, run ```./bin/dev_start.sh```
+1. Run `npm install` then `npm start`
+2. To run as a developer, run `node app.js`
 
 Forms Available
 ---------------
