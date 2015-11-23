@@ -11,12 +11,12 @@ module.exports = {
   captcha:
   {
     old:{
-      publicKey:'6LeRdfQSAAAAAG_fUXud4U5gaiQStQ5nWEbUS8Sr',
-      privateKey: '6LeRdfQSAAAAAGGvll55GUQHg9HEAKH9QjUrtG6j'
+      publicKey: process.env.RECAPTCHA_PUBLIC_KEY,
+      privateKey: process.env.RECAPTCHA_PRIVATE_KEY
     },
     new: {
-      publicKey: '6LdRSAYTAAAAAIF6kPVGPOY-Mg6Qvwca0gdphFxN',
-      privateKey: '6LdRSAYTAAAAAIpObr2gN5Ua66yNj0GccY2Euft8'
+      publicKey: process.env.RECAPTCHA_V2_PUBLIC_KEY,
+      privateKey: process.env.RECAPTCHA_V2_PRIVATE_KEY
     }
   }
 
