@@ -10,31 +10,13 @@ contact_form:
         value: $TOPIC
         required: true
         options:
-          Agriculture: AGR.GEN
-          Border Security: BOR.SEC
-          Budget: BGT.GEN
-          Civil Liberties: CIVLIB
-          Defense: DEF
-          Economy and Jobs: JOBS
-          Education: ED
-          Energy: ENE.GEN
-          Environment: ENV.GEN
-          First Responders: FEMA
-          Foreign Affairs: FOR.GEN
-          Gun Violence: GUN CONTROL
-          Health Care: HLT.GEN
-          Housing: HOU.GEN
-          Immigration: IMM.GEN
-          Indian Affairs: INDIAN
-          Law Enforcement: LAW.ENFORCE
-          Miscellaneous: KM1
-          National Security: NAT.SEC
-          Seniors and Social Security: SS.GEN
-          Small Business: SM BUS
-          Taxes: TAX.GEN
-          Technology: TECH
-          Transportation: TRN.GEN
-          Veterans: VET.GEN
+          Agriculture
+          Border Security
+          Budget
+          Civil Liberties
+          Defense
+          Economy and Jobs
+          Education
     - fill_in:
       - name: firstname
         selector: "#firstname"
