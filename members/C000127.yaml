@@ -1,7 +1,7 @@
 bioguide: C000127
 contact_form:
   method: POST
-  action: http://www.cantwell.senate.gov/public/index.cfm/email-maria
+  action: 
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/C000127"
     - select:
