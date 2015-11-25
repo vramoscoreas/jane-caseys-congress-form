@@ -15,7 +15,7 @@ contact_form:
           - Budget
           - Civil Liberties
           - Defense
-          - Economy and Jobs
+          - Miscellaneous
           - Education
     - fill_in:
       - name: firstname
