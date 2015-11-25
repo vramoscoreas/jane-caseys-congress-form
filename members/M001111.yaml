@@ -1,11 +1,11 @@
 bioguide: M001111
 contact_form:
   method: POST
-  action: http://www.murray.senate.gov/public/index.cfm/contactme
+  action: 
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/M001111"
     - select:
-      - name: field_58409530-3430-4481-9b78-4434bd9620eb
+      - name: topic
         selector: "#topic"
         value: $TOPIC
         required: true
