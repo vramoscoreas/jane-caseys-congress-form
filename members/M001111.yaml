@@ -54,7 +54,15 @@ contact_form:
     - fill_in:
       - name: firstname
         selector: "#firstname"
-        value: $FIRST_NAME
+        value: $NAME_FIRST
+        required: true
+      - name: message
+        selector: "#message"
+        value: $MESSAGE
+        required: true
+      - name: subject
+        selector: "#subject"
+        value: $SUBJECT
         required: true
       - name: email
         selector: "#email"
