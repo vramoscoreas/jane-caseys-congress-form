@@ -17,6 +17,7 @@ contact_form:
           - Defense
           - Miscellaneous
           - Education
+          - Science, Technology, Communications
     - fill_in:
       - name: firstname
         selector: "#firstname"
