@@ -5,7 +5,7 @@ contact_form:
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/C000127"
     - select:
-      - name: field_6544a2ff-bc89-4c03-b786-c7927f5bc6f7
+      - name: topic
         selector: "#topic"
         value: $TOPIC
         required: true
