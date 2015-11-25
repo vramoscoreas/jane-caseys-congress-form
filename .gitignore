@@ -31,3 +31,6 @@ postData.txt
 
 # vim swap files
 *.sw[a-z]
+
+# Bower components
+bower_components/*

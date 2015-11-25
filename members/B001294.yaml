@@ -51,10 +51,10 @@ contact_form:
       value: $NAME_PREFIX
       required: true
       options: 
-      - Mr.
-      - Mrs.
-      - Ms.
-      - Dr.
+        Mr.: Mr
+        Mrs.: Mrs.
+        Ms.: Ms.
+        Dr.: Dr.
     - name: ctl00$ctl09$State
       selector: "#ctl00_ctl09_State"
       value: $ADDRESS_STATE_POSTAL_ABBREV
