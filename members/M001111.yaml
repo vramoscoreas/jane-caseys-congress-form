@@ -51,6 +51,7 @@ contact_form:
           "Veterans" : "VETS"
           "Welfare" : "WELF"
           "Women" : "WOMENS"
+          "Miscellaneous" : "Miscellaneous"
     - fill_in:
       - name: firstname
         selector: "#firstname"
