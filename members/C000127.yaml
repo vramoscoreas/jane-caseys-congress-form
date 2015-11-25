@@ -10,13 +10,13 @@ contact_form:
         value: $TOPIC
         required: true
         options:
-          Agriculture
-          Border Security
-          Budget
-          Civil Liberties
-          Defense
-          Economy and Jobs
-          Education
+          - Agriculture
+          - Border Security
+          - Budget
+          - Civil Liberties
+          - Defense
+          - Economy and Jobs
+          - Education
     - fill_in:
       - name: firstname
         selector: "#firstname"
