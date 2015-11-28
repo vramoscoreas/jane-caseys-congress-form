@@ -17,7 +17,6 @@ contact_form:
           - Defense
           - Miscellaneous
           - Education
-          - Science Technology Communications
           - Taxation
     - fill_in:
       - name: firstname
