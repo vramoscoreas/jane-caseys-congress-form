@@ -13,7 +13,12 @@ Setup
 3. Start PostgreSQL
   - If on Mac, run `postgres -D /usr/local/var/postgres`
   - If on Windows, navigate to installation (by default: `C:\Program Files\PostgreSQL\{version}`) then goto the `\scripts` directory and run `runpsql.bat`. Hit enter 4 times to use default startup values.
-4. To run app, run `npm start` or `node app.js`
+5. Setup Environment Variables
+  - `POSTGRES_USERNAME`: If on Windows, will need to set this to `postgres`
+  - `POSTGRES_PASSWORD`: If on Windows, will need to set this to whatever you set in the Installer
+  - `RECAPTCHA_PUBLIC_KEY` & `RECAPTCHA_PRIVATE_KEY`: For ReCaptcha V1
+  - `RECAPTCHA_V2_PUBLIC_KEY` & `RECAPTCHA_V2_PRIVATE_KEY`: For ReCaptcha V2
+6. To run app, run `npm start` or `node app.js`
 
 Notes on Adding Forms
 ---------------------
