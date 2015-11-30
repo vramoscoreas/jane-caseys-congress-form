@@ -10,10 +10,10 @@ contact_form:
         value: $NAME_PREFIX
         required: true
         options:
-          - Mr.
-          - Mrs.
-          - Ms.
-          - Miss
+          Mr.: Mr
+          Mrs.: Mrs.
+          Ms.: Ms.
+          Miss: Miss
       - name: topic          
         selector: "#topic"
         value: $TOPIC

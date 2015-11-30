@@ -23,12 +23,12 @@ contact_form:
         value: $NAME_PREFIX
         required: true
         options:
-          - Mr.
-          - Mrs.
-          - Ms.
-          - Miss
-          - Dr.
-          - The Honorable
+          Mr.: Mr.
+          Mrs.: Mrs.
+          Ms.: Ms.
+          Miss: Miss
+          Dr.: Dr.
+          The Honorable: The Honorable
       - name: address_country
         selector: "#address_country"
         value: United States

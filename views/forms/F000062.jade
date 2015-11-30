@@ -14,7 +14,7 @@ block content
             br
             input(type='text', id='message', name='message', class='form-control', placeholder='Enter Message', required)
             h4 Prefix
-            select(name="prefix", required)#prefix
+            select(name="prefix")#prefix
                option(value='') Select One
                option Mr.
                option Mrs.
@@ -29,14 +29,14 @@ block content
             br
             h4 Topic
             label(for='opts1') Animals
-               input(type='radio', name='topic', id='opts1', value='Animals')
+               input(type='radio', name='topic', id='opts1', value='Animals', required)
             label(for='opts2') Government Affairs
-               input(type='radio', name='topic', id='opts2', value='Government Affairs')
+               input(type='radio', name='topic', id='opts2', value='Government Affairs', required)
             label(for='opts3') Disabilities
-               input(type='radio', name='topic', id='opts3', value='Disabilities')
+               input(type='radio', name='topic', id='opts3', value='Disabilities', required)
             label(for='opts4') Economic Development
-               input(type='radio', name='topic', id='opts4', value='Economic Development')
+               input(type='radio', name='topic', id='opts4', value='Economic Development', required)
             label(for='opts5') Education
-               input(type='radio', name='topic', id='opts5', value='Education')
+               input(type='radio', name='topic', id='opts5', value='Education', required)
             br
             input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
