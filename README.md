@@ -8,8 +8,78 @@ The email textfield must be on each yaml and view.
 Setup
 -----
 
-1. Run ```./setup.sh```
-2. To run as a developer, run ```./bin/dev_start.sh```
+1. Run `npm install`
+2. Install [PostgreSQL](http://www.postgresql.org/download/). (Using [Homebrew](http://brew.sh/): `brew install postgres`)
+3. Start PostgreSQL
+  - If on Mac, run `postgres -D /usr/local/var/postgres`
+  - If on Windows, navigate to installation (by default: `C:\Program Files\PostgreSQL\{version}`) then goto the `\scripts` directory and run `runpsql.bat`. Hit enter 4 times to use default startup values.
+5. Setup Environment Variables
+  - `POSTGRES_USERNAME`: If on Windows, will need to set this to `postgres`
+  - `POSTGRES_PASSWORD`: If on Windows, will need to set this to whatever you set in the Installer
+  - `RECAPTCHA_PUBLIC_KEY` & `RECAPTCHA_PRIVATE_KEY`: For ReCaptcha V1
+  - `RECAPTCHA_V2_PUBLIC_KEY` & `RECAPTCHA_V2_PRIVATE_KEY`: For ReCaptcha V2
+6. To run app, run `npm start` or `node app.js`
+
+Notes on Adding Forms
+---------------------
+
+1. Views' `form` tag should have the following attributes:
+  - `method` attribute should be `POST`
+  - `action` attribute should be `/forms/submitFormData` (for most cases)
+    - You can optionally include `?key={field}` at the end of the `action`, where `{field}` would be the `name` attribute value for a input within the form. Doing this will setup the key value for the post data to be associated with value of that field.
+2. Views should extend `layout` and put their content within `block content`
+3. Views should be in the `/views/forms` directory
+
+### Example usage of `?key={field}`
+#### Example 1: Using default `email` key
+```jade
+extends layout
+
+block content
+
+  form(method='POST', action='/forms/submitFormData', role="form")
+    .row
+      input(type='text', id='e', name='email', class='form-control', placeholder='Email', required)
+      input(type='text', id='p', name='phonenumber', class='form-control', placeholder='Enter Phone')
+      input(type='text', id='s', name='streetaddress', class='form-control', placeholder='Address', required)
+
+      input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
+
+```
+If `?key=` is not present in the form's `action`, then the `email` field will be used for the post data's key value. The above jade will use the default, email as its key.
+
+Suppose you filled out the above form with the following data:
+- `email`: `fake@email.com`
+- `phonenumber`: `1112223333`
+- `streetaddress`: `1 main st`
+
+To only see the post data from this post, you visit: `/forms/postData?key=fake@email.com`
+
+#### Example 2: Using `phonenumber` (or anything else) key
+```jade
+extends layout
+
+block content
+
+  form(method='POST', action='/forms/submitFormData?key=phonenumber', role="form")
+    .row
+      input(type='text', id='e', name='email', class='form-control', placeholder='Email', required)
+      input(type='text', id='p', name='phonenumber', class='form-control', placeholder='Enter Phone')
+      input(type='text', id='s', name='streetaddress', class='form-control', placeholder='Address', required)
+
+      input(type='submit', id='submit', name='submit', value='Submit', class='btn btn-default')
+
+```
+Note that the form's `action` ends with `?key=phonenumber`. This means the post data will use the value of the `phonenumber` input as the key for the post data.
+
+Suppose you filled out the above form with the following data:
+- `email`: `fake2@email.com`
+- `phonenumber`: `1112220000`
+- `streetaddress`: `2 main st`
+
+To only see the post data from this post, you visit: `/forms/postData?key=1112220000`
+
+
 
 Forms Available
 ---------------
