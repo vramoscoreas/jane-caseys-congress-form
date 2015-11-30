@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Fake Congress Forms",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://www.github.com/NGPVAN/jane-caseys-congress-form.git"
@@ -29,6 +26,7 @@
   },
   "scripts": {
     "start":"node app.js",
-    "postinstall":"./node_modules/bower/bin/bower install"
+    "postinstall":"./node_modules/bower/bin/bower install",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
