@@ -29,6 +29,8 @@ Notes on Adding Forms
     - You can optionally include `?key={field}` at the end of the `action`, where `{field}` would be the `name` attribute value for a input within the form. Doing this will setup the key value for the post data to be associated with value of that field.
 2. Views should extend `layout` and put their content within `block content`
 3. Views should be in the `/views/forms` directory
+4. When adding radio button groups to a form, be sure that the `name` attribute matches for all of them. If it is required, only the first radio button option should have the `required` attribute
+5. When adding dropdown `select` elements that are `required` and have a default invalid option, be sure that default option has the `value` set to `''` so HTML5 validation will consider it invalid
 
 ### Example usage of `?key={field}`
 #### Example 1: Using default `email` key
