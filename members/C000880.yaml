@@ -4,6 +4,18 @@ contact_form:
   action: ""
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/C000880"
+    - select:
+      - name: prefix
+        selector: "#prefix"
+        value: $NAME_PREFIX
+        required: true
+        options:
+          Mr.: Mr
+          Mrs.: Mrs.
+          Ms.: Ms.
+          Miss: Miss
+          Captain: Captain
+          World Master: World Master
     - fill_in:
       - name: recaptcha_response_field
         selector: "#recaptcha_response_field"
