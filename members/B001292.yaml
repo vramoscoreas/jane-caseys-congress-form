@@ -19,6 +19,10 @@ contact_form:
         selector: "#email"
         value: $EMAIL
         required: true
+      - name: phone
+        selector: "#phone"
+        value: $PHONE
+        required: Yes        
     - click_on:
       - value: Submit
         selector: "#submittwo"
