@@ -22,7 +22,7 @@ contact_form:
       - name: phone
         selector: "#phone"
         value: $PHONE
-        required: no        
+        required: false        
     - click_on:
       - value: Submit
         selector: "#submittwo"
