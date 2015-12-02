@@ -14,7 +14,7 @@ contact_form:
           Mrs.: Mrs.
           Ms.: Ms.
           Miss: Miss
-          Officer n Gentleman: Officer n Gentleman
+          Gentleman: Gentleman
       - name: state
         selector: "#state"
         value: $ADDRESS_STATE_POSTAL_ABBREV
