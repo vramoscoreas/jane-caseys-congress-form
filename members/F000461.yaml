@@ -29,6 +29,7 @@ contact_form:
       - name: phone
         selector: "#phone"
         value: $PHONE
+        required: false
       - name: email
         selector: "#email"
         value: $EMAIL
