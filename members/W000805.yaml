@@ -14,6 +14,7 @@ contact_form:
           Mrs.: Mrs.
           Ms.: Ms.
           Officer Gentleman: Officer Gentleman
+          Sith Lord: Sith Lord
     - fill_in:
       - name: lastname
         selector: "#lastname"
