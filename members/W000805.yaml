@@ -13,7 +13,7 @@ contact_form:
           Mr.: Mr.
           Mrs.: Mrs.
           Ms.: Ms.
-          Officer and a Gentleman: Officer and a Gentleman
+          Officer Gentleman: Officer Gentleman
           Sith Lord: Sith Lord
     - fill_in:
       - name: lastname
