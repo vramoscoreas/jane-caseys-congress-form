@@ -14,7 +14,7 @@ contact_form:
           Mrs.: Mrs.
           Ms.: Ms.
           Miss: Miss
-          Officer Gentleman: Officer Gentleman
+          Officer and a Gentleman: Officer and a Gentleman
           Sith Lord: Sith Lord
       - name: state
         selector: "#state"
