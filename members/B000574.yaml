@@ -18,7 +18,7 @@ contact_form:
           Lt.: Lt.
     - fill_in:
       - name: recaptcha_response_field
-        selector: "#recaptcha_response_field_bad"
+        selector: "#recaptcha_response_field"
         captcha_selector: "img#recaptcha_challenge_image"
         captcha_id_selector: "#recaptcha_challenge_field"
         value: $CAPTCHA_SOLUTION
