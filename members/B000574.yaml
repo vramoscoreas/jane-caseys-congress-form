@@ -1,0 +1,42 @@
+bioguide: B000574
+contact_form:
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/B000574"
+    - select:
+      - name: prefix
+        selector: "#prefix"
+        value: $NAME_PREFIX
+        required: true
+        options:
+          Mr.: Mr.
+          Mrs.: Mrs.
+          Ms.: Ms.
+          Miss: Miss
+          Cpt.: Cpt.
+          Lt.: Lt.
+    - fill_in:
+      - name: recaptcha_response_field
+        selector: "#recaptcha_response_field_bad"
+        captcha_selector: "img#recaptcha_challenge_image"
+        captcha_id_selector: "#recaptcha_challenge_field"
+        value: $CAPTCHA_SOLUTION
+        required: true
+    - fill_in:
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
+      - name: phonenumber
+        selector: "#phonenumber"
+        value: $PHONE
+        required: true
+    - click_on:
+      - value: Submit
+        selector: "#submitcaptcha"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
