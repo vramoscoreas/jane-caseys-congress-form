@@ -153,3 +153,6 @@ Forms Available
 | 16064 31st Ave PO Box 3305<br/> Clearlake, CA 95422 | B000711<br/>Barbara Boxer | US Senate | VAN Address Service | streetaddress2 |
 | 1115 Kennesaw Ridge Rd Apt 411<br />Columbia, MO 65202 | state_mo_gov_jay_nixon<br/>Jay Nixon | Governor | One Step, All Non-CAPTCHA Fields | N/A |
 | 4721 Rosedale Ave<br />Bethesda, MD 20814 | MDL000400<br/>Ariana Kelly | MD State Delegate | CAPTCHA and Phone | N/A |
+| 729 Northeast Oregon Street<br/>Portland, OR 97232 | M001176<br/>Jeff Merkley | US Senate | Bad CAPTCHA and Phone | N/A |
+| 729 Northeast Oregon Street<br/>Portland, OR 97232 | B000574<br/>Earl Blumenauer | US House | CAPTCHA and Phone | N/A |
+| 729 Northeast Oregon Street<br/>Portland, OR 97232 | W000779<br/>Ron Wyden | US Senate | One Step | N/A |
