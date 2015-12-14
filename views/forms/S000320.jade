@@ -4,6 +4,15 @@ block content
 
   form(method='POST', action='/forms/solveNewRecaptcha', role="form")
     .row
+      h3 Prefix
+      select(name="prefix", required)#prefix
+        option(value='') Select One
+        option Mr.
+        option Mrs.
+        option Ms.
+        option Miss
+        option Boss Hog
+        option The Colonel    
       noscript
       div(data-sitekey='#{newPublicKey}', class='g-recaptcha')
     input(type='text', id='email', name='email', class='form-control', placeholder='Email', required)
