@@ -24,6 +24,18 @@ contact_form:
         value: $CAPTCHA_SOLUTION
         types: [image, audio]
         required: true
+    - select:
+      - name: prefix
+        selector: "#prefix"
+        value: $NAME_PREFIX
+        required: true
+        options:
+          Mr.: Mr.
+          Mrs.: Mrs.
+          Ms.: Ms.
+          Miss: Miss
+          Boss Hog: Boss Hog
+          The Colonel: The Colonel
     - fill_in:
       - name: email
         selector: "#email"
