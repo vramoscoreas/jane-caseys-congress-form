@@ -19,7 +19,7 @@ contact_form:
     - fill_in:
       - name: recaptcha_response_field
         selector: "#recaptcha_response_field"
-        captcha_selector: "img#recaptcha_challenge_image"
+        captcha_selector: "img#recaptcha_challenge_image_wrong"
         captcha_id_selector: "#recaptcha_challenge_field"
         value: $CAPTCHA_SOLUTION
         required: true
