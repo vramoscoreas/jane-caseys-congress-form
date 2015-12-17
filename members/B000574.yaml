@@ -28,10 +28,6 @@ contact_form:
         selector: "#email"
         value: $EMAIL
         required: true
-      - name: phonenumber
-        selector: "#phonenumber"
-        value: $PHONE
-        required: true
     - click_on:
       - value: Submit
         selector: "#submitcaptcha"
