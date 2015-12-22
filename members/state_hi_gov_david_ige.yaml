@@ -42,9 +42,9 @@ contact_form:
             - Moloka`i
             - Mainland U.S.
             - International
-        - name: type
-          selector: "#element_7"
-          value: "Comment/ Suggestion"
+        - name: "Request Type"
+          selector: "#type"
+          value: $REQUEST_TYPE
           required: true
           options:
             - Comment/ Suggestion
