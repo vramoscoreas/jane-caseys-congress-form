@@ -1,0 +1,61 @@
+bioguide: state_hi_gov_david_ige
+contact_form:
+  method: post
+  action: "/embed.php"
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/state_hi_gov_david_ige"
+    - fill_in:
+        - name: first_name
+          selector: "#first"
+          value: $NAME_FIRST
+          required: true
+        - name: last_name
+          selector: "#last"
+          value: $NAME_LAST
+          required: true
+        - name: email
+          selector: "#email"
+          value: $EMAIL
+          required: true
+    - select:
+        - name: Prefix
+          selector: "#prefix"
+          value: $NAME_PREFIX
+          required: true
+          options:
+            Mr.: Mr.
+            Miss: Miss
+            Ms.: Ms.
+            Mrs.: Mrs.
+            Dr.: Dr.
+        - name: Location
+          selector: "#location"
+          value: Mainland
+          required: true
+          options:
+            - O`ahu
+            - East Hawai`i Island
+            - West Hawai`i Island
+            - Kaua`i
+            - Lana`i
+            - Maui
+            - Moloka`i
+            - Mainland U.S.
+            - International
+        - name: type
+          selector: "#element_7"
+          value: "Comment/ Suggestion"
+          required: true
+          options:
+            - Comment/ Suggestion
+            - Complaint
+            - Question
+            - Other
+    - click_on:
+        - value: Submit
+          selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success"
