@@ -30,7 +30,7 @@ contact_form:
             Dr.: Dr.
         - name: Location
           selector: "#location"
-          value: Mainland
+          value: $LOCATION
           required: true
           options:
             - O`ahu
