@@ -33,15 +33,15 @@ contact_form:
           value: $LOCATION
           required: true
           options:
-            - O`ahu
-            - East Hawai`i Island
-            - West Hawai`i Island
-            - Kaua`i
-            - Lana`i
-            - Maui
-            - Moloka`i
-            - Mainland U.S.
-            - International
+            O`ahu: O`ahu
+            East Hawai`i Island: East Hawai`i Island
+            West Hawai`i Island: West Hawai`i Island
+            Kaua`i: Kaua`i
+            Lana`i: Lana`i
+            Maui: Maui
+            Moloka`i: Moloka`i
+            Mainland U.S.: Mainland U.S.
+            International: International
         - name: "Request Type"
           selector: "#type"
           value: $REQUEST_TYPE
