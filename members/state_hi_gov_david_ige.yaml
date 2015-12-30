@@ -17,6 +17,10 @@ contact_form:
           selector: "#email"
           value: $EMAIL
           required: true
+        - name: Comment Section
+          selector: "#comments"
+          value: $COMMENTS
+          required: true
     - select:
         - name: Prefix
           selector: "#prefix"
