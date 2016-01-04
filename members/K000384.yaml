@@ -30,8 +30,8 @@ contact_form:
         selector: "#firstname"
         value: $NAME_FIRST
         required: true
-        #options:
-          #blacklist: "\"\\.&/"
+        options:
+          blacklist: "\"\\.&/"
       - name: streetaddress1
         selector: "#streetaddress1"
         value: $ADDRESS_STREET
@@ -55,14 +55,14 @@ contact_form:
         selector: "[name='subject']"
         value: $SUBJECT
         required: Yes
-        #options:
-          #blacklist: ".&/\"\\"
+        options:
+          blacklist: ".&/\"\\"
       - name: message
         selector: "#message"
         value: $MESSAGE
         required: Yes
-        #options:
-          #blacklist: ".&/\"\\"
+        options:
+          blacklist: ".&/\"\\"
       - name: email
         selector: "#email"
         value: $EMAIL
