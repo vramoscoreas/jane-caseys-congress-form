@@ -31,7 +31,7 @@ contact_form:
         value: $NAME_FIRST
         required: true
         options:
-          blacklist: "\"\\.&/"
+          blacklist: "."
       - name: streetaddress1
         selector: "#streetaddress1"
         value: $ADDRESS_STREET
@@ -56,13 +56,13 @@ contact_form:
         value: $SUBJECT
         required: Yes
         options:
-          blacklist: ".&/\"\\"
+          blacklist: "&"
       - name: message
         selector: "#message"
         value: $MESSAGE
         required: Yes
         options:
-          blacklist: ".&/\"\\"
+          blacklist: "/"
       - name: email
         selector: "#email"
         value: $EMAIL
