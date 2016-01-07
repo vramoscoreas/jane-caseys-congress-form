@@ -156,3 +156,4 @@ Forms Available
 | 729 Northeast Oregon Street<br/>Portland, OR 97232 | M001176<br/>Jeff Merkley | US Senate | Bad CAPTCHA and Phone | N/A |
 | 729 Northeast Oregon Street<br/>Portland, OR 97232 | B000574<br/>Earl Blumenauer | US House | CAPTCHA and Phone | N/A |
 | 729 Northeast Oregon Street<br/>Portland, OR 97232 | W000779<br/>Ron Wyden | US Senate | One Step | N/A |
+| 1015 Koko Kai Pl<br/>Honolulu, HI 96825-3603 | state_hi_gov_david_ige<br/>David Ige | HI Governor | Non-inferred field | N/A |
