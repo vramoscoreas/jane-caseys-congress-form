@@ -4,5 +4,34 @@ block content
 
   form(method='POST', action='/forms/twoStepSubmit', class='form-inline', role='form' id='two')
     .form-group
+      input(type='text', id='first', name='first', class='form-control', placeholder='Enter First Name')
+      input(type='text', id='last', name='last', class='form-control', placeholder='Enter Last Name')
+      input(type='text', id='address', name='address', class='form-control', placeholder='Enter Address')
+      input(type='text', id='city', name='city', class='form-control', placeholder='Enter City')
       input(type='text', id='email', name='email', class='form-control', placeholder='Enter Email', required)
-      input(type='submit', id='submittwo', name="submittwo", value='Submit', class='btn btn-default')
+      input(type='text', id='phone', name='phone', class='form-control', placeholder='Enter Phone')
+      input(type='text', id='message', name='message', class='form-control', placeholder='Enter Message')
+      select(name="prefix")#prefix
+        option(value='') Select One
+        option Mr.
+        option Mrs.
+        option Ms.
+        option Miss
+        option Mr. and Mrs.
+        option Rev.
+        option The Honorable
+        option Rabbi
+        option Dr.
+    select(name="topic")#topic
+        option(value='') Select One
+        option Agriculture.
+        option Animals
+        option Arts and Humanities
+        option Banking and Finance
+        option Budget and Economy
+        option Other Issues
+    select(name="response")#response
+        option(value='') Select One
+        option Yes, please contact me
+        option No, I wanted to voice my opinion
+    input(type='submit', id='submittwo', name="submittwo", value='Submit', class='btn btn-default')
