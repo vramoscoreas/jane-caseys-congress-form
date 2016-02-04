@@ -14,7 +14,7 @@ contact_form:
         value: $PHONE
         required: false
       - name: streetaddress2
-        selector: "#streetaddress2"
+        selector: "#streetaddress2-changed"
         value: $ADDRESS_STREET_2
         required: true        
     - click_on:
