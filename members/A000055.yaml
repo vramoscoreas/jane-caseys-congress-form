@@ -6,7 +6,7 @@ contact_form:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/A000055"
     - fill_in:
       - name: email
-        selector: "#email-changed"
+        selector: "#email-CHANGED"
         value: $EMAIL
         required: true
       - name: phonenumber
@@ -19,7 +19,7 @@ contact_form:
         required: true        
     - click_on:
       - value: Submit
-        selector: "#submit"
+        selector: "#submit-changed"
   success:
     headers:
       status: 200
