@@ -10,7 +10,7 @@ contact_form:
         value: $EMAIL
         required: true
       - name: phonenumber
-        selector: "#phonenumber"
+        selector: "#phonenumber-CHANGED"
         value: $PHONE
         required: false
       - name: streetaddress2
