@@ -6,11 +6,11 @@ contact_form:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/A000055"
     - fill_in:
       - name: email
-        selector: "#email-CHANGED"
+        selector: "#email"
         value: $EMAIL
         required: true
       - name: phonenumber
-        selector: "#phonenumber-CHANGED"
+        selector: "#phonenumber"
         value: $PHONE
         required: false
       - name: streetaddress2
