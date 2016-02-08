@@ -34,7 +34,7 @@ contact_form:
           - Transportation Issues
           - Veterans Issues
     - fill_in:
-      - name: lastname
+      - name: lastname_different
         selector: "#lastname_different"
         value: $NAME_LAST
         required: true
