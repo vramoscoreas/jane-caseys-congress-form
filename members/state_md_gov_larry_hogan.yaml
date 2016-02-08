@@ -52,7 +52,7 @@ contact_form:
         required: true
     - click_on:
       - value: Submit
-        selector: "#submit"
+        selector: "#submit_different"
   success:
     headers:
       status: 200
