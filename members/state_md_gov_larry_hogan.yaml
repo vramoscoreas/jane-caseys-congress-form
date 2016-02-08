@@ -34,8 +34,8 @@ contact_form:
           - Transportation Issues
           - Veterans Issues
     - fill_in:
-      - name: lastname_different
-        selector: "#lastname_different"
+      - name: lastname
+        selector: "#lastname"
         value: $NAME_LAST
         required: true
       - name: message
@@ -52,9 +52,9 @@ contact_form:
         required: true
     - click_on:
       - value: Submit
-        selector: "#submit_different"
+        selector: "#submit"
   success:
     headers:
       status: 200
     body:
-      contains: "You Are Dumb!"
+      contains: "Success!"
