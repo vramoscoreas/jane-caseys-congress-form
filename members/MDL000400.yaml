@@ -15,7 +15,7 @@ contact_form:
           Ms.: Ms.
     - fill_in:
       - name: lastname
-        selector: "#lastname"
+        selector: "#lastname_different"
         value: $NAME_LAST
         required: true
       - name: message
