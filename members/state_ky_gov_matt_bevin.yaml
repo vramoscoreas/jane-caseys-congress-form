@@ -1,9 +1,9 @@
-bioguide: state_ky_gov_steve_beshear
+bioguide: state_ky_gov_matt_bevin
 contact_form:
   method: post
   action: ""
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/state_ky_gov_steve_beshear"
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/state_ky_gov_matt_bevin"
     - fill_in:
       - name: recaptcha_response_field
         selector: "#recaptcha_response_field"
