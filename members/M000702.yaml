@@ -7,7 +7,7 @@ contact_form:
     - fill_in:
       - name: Prefix
         selector: "#prefix"
-        value: $PREFIX
+        value: $NAME_PREFIX
         required: true    
       - name: streetaddress1
         selector: "#streetaddress1"
