@@ -5,7 +5,7 @@ contact_form:
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/M000702"
     - fill_in:
-      - name: prefix
+      - name: Prefix
         selector: "#prefix"
         value: $PREFIX
         required: true    
