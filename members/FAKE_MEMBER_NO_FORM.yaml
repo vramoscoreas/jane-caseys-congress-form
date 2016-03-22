@@ -4,6 +4,19 @@ contact_form:
   action: webform.cfm
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/THIS_FORM_DOES_NOT_EXIST"
+    - fill_in:
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
+      - name: phonenumber
+        selector: "#phonenumber"
+        value: $PHONE
+        required: false
+      - name: streetaddress2
+        selector: "#streetaddress2"
+        value: $ADDRESS_STREET_2
+        required: true
     - click_on:
       - value: Submit
         selector: "#submit"
