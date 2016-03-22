@@ -1,0 +1,14 @@
+bioguide: FAKE_MEMBER_NO_FORM
+contact_form:
+  method: post
+  action: webform.cfm
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/THIS_FORM_DOES_NOT_EXIST"
+    - click_on:
+      - value: Submit
+        selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success"
