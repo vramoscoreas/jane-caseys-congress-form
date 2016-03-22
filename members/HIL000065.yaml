@@ -1,0 +1,60 @@
+bioguide: HIL000065
+contact_form:
+  method: post
+  action: "/embed.php"
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/HIL000065"
+    - fill_in:
+        - name: first_name
+          selector: "#first"
+          value: $NAME_FIRST
+          required: true
+        - name: last_name
+          selector: "#last"
+          value: $NAME_LAST
+          required: true
+        - name: email
+          selector: "#email"
+          value: $EMAIL
+          required: true
+        - name: phone
+          selector: "#phone"
+          value: $PHONE
+          required: true          
+        - name: Comment Section
+          selector: "#comments"
+          value: $COMMENTS
+          required: true
+    - select:
+        - name: Prefix
+          selector: "#prefix"
+          value: $NAME_PREFIX
+          required: true
+          options:
+            Mr.: Mr.
+            Miss: Miss
+            Ms.: Ms.
+            Mrs.: Mrs.
+            Dr.: Dr.
+        - name: Location
+          selector: "#location"
+          value: $LOCATION
+          required: true
+          options:
+            O`ahu: O`ahu
+            East Hawai`i Island: East Hawai`i Island
+            West Hawai`i Island: West Hawai`i Island
+            Kaua`i: Kaua`i
+            Lana`i: Lana`i
+            Maui: Maui
+            Moloka`i: Moloka`i
+            Mainland U.S.: Mainland U.S.
+            International: International
+    - click_on:
+        - value: Submit
+          selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success"
