@@ -21,7 +21,7 @@ contact_form:
           selector: "#phone"
           value: $PHONE
           required: true          
-        - name: Prefix
+        - name: prefix
           selector: "#prefix"
           value: $NAME_PREFIX
           required: true
