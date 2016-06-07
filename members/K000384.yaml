@@ -68,8 +68,7 @@ contact_form:
         value: $EMAIL
         required: true
     - click_on:
-      - value: Submit
-        selector: "#brokenselector"
+      - selector: "#brokenselector"
   success:
     headers:
       status: 200
