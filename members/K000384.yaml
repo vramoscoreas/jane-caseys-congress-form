@@ -4,6 +4,7 @@ contact_form:
   action: ""
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/K000384"
+    - select:
       - name: state
         selector: "#state"
         value: $ADDRESS_STATE_POSTAL_ABBREV
