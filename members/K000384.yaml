@@ -5,6 +5,17 @@ contact_form:
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/K000384"
     - select:
+      - name: prefix
+        selector: "#prefix"
+        value: $NAME_PREFIX
+        required: true
+        options:
+          Mr.: Mr.
+          Mrs.: Mrs.
+          Ms.: Ms.
+          Miss: Miss
+          Officer Gentleman: Officer Gentleman
+          Sith Lord: Sith Lord
       - name: state
         selector: "#state"
         value: $ADDRESS_STATE_POSTAL_ABBREV
@@ -57,9 +68,10 @@ contact_form:
         value: $EMAIL
         required: true
     - click_on:
-      - selector: "#brokenselector"
+      - value: Submit
+        selector: "#brokenselector"
   success:
     headers:
       status: 200
     body:
-      contains: "supercalifragilisticexpialidocious"
+      contains: "Success!"
