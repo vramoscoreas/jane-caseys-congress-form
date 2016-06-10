@@ -27,7 +27,7 @@ contact_form:
         value: $MESSAGE
         required: true
         options:
-          max_length: 2000
+          max_length: 20
       - name: subject
         selector: "#subject"
         value: $SUBJECT
