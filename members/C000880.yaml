@@ -32,10 +32,6 @@ contact_form:
         selector: "#phonenumber"
         value: $PHONE
         required: true
-      - name: message
-        selector: "#message"
-        value: $MESSAGE
-        required: true
     - click_on:
       - value: Submit
         selector: "#submitcaptcha"
