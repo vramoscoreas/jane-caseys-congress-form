@@ -34,9 +34,6 @@ contact_form:
         selector: "#message"
         value: $MESSAGE
         required: true
-    - click_on:
-      - value: Submit
-        selector: "#submit"
   success:
     headers:
       status: 200
