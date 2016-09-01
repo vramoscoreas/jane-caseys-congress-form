@@ -22,16 +22,8 @@ contact_form:
         selector: "#message"
         value: $MESSAGE
         required: true
-      - name: subject
-        selector: "#subject"
-        value: $SUBJECT
-        required: true
-      - name: email
-        selector: "#email"
-        value: $EMAIL
-        required: true
   success:
     headers:
       status: 200
     body:
-      contains: "Success!"
+      contains: "You will never find this!"
