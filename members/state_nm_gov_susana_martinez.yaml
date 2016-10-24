@@ -30,6 +30,13 @@ contact_form:
         selector: "#subject"
         value: $SUBJECT
         required: true
+      - name: message
+        selector: "#message"
+        value: $MESSAGE
+        required: true
+    - click_on:
+      - value: Submit
+        selector: "#submit"        
   success:
     headers:
       status: 200
