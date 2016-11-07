@@ -47,10 +47,6 @@ contact_form:
         selector: "#zipcode"
         value: $ADDRESS_ZIP5
         required: Yes
-      - name: phonenumber
-        selector: "#phonenumber"
-        value: $PHONE
-        required: Yes
       - name: subject
         selector: "[name='subject']"
         value: $SUBJECT
@@ -67,11 +63,8 @@ contact_form:
         selector: "#email"
         value: $EMAIL
         required: true
-    - click_on:
-      - value: Submit
-        selector: input#submit
   success:
     headers:
       status: 200
     body:
-      contains: "Success!"
+      contains: "BLAAAAAAAAAAAAAARG"
