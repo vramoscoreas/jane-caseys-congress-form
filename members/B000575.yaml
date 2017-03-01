@@ -53,7 +53,7 @@ contact_form:
         value: $MESSAGE
         required: Yes
         options:
-          max_length: 2000
+          max_length: 4000
     - click_on:
       - value: Submit
         selector: "#submit"
