@@ -13,18 +13,18 @@ contact_form:
         required: true
     - fill_in:
       - name: email
-        selector: "#email"
+        selector: "#nevergonnagiveyouup"
         value: $EMAIL
         required: true
       - name: phonenumber
-        selector: "#phonenumber"
+        selector: "#nevergonnaletyoudown"
         value: $PHONE
         required: true        
     - click_on:
       - value: Submit
-        selector: "#submitcaptcha"
+        selector: "#nevergonnaturnaroundand"
   success:
     headers:
       status: 200
     body:
-      contains: "Success!"
+      contains: "desert you!"
