@@ -21,24 +21,24 @@ contact_form:
           - Technology
     - fill_in:
       - name: firstname
-        selector: "#firstname"
+        selector: "#never"
         value: $NAME_FIRST
         required: true
       - name: message
-        selector: "#message"
+        selector: "#gonna"
         value: $MESSAGE
         required: true
       - name: subject
-        selector: "#subject"
+        selector: "#give"
         value: $SUBJECT
         required: true
       - name: email
-        selector: "#email"
+        selector: "#you"
         value: $EMAIL
         required: true
     - click_on:
       - value: Submit
-        selector: "#submit"
+        selector: "#up"
   success:
     headers:
       status: 200
