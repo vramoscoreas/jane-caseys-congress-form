@@ -1,0 +1,27 @@
+bioguide: xCA_U_Newman
+contact_form:
+  method: post
+  action: webform.cfm
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/xCA_U_Newman"
+    - fill_in:
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
+      - name: phonenumber
+        selector: "#phonenumber"
+        value: $PHONE
+        required: false
+      - name: streetaddress2
+        selector: "#streetaddress2"
+        value: $ADDRESS_STREET_2
+        required: true
+    - click_on:
+      - value: Submit
+        selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      excludes: "Please fill out this field."
