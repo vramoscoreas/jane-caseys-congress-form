@@ -13,10 +13,18 @@ contact_form:
         selector: "#phonenumber"
         value: $PHONE
         required: false
-      - name: streetaddress2
+      - name: streetaddress
         selector: "#streetaddress"
         value: $ADDRESS_STREET
         required: true
+    - select:
+      - name: topic
+        selector: select#topic
+        value: $TOPIC
+        required: true
+        options:
+          Mario: Mario
+          Zelda: Zelda
     - click_on:
       - value: Submit
         selector: "#submit"

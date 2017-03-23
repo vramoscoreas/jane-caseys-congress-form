@@ -17,6 +17,14 @@ contact_form:
         selector: "#streetaddress"
         value: $ADDRESS_STREET
         required: true
+    - select:
+      - name: topic
+        selector: select#topic
+        value: $TOPIC
+        required: true
+        options:
+          Mario: Mario
+          Zelda: Zelda
     - click_on:
       - value: Submit
         selector: "#submit"
