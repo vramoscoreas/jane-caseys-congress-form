@@ -1,7 +1,7 @@
 bioguide: xCA_U_Newman
 contact_form:
   method: post
-  action: webform.cfm
+  action: ""
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/xCA_U_Newman"
     - fill_in:
@@ -12,8 +12,8 @@ contact_form:
       - name: phonenumber
         selector: "#phonenumber"
         value: $PHONE
-        required: false
-      - name: streetaddress2
+        required: true
+      - name: streetaddress
         selector: "#streetaddress"
         value: $ADDRESS_STREET
         required: true
@@ -26,8 +26,7 @@ contact_form:
           Mario: Mario
           Zelda: Zelda
     - click_on:
-      - value: Submit
-        selector: "#submit"
+      - selector: "#submit"
   success:
     headers:
       status: 200
