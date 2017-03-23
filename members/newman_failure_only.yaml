@@ -31,4 +31,4 @@ contact_form:
     headers:
       status: 200
     body:
-      excludes: "Please fill out this field."
+      excludes: "Please match the requested format."
