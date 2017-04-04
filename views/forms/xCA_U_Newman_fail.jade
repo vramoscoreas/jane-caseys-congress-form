@@ -1,0 +1,16 @@
+extends layout
+
+block content
+
+  form(method='POST', action='/forms/submitFormData', role="form")
+    .row
+    br
+    br
+    input(type='text', id='email', name='email', class='form-control', placeholder='Email', required)
+    br
+    input(type='text', id='phonenumber', name='phonenumber', class='form-control', placeholder='Enter Phone')
+    br
+    input(type='text', id='streetaddress', name='streetaddress', class='form-control', placeholder='Address', required)
+    br
+    p fail if you see me
+    br

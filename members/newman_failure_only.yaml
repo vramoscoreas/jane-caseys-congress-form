@@ -3,7 +3,7 @@ contact_form:
   method: post
   action: ""
   steps:
-    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/xCA_U_Newman"
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/xCA_U_Newman_fail"
     - fill_in:
       - name: email
         selector: "#email"
@@ -17,18 +17,8 @@ contact_form:
         selector: "#streetaddress"
         value: $ADDRESS_STREET
         required: true
-    - select:
-      - name: topic
-        selector: select#topic
-        value: $TOPIC
-        required: true
-        options:
-          Mario: Mario
-          Zelda: Zelda
-    - click_on:
-      - selector: "#submit"
   success:
     headers:
       status: 200
     body:
-      excludes: "Please match the requested format."
+      excludes: "fail if you see me"
