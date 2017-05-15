@@ -35,6 +35,10 @@ contact_form:
         selector: "#email"
         value: $EMAIL
         required: true
+      - name: phone
+        selector: "#phone"
+        value: $PHONE
+        required: true
       - name: zip
         selector: "#zip5"
         value: $ADDRESS_ZIP5
