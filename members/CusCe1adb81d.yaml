@@ -1,0 +1,57 @@
+bioguide: CusCe1adb81d
+contact_form:
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/CusCe1adb81d"
+    - select:
+      - name: prefix
+        selector: "#prefix"
+        value: $NAME_PREFIX
+        required: true
+        options:
+          Mr.: Mr.
+          Mrs.: Mrs.
+          Ms.: Ms.
+          Miss: Miss
+    - fill_in:
+      - name: firstname
+        selector: "#firstname"
+        value: $NAME_FIRST
+        required: true
+      - name: lastname
+        selector: "#lastname"
+        value: $NAME_LAST
+        required: true
+      - name: streetaddress1
+        selector: "#streetaddress1"
+        value: $ADDRESS_STREET
+        required: true        
+      - name: message
+        selector: "#message"
+        value: $MESSAGE
+        required: true
+      - name: subject
+        selector: "#subject"
+        value: $SUBJECT
+        required: true
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
+      - name: phone
+        selector: "#phone"
+        value: $PHONE
+        required: true
+      - name: zip
+        selector: "#zip5"
+        value: $ADDRESS_ZIP5
+        required: true
+    - click_on:
+      - value: Submit
+        selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
