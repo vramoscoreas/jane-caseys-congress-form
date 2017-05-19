@@ -23,10 +23,6 @@ contact_form:
         selector: "#lastname"
         value: $NAME_LAST
         required: true
-      - name: streetaddress1
-        selector: "#streetaddress1"
-        value: $ADDRESS_STREET
-        required: Yes        
       - name: message
         selector: "#message"
         value: $MESSAGE
