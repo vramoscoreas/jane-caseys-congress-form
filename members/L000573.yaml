@@ -23,7 +23,7 @@ contact_form:
         required: false        
     - click_on:
       - value: Submit
-        selector: "#submitcaptcha"
+        selector: "#submit"
   success:
     headers:
       status: 200
