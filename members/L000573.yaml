@@ -21,9 +21,6 @@ contact_form:
         selector: "#streetaddress2"
         value: $ADDRESS_STREET_2
         required: false        
-    - click_on:
-      - value: Submit
-        selector: "#submit"
   success:
     headers:
       status: 200
