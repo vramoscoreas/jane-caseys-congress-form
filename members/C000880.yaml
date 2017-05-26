@@ -24,6 +24,9 @@ contact_form:
       - name: phonenumber
         selector: "#phonenumber"
         value: $PHONE
+    - click_on:
+      - value: Submit
+        selector: "#submitcaptcha"	        
   success:
     headers:
       status: 200
