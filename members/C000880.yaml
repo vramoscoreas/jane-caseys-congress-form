@@ -17,6 +17,13 @@ contact_form:
           Captain: Captain
           World Master: World Master
     - fill_in:
+      - name: recaptcha_response_field
+        selector: "#recaptcha_response_field"
+        captcha_selector: "img#recaptcha_challenge_image"
+        captcha_id_selector: "#recaptcha_challenge_field"
+        value: $CAPTCHA_SOLUTION
+        required: true
+    - fill_in:
       - name: email
         selector: "#email"
         value: $EMAIL
@@ -24,10 +31,10 @@ contact_form:
       - name: phonenumber
         selector: "#phonenumber"
         value: $PHONE
-        required: true        
+        required: true
     - click_on:
       - value: Submit
-        selector: "#submitcaptcha"	        
+        selector: "#submitcaptcha"
   success:
     headers:
       status: 200
