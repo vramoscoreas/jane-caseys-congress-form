@@ -45,20 +45,21 @@ contact_form:
           Housing and Real Estate: HUD
           Human Rights: FOR.HUMAN RIGHTS
           Immigration: IMM
-          "Judiciary, Justice and Crime": JUD
-          "Labor, Retirement and Pensions": LAB
+          Judiciary, Justice and Crime: JUD
+          Labor, Retirement and Pensions: LAB
           Local Community Issues: CASE
           Postal Issues: POST
           Religion: JUD.RELIGION
-          "Science, Technology and Space": SCI
+          Science, Technology and Space: SCI
           Seniors: SNR
           Social Security: SSA
           Taxes: TAX
-          "Telecommunications, Phone, Cable, TV, Etc.": COMM
+          Telecommunications, Phone, Cable, TV, Etc.: COMM
           Transportation: TRAN
           Trade: FOR.TRADE
           Veterans: VET
           Miscellaneous: MISC
+          General Comments: GEN
     - fill_in:
       - name: lastname
         selector: "#lastname"
