@@ -87,8 +87,8 @@ Forms Available
 ---------------
 
 * One Step
-* Two step 
-* ReCaptcha 
+* Two step
+* ReCaptcha
 
 
 | Address          | BioID   | Chamber   | Form Type  | Key Value |
@@ -125,7 +125,7 @@ Forms Available
 | 650 Dundee Rd<br />Northbrook, IL 60062 | D000613<br/>Bob Dold | US House | 2,000 character limit for message | message |
 | 222 Liberty St.<br />Lowell, MA 01851 | MAL000362<br/>Rady Mom | MA Lower | One Step | firstname |
 | PO Box 991<br />Union, KY 41091 | KYL000025<br/>John Schickel | KY Senator | Anti-spam Hot or Cold Q&A | N/A |
-| 898 Malabar Rd SE<br />Palm Bay, FL 32907 | FLL000002<br/>Thad Altman | FL Senator | Anti-spam Math Q&A | N/A | 
+| 898 Malabar Rd SE<br />Palm Bay, FL 32907 | FLL000002<br/>Thad Altman | FL Senator | Anti-spam Math Q&A | N/A |
 | 2500 Harrisburg Pike Lot 17<br />Grove City, OH 43123 | OHL000003<br/>Kevin Bacon | OH Senator | Sanitized Address | streetaddress2 |   
 | 1011 George Wallace Blvd<br/>Tuscumbia, AL 35674 | A000055<br/>Robert Aderholt | US House | One Step | N/A |
 | 1011 George Wallace Blvd<br/>Tuscumbia, AL 35674 | S001141<br/>Jefferson Sessions  | US Senate | ReCaptchaV2 | N/A |
@@ -161,3 +161,6 @@ Forms Available
 | 34 1/2 Beacon St Unit 2S<br/>Boston, MA 02108-1414 | W000817<br/>Elizabeth Warren | MA Senator | StreetNoHalf | N/A |
 | 98661 | state_wa_gov_jay_inslee<br/>Jay Inslee | WA Governor | No Street Address Line 1 | N/A |
 | TODO | PAL000059<br/>TODO: Change to Target that exists | PA House | ReCaptchaV2 | N/A |
+| 190 Brookline St<br/>Cambridge, MA 02139 | C001037<br/>Michael Capuano | MA US House | N/A | N/A |
+| 210 Pearl St<br/>Burlington, VT 05401 | S000033<br/>Bernard Sanders | VT US Senate | N/A | N/A |
+| 210 Pearl St<br/>Burlington, VT 05401 | L000174<br/>Patrick Leahy | VT US Senate | N/A | N/A |
