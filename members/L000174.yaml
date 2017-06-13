@@ -1,0 +1,27 @@
+bioguide: L000174
+contact_form:
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/L000174"
+    - fill_in:
+      - name: prefix
+        selector: "#prefix"
+        value: $NAME_PREFIX
+        required: true
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
+      - name: streetaddress
+        selector: "#streetaddress"
+        value: $ADDRESS_STREET
+        required: true
+    - click_on:
+      - value: Submit
+        selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
