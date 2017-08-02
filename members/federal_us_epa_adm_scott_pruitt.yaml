@@ -5,8 +5,8 @@ contact_form:
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/federal_us_epa_adm_scott_pruitt"
     - javascript:
-      - name: prefix
-        selectors: [ "#message" ]
+      - name: arbitraryField
+        selectors: [ "#arbitraryField" ]
         commands: [ "elements[0].value = 'different'"]
     - fill_in:
       - name: lastname
