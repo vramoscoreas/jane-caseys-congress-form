@@ -1,0 +1,27 @@
+bioguide: federal_us_epa_adm_scott_pruitt
+contact_form:
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/federal_us_epa_adm_scott_pruitt"
+    - javascript:
+      - name: prefix
+        selectors: [ "#message" ]
+        commands: [ "elements[0].value = 'different'"]
+    - fill_in:
+      - name: lastname
+        selector: "#lastname"
+        value: $NAME_LAST
+        required: true
+      - name: email
+        selector: "#email"
+        value: $EMAIL
+        required: true
+    - click_on:
+      - value: Submit
+        selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
