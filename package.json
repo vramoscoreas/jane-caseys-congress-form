@@ -8,7 +8,8 @@
     "url": "https://www.github.com/NGPVAN/jane-caseys-congress-form.git"
   },
   "engines": {
-    "npm":"2.7.5"
+    "npm":"3.10.10",
+    "node": "6.11.1"
   },
   "author": "NGPVAN",
   "license": "ISC",
