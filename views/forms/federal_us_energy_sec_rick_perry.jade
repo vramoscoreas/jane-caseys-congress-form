@@ -4,12 +4,6 @@ block content
 
   form(method='POST', action='/forms/submitFormData', role="form")
     .row
-      h3 Prefix
-      select(name="prefix", required)#prefix
-        option(value='') Select One
-        option Mr.
-        option Mrs.
-        option Ms.
       br
       br
       input(type='text' id='bioid' name='bioid' value='#{bioId}')
