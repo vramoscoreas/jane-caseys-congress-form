@@ -5,6 +5,10 @@ contact_form:
   useChrome: true
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/federal_us_energy_sec_rick_perry"
+    - wait:
+      - value: 2
+    - find:
+      - selector: "#lastname"
     - fill_in:
       - name: lastname
         selector: "#lastname"
@@ -22,6 +26,8 @@ contact_form:
         selector: "#email"
         value: $EMAIL
         required: true
+    - click_on:
+      - selector: "#submit"
   success:
     headers:
       status: 200
