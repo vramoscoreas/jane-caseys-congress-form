@@ -5,15 +5,6 @@ contact_form:
   useChrome: true
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/federal_us_energy_sec_rick_perry"
-    - select:
-      - name: prefix
-        selector: "#prefix"
-        value: $NAME_PREFIX
-        required: true
-        options:
-          Mr.: Mr.
-          Mrs.: Mrs.
-          Ms.: Ms.
     - fill_in:
       - name: lastname
         selector: "#lastname"
