@@ -26,6 +26,8 @@ contact_form:
         selector: "#message"
         value: $MESSAGE
         required: true
+        options:
+          blacklist: '\n'
     - click_on:
       - selector: "#submit"
   success:
