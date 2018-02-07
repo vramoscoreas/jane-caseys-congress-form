@@ -1,0 +1,41 @@
+bioguide: S000226
+contact_form:
+  method: post
+  action: ""
+  steps:
+    - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/M001111"
+    - fill_in:
+        - name: fname
+          selector: "#fname"
+          value: $NAME_FIRST
+          required: true
+        - name: email
+          selector: "#email"
+          value: $EMAIL
+          required: true
+        - name: subject
+          selector: "#subjecttext"
+          value: $SUBJECT
+          required: true
+        - name: message
+          selector: "#message"
+          value: $MESSAGE
+          required: true
+          options:
+            blacklist: "/https://www\\.youtube\\.com/watch?time_continue=1&v=6_dIT2pim3c/"
+    - select:
+        - name: prefix
+          selector: "#salutation"
+          value: $NAME_PREFIX
+          required: true
+          options:
+            Mr.: Mr.
+            Mrs.: Mrs.
+    - click_on:
+        - value: Submit
+          selector: "#submit"
+  success:
+    headers:
+      status: 200
+    body:
+      contains: "Success!"
