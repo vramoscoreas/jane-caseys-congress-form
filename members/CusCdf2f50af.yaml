@@ -1,4 +1,4 @@
-bioguide: CusCe1adb81d
+bioguide: CusCdf2f50af
 contact_form:
   method: post
   action: ""
@@ -14,42 +14,62 @@ contact_form:
           Mrs.: Mrs.
           Ms.: Ms.
           Miss: Miss
+          Officer Gentleman: Officer Gentleman
+          Sith Lord: Sith Lord
+      - name: state
+        selector: "#state"
+        value: $ADDRESS_STATE_POSTAL_ABBREV
+        required: Yes
+        options: US_STATES
+      - name: response
+        selector: "#response"
+        value: "yes"
+        required: Yes
     - fill_in:
       - name: firstname
         selector: "#firstname"
         value: $NAME_FIRST
         required: true
-      - name: lastname
-        selector: "#lastname"
-        value: $NAME_LAST
-        required: true
+        options:
+          blacklist: "."
       - name: streetaddress1
         selector: "#streetaddress1"
         value: $ADDRESS_STREET
-        required: true        
+        required: Yes
+      - name: streetaddress2
+        selector: "#streetaddress2"
+        value: $ADDRESS_STREET_2
+      - name: city
+        selector: "#city"
+        value: $ADDRESS_CITY
+        required: Yes
+      - name: zipcode
+        selector: "#zipcode"
+        value: $ADDRESS_ZIP5
+        required: Yes
+      - name: phonenumber
+        selector: "#phonenumber"
+        value: $PHONE
+        required: Yes
+      - name: subject
+        selector: "[name='subject']"
+        value: $SUBJECT
+        required: Yes
+        options:
+          blacklist: "&"
       - name: message
         selector: "#message"
         value: $MESSAGE
-        required: true
-      - name: subject
-        selector: "#subject"
-        value: $SUBJECT
-        required: true
+        required: Yes
+        options:
+          blacklist: "/"
       - name: email
         selector: "#email"
         value: $EMAIL
         required: true
-      - name: phone
-        selector: "#phone"
-        value: $PHONE
-        required: true
-      - name: zip
-        selector: "#zip5"
-        value: $ADDRESS_ZIP5
-        required: true
     - click_on:
       - value: Submit
-        selector: "#submit"
+        selector: input#submit
   success:
     headers:
       status: 200
