@@ -18,7 +18,7 @@ contact_form:
       - name: lastname
         selector: "#lastname"
         value: $NAME_LAST
-        required: true
+        required: false
       - name: message
         selector: "#message"
         value: $MESSAGE
@@ -30,7 +30,7 @@ contact_form:
       - name: email
         selector: "#email"
         value: $EMAIL
-        required: true
+        required: false
     - click_on:
       - value: Submit
         selector: "#submit"
