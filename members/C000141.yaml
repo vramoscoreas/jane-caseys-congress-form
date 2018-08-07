@@ -32,7 +32,7 @@ contact_form:
         required: false
     - click_on:
       - value: Submit
-        selector: "#submit"
+        selector: "#send"
   success:
     headers:
       status: 200
