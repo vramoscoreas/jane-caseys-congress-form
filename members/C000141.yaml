@@ -15,10 +15,6 @@ contact_form:
           Ms.: Ms.
           Miss: Miss
     - fill_in:
-      - name: lastname
-        selector: "#lastname"
-        value: $NAME_LAST
-        required: false
       - name: message
         selector: "#message"
         value: $MESSAGE
