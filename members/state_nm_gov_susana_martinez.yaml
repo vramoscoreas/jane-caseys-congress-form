@@ -1,7 +1,8 @@
 bioguide: state_nm_gov_susana_martinez
 contact_form: 
   method: post
-  action: ""
+  action: 
+  usePhantomJsLogging: true
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/state_nm_gov_susana_martinez"
     - iframe:
