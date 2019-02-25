@@ -2,7 +2,7 @@ bioguide: B001292
 contact_form:
   method: post
   action: ""
-  useChrome: true
+  chromeDriver: true
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/B001292"
     - fill_in:
