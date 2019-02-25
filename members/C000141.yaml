@@ -17,7 +17,7 @@ contact_form:
           Miss: Miss
     - fill_in:
       - name: lastname
-        selector: "#name"
+        selector: "#lastname"
         value: $NAME_LAST
       - name: message
         selector: "#message"
