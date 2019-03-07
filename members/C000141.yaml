@@ -2,7 +2,6 @@ bioguide: C000141
 contact_form:
   method: post
   action: ""
-  useChrome: true
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/C000141"
     - select:
