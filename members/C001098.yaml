@@ -2,6 +2,7 @@ bioguide: C001098
 contact_form:
   method: post
   action: ""
+  usePhantomLogging: true  
   steps:
     - visit: "http://ngpvan-contact-jane-casey.herokuapp.com/forms/C001098"
     - select:
