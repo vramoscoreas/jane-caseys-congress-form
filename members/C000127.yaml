@@ -25,6 +25,12 @@ contact_form:
         selector: "#firstname"
         value: $NAME_FIRST
         required: true
+      - name: ngpvantopic
+        selector: "#ngpvantopic"
+        value: $NGPVAN_TOPIC
+      - name: topictext
+        selector: "#topictext"
+        value: $TOPIC
       - name: message
         selector: "#message"
         value: $MESSAGE
