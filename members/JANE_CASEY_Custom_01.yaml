@@ -36,3 +36,6 @@ contact_form:
       status: 200
     body:
       contains: "Success!"
+    - click_on:
+      - value: Submit
+        selector: "#submit"
