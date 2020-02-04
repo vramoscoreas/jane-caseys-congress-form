@@ -35,10 +35,6 @@ contact_form:
           selector: input#x-auto-10-input
           value: $EMAIL
           required: false
-        - name: phone number
-          selector: input#x-auto-11-input
-          value: $PHONE
-          required: false
     - select:
         - name: state
           selector: input#x-auto-6-input
@@ -109,7 +105,7 @@ contact_form:
         - selector: input[id*='gwt-uid-250']
         - selector: button[id*='gwt-uid']
     - wait:
-        - value: 3
+        - value: 5
   success:
     headers:
       status: 200
